@@ -3,4 +3,5 @@
 <p>{{ $name }}</p>
 <p>{{ $email }}</p>
 <p>{{ $phone }}</p>
-<pre>{{ $message }}</pre>
+<p>{{ $subject-matter }}</p>
+<pre>{{ $msg }}</pre>
