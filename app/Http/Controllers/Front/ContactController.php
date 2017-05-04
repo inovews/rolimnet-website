@@ -97,8 +97,8 @@ class ContactController extends Controller
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
                 'phone' => $request->get('phone'),
-                'subject' => $request->get('subject'),
-                'message' => $request->get('message'),
+                'subject_matter' => $request->get('subject'),
+                'msg' => $request->get('message'),
                 //'file' => $filePath,
             ), function($message) 
             {

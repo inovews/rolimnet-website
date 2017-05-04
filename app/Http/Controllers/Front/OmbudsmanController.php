@@ -93,11 +93,11 @@ class OmbudsmanController extends Controller
 
     public function send(OmbudsmanRequest $request)
     {
-        \Mail::send('mails.contact', array(
+        \Mail::send('mails.ombudsman', array(
                 'name' => $request->get('name'),
                 'email' => $request->get('email'),
                 'phone' => $request->get('phone'),
-                'subject-matter' => $request->get('subject'),
+                'subject_matter' => $request->get('subject'),
                 'msg' => $request->get('message'),
                 //'file' => $filePath,
             ), function($message) 
