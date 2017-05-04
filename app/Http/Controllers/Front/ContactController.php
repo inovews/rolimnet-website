@@ -103,7 +103,7 @@ class ContactController extends Controller
             ), function($message) 
             {
                 $message->from('no-reply@rolimnet.com.br', 'No reply');
-                $message->to('geral@rolimnet.com.br', 'Rolim Net Geral')->subject('Você recebe uma nova mensagem, SITE: Contato | Rolim Net!');
+                $message->to('geral@rolimnet.com.br', 'Rolim Net Geral')->subject('Você recebeu uma nova mensagem, SITE: Contato | Rolim Net!');
             }
         );
 

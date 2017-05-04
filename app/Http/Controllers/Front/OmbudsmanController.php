@@ -103,7 +103,7 @@ class OmbudsmanController extends Controller
             ), function($message) 
             {
                 $message->from('no-reply@rolimnet.com.br', 'No reply');
-                $message->to('pauloricardo@rolimnet.com.br', 'Rolim Net Alexandre Silvério')->subject('Você recebe uma nova mensagem, SITE: Ouvidoria | Rolim Net!');
+                $message->to('pauloricardo@rolimnet.com.br', 'Rolim Net Alexandre Silvério')->subject('Você recebeu uma nova mensagem, SITE: Ouvidoria | Rolim Net!');
             }
         );
 

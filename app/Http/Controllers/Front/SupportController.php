@@ -103,7 +103,7 @@ class SupportController extends Controller
             ), function($message) 
             {
                 $message->from('no-reply@rolimnet.com.br', 'No reply');
-                $message->to('suporte@rolimnet.com.br', 'Rolim Net Suporte')->subject('Você recebe uma nova mensagem, SITE: Suporte | Rolim Net!');
+                $message->to('suporte@rolimnet.com.br', 'Rolim Net Suporte')->subject('Você recebeu uma nova mensagem, SITE: Suporte | Rolim Net!');
             }
         );
 
