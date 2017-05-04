@@ -1,7 +1,7 @@
-<h2>Olá Alexandre Silvério,</h2>
-<h3>Você tem um novo recado.</h3>
-<p>{{ $name }}</p>
-<p>{{ $email }}</p>
-<p>{{ $phone }}</p>
-<p>{{ $subject_matter }}</p>
-<pre>{{ $msg }}</pre>
+<h2>Olá Alexandre Silvério.</h2>
+<h3>Você recebe novas mensagem, SITE: Ouvidoria | Rolim Net!</h3>
+<p>Nome: {{ $name }}</p>
+<p>E-mail: {{ $email }}</p>
+<p>Telefone: {{ $phone }}</p>
+<p>Assunto: {{ $subject_matter }}</p>
+<pre>Mensagem: {{ $msg }}</pre>
