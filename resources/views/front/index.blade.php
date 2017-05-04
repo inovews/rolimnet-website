@@ -520,7 +520,17 @@
             </div>
             <div class="col-sm-8 col-md-offset-2">
                 <div class="form-wrapper marginbot-50">
-                    {!! Form::open(array('route' => 'contato.enviar', 'class' => 'form-group')) !!}
+                    @if (Session::has('message'))
+                    <div class="alert alert-success">
+                        {{ Session::get('message') }}
+                    </div>
+                    @endif
+                    {!! Form::open(array('route' => 'suporte.enviar', 'class' => 'form', 'files' => true)) !!}
+                        <ul>
+                            @foreach($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
                         <div class="form-group">
                             <input type="text" name="name" value="" placeholder="Seu nome" class="form-control input-lg" required>
                         </div>
