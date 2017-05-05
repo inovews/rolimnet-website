@@ -72,13 +72,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 		Route::post('reset', ['as' => 'reset', 'uses' => 'Black\ResetPasswordController@reset']);
 		Route::get('reset/{token}', ['as' => 'reset', 'uses' => 'Black\ResetPasswordController@showResetForm']);
 	});
-	//Route::get('register', ['as' => 'register', 'uses' => 'Black\RegisterController@showRegistrationForm']);
-	//Route::post('register', ['as' => 'register', 'uses' => 'Black\RegisterController@register']);
 
-	Route::group(['prefix' => 'documentos', 'as' => 'documentos.'], function()
+	Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // BANNERS-ADMIN
 	{
-		Route::get('/', ['as' => 'index', 'uses' => 'Black\Sys\DocumentController@index']);
-		Route::post('upload/enviar', ['as' => 'upload', 'uses' => 'Black\Sys\DocumentController@upload']);
+		Route::get('/', ['as' => 'index', 'uses' => 'Black\Sys\BannerController@index']);
+		Route::post('enviar', ['as' => 'enviar', 'uses' => 'Black\Sys\BannerController@send']);
 	});
 
 });
