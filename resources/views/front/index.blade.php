@@ -525,7 +525,7 @@
                         {{ Session::get('message') }}
                     </div>
                     @endif
-                    {!! Form::open(array('route' => 'suporte.enviar', 'class' => 'form', 'files' => true)) !!}
+                    {!! Form::open(array('route' => 'contato.enviar', 'class' => 'form', 'files' => true)) !!}
                         <ul>
                             @foreach($errors->all() as $error)
                             <li>{{ $error }}</li>
