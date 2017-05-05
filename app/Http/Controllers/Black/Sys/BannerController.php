@@ -15,6 +15,7 @@ class BannerController extends Controller
     public function index()
     {
         //
+        return view('black.sys.banners.index'); 
     }
 
     /**
