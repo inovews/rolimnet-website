@@ -17,7 +17,7 @@ class CreateFaqTagsTable extends Migration
             $table->increments('id');
             $table->bigInteger('faq_id')->unsigned();
             $table->bigInteger('tag_id')->unsigned();
-            $table->primary(['faq_id','tag_id']);
+            //$table->primary(['faq_id','tag_id']);
             $table->timestamps();
         });
     }
