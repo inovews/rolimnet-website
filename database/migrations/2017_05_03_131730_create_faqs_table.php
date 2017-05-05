@@ -15,7 +15,18 @@ class CreateFaqsTable extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->increments('id');
+            $table->bigInteger('user_id')->unsigned()->index();
+            $table->bigInteger('category_id')->unsigned()->index();
+            $table->string('title')->nullable(false);
+            $table->string('description')->nullable(false);
+            $table->string('slug')->unique();
+            $table->longText('content')->nullable(false);
+            $table->longText('html_content')->nullable(false);
+            $table->tinyInteger('status')->default(0);
+            $table->integer('view_count')->unsigned()->default(0);
             $table->timestamps();
+            $table->timestamp('published_at')->nullable()->index();
+            $table->softDeletes();
         });
     }
 
