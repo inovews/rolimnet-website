@@ -143,7 +143,7 @@
         <div class="body-content" >
 
             <!-- header section start-->
-            <div class="header-section">
+            <div class="header-section"> 
 
                 <!--logo and logo icon start-->
                 <div class="logo dark-logo-bg hidden-xs hidden-sm">
