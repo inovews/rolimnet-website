@@ -8,7 +8,10 @@
     <meta name="description" content="" />
     <link rel="shortcut icon" href="javascript:;" type="image/png">
 
-    <title>SlickLab - Responsive Admin Dashboard Template</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ isset($title) ? $title . ' - Rolim Net | Adminstração' : null }}</title>
 
     <!--easy pie chart-->
     <link href="admin/js/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
@@ -40,6 +43,13 @@
     <script src="admin/js/html5shiv.js"></script>
     <script src="admin/js/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Scripts -->
+    <script>
+        window.Laravel = <?php echo json_encode([
+            'csrfToken' => csrf_token(),
+        ]); ?>
+    </script>
 </head>
 
 <body class="sticky-header">
