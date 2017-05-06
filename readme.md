@@ -2,7 +2,7 @@
 
 ## Rolim Net
 
-Novo website Rolim Net Tecnologia LTDA sobre a plataformar Laravel 5.3
+Novo website Rolim Net Tecnologia LTDA sobre a plataforma Laravel 5.3
 
 ## Licença
 
