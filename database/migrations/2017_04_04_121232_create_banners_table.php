@@ -25,8 +25,8 @@ class CreateBannersTable extends Migration
             $table->string('slug', 150)->default('');
             $table->string('file', 300);
             $table->string('target', 30)->default('_self');
-            $table->dateTime('published_at');
-            $table->dateTime('until_then')->nullable();
+            $table->date('published_at');
+            $table->date('until_then')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
