@@ -14,34 +14,34 @@
     <title>{{ isset($title) ? $title . ' - Rolim Net | Adminstração' : null }}</title>
 
     <!--easy pie chart-->
-    <link href="js/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ url('slicklab/js/jquery-easy-pie-chart/jquery.easy-pie-chart.css') }}" rel="stylesheet" type="text/css" media="screen" />
 
     <!--vector maps -->
-    <link rel="stylesheet" href="js/vector-map/jquery-jvectormap-1.1.1.css">
+    <link rel="stylesheet" href="{{ url('slicklab/js/vector-map/jquery-jvectormap-1.1.1.css') }}">
 
     <!--right slidebar-->
-    <link href="css/slidebars.css" rel="stylesheet">
+    <link href="{{ url('slicklab/css/slidebars.css') }}" rel="stylesheet">
 
     <!--switchery-->
-    <link href="js/switchery/switchery.min.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{{ url('slicklab/js/switchery/switchery.min.css') }}" rel="stylesheet" type="text/css" media="screen" />
 
     <!--jquery-ui-->
-    <link href="js/jquery-ui/jquery-ui-1.10.1.custom.min.css" rel="stylesheet" />
+    <link href="{{ url('slicklab/js/jquery-ui/jquery-ui-1.10.1.custom.min.css') }}" rel="stylesheet" />
 
     <!--iCheck-->
-    <link href="js/icheck/skins/all.css" rel="stylesheet">
+    <link href="{{ url('slicklab/js/icheck/skins/all.css') }}" rel="stylesheet">
 
-    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="{{ url('slicklab/css/owl.carousel.css') }}" rel="stylesheet">
 
 
     <!--common style-->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="{{ url('slicklab/css/style.css') }}" rel="stylesheet">
+    <link href="{{ url('slicklab/css/style-responsive.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ url('slicklab/js/html5shiv.js') }}"></script>
+    <script src="{{ url('slicklab/js/respond.min.js') }}"></script>
     <![endif]-->
 
     <!-- Scripts -->
@@ -234,68 +234,68 @@
 
 
 <!-- Placed js at the end of the document so the pages load faster -->
-<script src="js/jquery-1.10.2.min.js"></script>
+<script src="{{ url('slicklab/js/jquery-1.10.2.min.js') }}"></script>
 
 <!--jquery-ui-->
-<script src="js/jquery-ui/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="{{ url('slicklab/js/jquery-ui/jquery-ui-1.10.1.custom.min.js') }}" type="text/javascript"></script>
 
-<script src="js/jquery-migrate.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/modernizr.min.js"></script>
+<script src="{{ url('slicklab/js/jquery-migrate.js') }}"></script>
+<script src="{{ url('slicklab/js/bootstrap.min.js') }}"></script>
+<script src="{{ url('slicklab/js/modernizr.min.js') }}"></script>
 
 <!--Nice Scroll-->
-<script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="{{ url('slicklab/js/jquery.nicescroll.js') }}" type="text/javascript"></script>
 
 <!--right slidebar-->
-<script src="js/slidebars.min.js"></script>
+<script src="{{ url('slicklab/js/slidebars.min.js') }}"></script>
 
 <!--switchery-->
-<script src="js/switchery/switchery.min.js"></script>
-<script src="js/switchery/switchery-init.js"></script>
+<script src="{{ url('slicklab/js/switchery/switchery.min.js') }}"></script>
+<script src="{{ url('slicklab/js/switchery/switchery-init.js') }}"></script>
 
 <!--flot chart -->
-<script src="js/flot-chart/jquery.flot.js"></script>
-<script src="js/flot-chart/flot-spline.js"></script>
-<script src="js/flot-chart/jquery.flot.resize.js"></script>
-<script src="js/flot-chart/jquery.flot.tooltip.min.js"></script>
-<script src="js/flot-chart/jquery.flot.pie.js"></script>
-<script src="js/flot-chart/jquery.flot.selection.js"></script>
-<script src="js/flot-chart/jquery.flot.stack.js"></script>
-<script src="js/flot-chart/jquery.flot.crosshair.js"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/flot-spline.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.resize.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.tooltip.min.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.pie.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.selection.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.stack.js') }}"></script>
+<script src="{{ url('slicklab/js/flot-chart/jquery.flot.crosshair.js') }}"></script>
 
 
 <!--earning chart init-->
-<script src="js/earning-chart-init.js"></script>
+<script src="{{ url('slicklab/js/earning-chart-init.js') }}"></script>
 
 
 <!--Sparkline Chart-->
-<script src="js/sparkline/jquery.sparkline.js"></script>
-<script src="js/sparkline/sparkline-init.js"></script>
+<script src="{{ url('slicklab/js/sparkline/jquery.sparkline.js') }}"></script>
+<script src="{{ url('slicklab/js/sparkline/sparkline-init.js') }}"></script>
 
 <!--easy pie chart-->
-<script src="js/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
-<script src="js/easy-pie-chart.js"></script>
+<script src="{{ url('slicklab/js/jquery-easy-pie-chart/jquery.easy-pie-chart.js') }}"></script>
+<script src="{{ url('slicklab/js/easy-pie-chart.js') }}"></script>
 
 
 <!--vectormap-->
-<script src="js/vector-map/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="js/vector-map/jquery-jvectormap-world-mill-en.js"></script>
-<script src="js/dashboard-vmap-init.js"></script>
+<script src="{{ url('slicklab/js/vector-map/jquery-jvectormap-1.2.2.min.js') }}"></script>
+<script src="{{ url('slicklab/js/vector-map/jquery-jvectormap-world-mill-en.js') }}"></script>
+<script src="{{ url('slicklab/js/dashboard-vmap-init.js') }}"></script>
 
 <!--Icheck-->
-<script src="js/icheck/skins/icheck.min.js"></script>
-<script src="js/todo-init.js"></script>
+<script src="{{ url('slicklab/js/icheck/skins/icheck.min.js') }}"></script>
+<script src="{{ url('slicklab/js/todo-init.js') }}"></script>
 
 <!--jquery countTo-->
-<script src="js/jquery-countTo/jquery.countTo.js"  type="text/javascript"></script>
+<script src="{{ url('slicklab/js/jquery-countTo/jquery.countTo.js') }}"  type="text/javascript"></script>
 
 <!--owl carousel-->
-<script src="js/owl.carousel.js"></script>
+<script src="{{ url('slicklab/js/owl.carousel.js') }}"></script>
 
 
 <!--common scripts for all pages-->
 
-<script src="js/scripts.js"></script>
+<script src="{{ url('slicklab/js/scripts.js') }}"></script>
 
 
 <script type="text/javascript">
