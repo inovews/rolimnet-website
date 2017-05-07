@@ -73,10 +73,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 		Route::get('reset/{token}', ['as' => 'reset', 'uses' => 'Black\ResetPasswordController@showResetForm']);
 	});
 
-	Route::group(['prefix' => 'banners', 'as' => 'banners.'], function() // BANNERS-ADMIN 
+	/*Route::group(['prefix' => 'banners', 'as' => 'banners.'], function() // BANNERS-ADMIN 
 	{
 		Route::get('/', ['as' => 'index', 'uses' => 'Black\Sys\BannerController@index']);
 		Route::post('enviar', ['as' => 'enviar', 'uses' => 'Black\Sys\BannerController@send']);
-	});
+	});*/
+	 Route::resource('banners', 'Black\Sys\BannerController');
 
 });

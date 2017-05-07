@@ -50,6 +50,8 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/css/dropify.min.css">
 </head>
 
 <body class="sticky-header">
@@ -322,7 +324,13 @@
         owl.reinit();
     });
 
+    $('.dropify').dropify();
+
 </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/js/dropify.min.js"></script>
+
+@yield('script')
 
 </body>
 </html>

@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Black\Sys;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\Black\BannerRequest;
+use App\Black\Banner;
+
 class BannerController extends Controller
 {
     public function __construct()
@@ -19,7 +22,8 @@ class BannerController extends Controller
     public function index()
     {
         //
-        return view('black.sys.banners.index'); 
+        $banner = Banner::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.banners.index')->withBanners($banner); 
     }
 
     /**
@@ -30,6 +34,7 @@ class BannerController extends Controller
     public function create()
     {
         //
+        return view('black.sys.banners.create');
     }
 
     /**
@@ -38,9 +43,12 @@ class BannerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BannerRequest $banner)
     {
         //
+        $banner = Banner::create($banner->getValidRequest());
+
+        return redirect()->route('admin.banners.index')->with('message', 'O banner foi criado.');
     }
 
     /**
@@ -63,6 +71,8 @@ class BannerController extends Controller
     public function edit($id)
     {
         //
+        $banner = Banner::findOrFail($id);
+        return view('black.sys.banners.edit', compact('banner'));
     }
 
     /**
@@ -86,5 +96,10 @@ class BannerController extends Controller
     public function destroy($id)
     {
         //
+        $banners = Banner::findOrFail($id);
+        //$post->tags()->detach(); // Depois eu vejo isso.
+        $banners->delete();
+
+        return redirect()->route('admin.banners.index')->with('message', 'Item removido com sucesso.');
     }
 }

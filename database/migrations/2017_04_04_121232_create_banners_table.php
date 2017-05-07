@@ -22,8 +22,8 @@ class CreateBannersTable extends Migration
             $table->text('description')->nullable();
             $table->text('subdescription')->nullable();
             $table->string('price');
-            $table->string('link', 150)->default('');
-            $table->string('image_file_name', 300);
+            $table->string('slug', 150)->default('');
+            $table->string('file', 300);
             $table->string('target', 30)->default('_self');
             $table->dateTime('published_at');
             $table->dateTime('until_then')->nullable();
