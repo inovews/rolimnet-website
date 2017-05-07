@@ -4,7 +4,7 @@ namespace App\Http\Requests\Black;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BannerRequest extends FormRequest
+class FileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -35,16 +35,9 @@ class BannerRequest extends FormRequest
             //
             'file' => $this->input('file') ?? false,
             'name' => $this->input('name'),
-            'status' => $this->input('status'),
-            'star' => $this->input('star'),
-            'place' => $this->input('place'),
-            'slug' => $this->input('slug'),
-            'price' => $this->input('price'),
-            'description' => $this->input('description'),
-            'subdescription' => $this->input('subdescription'),
-            'published_at' => $this->input('published_at'),
-            'until_then' => $this->input('until_then'),
-            'target' => $this->input('target'),
+            'key' => $this->input('key'),
+            'type' => $this->input('type'),
+            'size' => $this->input('size') ?? false,
         ];
     }
 }

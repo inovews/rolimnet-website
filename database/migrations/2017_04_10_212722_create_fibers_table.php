@@ -15,6 +15,12 @@ class CreateFibersTable extends Migration
     {
         Schema::create('fibers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name', 250)->default('');
+            $table->string('address');
+            $table->string('number');
+            $table->string('neighborhood');
+            $table->string('phone');
+            $table->string('email')->unique();
             $table->timestamps();
         });
     }

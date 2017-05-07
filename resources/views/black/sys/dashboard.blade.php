@@ -6,7 +6,7 @@
     <h1 style="font-weight:500">
       Bem vindo !
     </h1>
-    <p class="lead">Tudo bem com você? Espero que dê tudo certo.</p>
+    <p class="lead">Tudo bem com você? Espero que sim <i class="fa fa-smile-o fa-3"></i>.</p>
   </div>
 </div>
 <!-- page head end--> 
@@ -20,7 +20,7 @@
           <ul class="monthly-page-view w-p-view-">
             <li class="pull-left page-view-label">
             <span class="page-view-value">0</span>
-              <span>Vagas postadas hoje.</span>
+              <span>//.</span>
             </li>
             <li class="pull-right">
               <div id="m-g-light" class="chart"><canvas height="35" width="131" style="display: inline-block; width: 131px; height: 35px; vertical-align: top;"></canvas></div>
@@ -37,7 +37,7 @@
           <ul class="monthly-page-view w-p-view-">
             <li class="pull-left page-view-label">
             <span class="page-view-value">1</span>
-              <span>Vagas postadas nessa semana.</span>
+              <span>//.</span>
             </li>
             <li class="pull-right">
               <div id="m-g-light" class="chart"><canvas height="35" width="131" style="display: inline-block; width: 131px; height: 35px; vertical-align: top;"></canvas></div>
@@ -54,7 +54,7 @@
           <ul class="monthly-page-view w-p-view-">
             <li class="pull-left page-view-label">
             <span class="page-view-value">1</span>
-              <span>Vagas postadas nesse mês.</span>
+              <span>//.</span>
             </li>
             <li class="pull-right">
               <div id="m-g-light" class="chart"><canvas height="35" width="131" style="display: inline-block; width: 131px; height: 35px; vertical-align: top;"></canvas></div>
@@ -69,7 +69,7 @@
       <div class="col-md-6">
         <section class="panel">
           <header class="panel-heading head-border">
-            Últimas vagas adicionadas por você
+            Test 1
             <span class="tools pull-right">
             </span>
           </header>
@@ -78,7 +78,7 @@
     <div class="col-md-6">
       <section class="panel">
         <header class="panel-heading head-border">
-          Vagas de HOJE
+          Test 2
           <span class="tools pull-right">
           </span>
         </header>

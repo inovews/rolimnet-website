@@ -38,6 +38,7 @@ Route::group(['prefix' => 'documentos-publicos', 'as' => 'documentos.'], functio
 Route::group(['prefix' => 'faq', 'as' => 'faq.'], function() // FAQ
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\FaqController@index']);
+	Route::get('/{slug}', ['as' => 'slug', 'uses' => 'Front\FaqController@show'])->where('slug', '[\w\d\-\_]+');
 });
 
 Route::group(['prefix' => 'ouvidoria', 'as' => 'ouvidoria.'], function() // OUVIDORIA
@@ -78,6 +79,11 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 		Route::get('/', ['as' => 'index', 'uses' => 'Black\Sys\BannerController@index']);
 		Route::post('enviar', ['as' => 'enviar', 'uses' => 'Black\Sys\BannerController@send']);
 	});*/
-	 Route::resource('banners', 'Black\Sys\BannerController');
+	Route::resource('banners', 'Black\Sys\BannerController');
+	Route::resource('faqs', 'Black\Sys\FaqController');
+	Route::resource('files', 'Black\Sys\FileController');
+	Route::resource('fibers', 'Black\Sys\FiberController');
+	Route::resource('supports', 'Black\Sys\SupportController');
+	Route::resource('documents', 'Black\Sys\DocumentController');
 
 });

@@ -15,6 +15,8 @@ class CreateSupportsTable extends Migration
     {
         Schema::create('supports', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->string('phone');
             $table->timestamps();
         });
     }

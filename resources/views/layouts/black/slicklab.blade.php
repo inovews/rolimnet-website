@@ -52,6 +52,12 @@
     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/css/dropify.min.css">
+
+    <!--bootstrap-wysihtml5-->
+    <link rel="stylesheet" type="text/css" href="{{ url('slicklab/js/bootstrap-wysihtml5/bootstrap-wysihtml5.css') }}" />
+
+    <!--dropzone-->
+    <link href="{{ url('slicklab/css/dropzone.css') }}" rel="stylesheet">
 </head>
 
 <body class="sticky-header">
@@ -83,29 +89,39 @@
                     <li class="menu-list">
                         <a href=""><i class="fa fa-laptop"></i>  <span>Banners</span></a>
                         <ul class="child-list">
-                            <li><a href="#"> Adicionar</a></li>
+                            <li><a href="{{route('admin.banners.create')}}"> Adicionar</a></li>
                             <li><a href="{{route('admin.banners.index')}}"> Listar</a></li>
                             <li><a href="#"> Categorias</a></li>
                         </ul>
                     </li>
-                    <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>UI Elements</span></a>
+                    <li class="menu-list"><a href=""><i class="fa fa-cloud-upload"></i> <span>Documentos Publicos</span></a>
                         <ul class="child-list">
-                            <li><a href="general.html"> BS Elements</a></li>
-                            <li><a href="buttons.html"> Buttons</a></li>
-                            <li><a href="toastr.html"> Toaster Notification</a></li>
-                            <li><a href="widgets.html"> Widgets</a></li>
-                            <li><a href="ion-slider.html"> Ion Slider</a></li>
-                            <li><a href="tree.html"> Tree View</a></li>
-                            <li><a href="nestable.html"> Nestable</a></li>
-                            <li><a href="fontawesome.html"> Fontawesome</a></li>
-                            <li><a href="line-icon.html"> Line Icon</a></li>
+                            <li><a href="{{route('admin.documents.create')}}"> Adicionar</a></li>
+                            <li><a href="{{route('admin.documents.index')}}"> Listar</a></li>
+                            <li><a href="{{route('admin.files.index')}}"> Arquivos</a></li>
                         </ul>
                     </li>
+                    <li><a href="{{route('admin.fibers.index')}}"><i class="fa fa-bolt"></i> <span>Fibra</span></a></li>
+                    <li class="menu-list"><a href=""><i class="fa fa-tags"></i> <span>Planos</span></a>
+                        <ul class="child-list">
+                            <li><a href="{{route('admin.faqs.create')}}"> Adicionar</a></li>
+                            <li><a href="{{route('admin.faqs.index')}}"> Listar</a></li>
+                            <li><a href="#"> Categorias</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>Perguntas Frequentes</span></a>
+                        <ul class="child-list">
+                            <li><a href="{{route('admin.faqs.create')}}"> Adicionar</a></li>
+                            <li><a href="{{route('admin.faqs.index')}}"> Listar</a></li>
+                            <li><a href="#"> Categorias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{route('admin.supports.index')}}"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
 
                     <li>
                         <h3 class="navigation-title">Extra</h3>
                     </li>
-
+                    <!--
                     <li class="menu-list"><a href="javascript:;"><i class="fa fa-envelope-o"></i> <span>Email <span class="label noti-arrow bg-danger pull-right">4 Unread</span> </span></a>
                         <ul class="child-list">
                             <li><a href="inbox.html"> Inbox</a></li>
@@ -120,17 +136,11 @@
                             <li><a href="vector-map.html"> Vector Map</a></li>
                         </ul>
                     </li>
-
-                    <li class="menu-list"><a href=""><i class="fa fa-file-text"></i> <span>Extra Pages</span></a>
+                    -->
+                    <li class="menu-list"><a href=""><i class="fa fa-file-text"></i> <span>Páginas Extras</span></a>
                         <ul class="child-list">
-                            <li><a href="profile.html"> Profile</a></li>
-                            <li><a href="invoice.html"> Invoice</a></li>
-                            <li><a href="login.html"> Login </a></li>
-                            <li><a href="registration.html"> Registration </a></li>
-                            <li><a href="lock.html"> Lock Screen </a></li>
-                            <li><a href="404.html"> 404 Error</a></li>
-                            <li><a href="500.html"> 500 Error</a></li>
-
+                            <li><a href="#"> Empresa</a></li>
+                            <li><a href="#"> Produtos</a></li>
                         </ul>
                     </li>
 
@@ -225,7 +235,7 @@
 
             <!--footer section start-->
             <footer>
-                2015 &copy; SlickLab by VectorLab.
+                Todos os direitos reservados © 2008 - 2017 NOC | Rolim Net. 
             </footer>
             <!--footer section end-->
 
@@ -331,6 +341,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.1/js/dropify.min.js"></script>
 
 @yield('script')
+
+<!--bootstrap-wysihtml5-->
+<script type="text/javascript" src="{{ url('slicklab/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js') }}"></script>
+<script type="text/javascript" src="{{ url('slicklab/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js') }}"></script>
+
+<script>
+
+    jQuery(document).ready(function(){
+        $('.wysihtml5').wysihtml5();
+
+        $('.summernote').summernote({
+            height: 200,                 // set editor height
+
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+
+            focus: true                 // set focus to editable area after initializing summernote
+        });
+    });
+
+</script>
+
+<!--dropzone-->
+<script src="{{ url('slicklab/js/dropzone.js') }}"></script>
 
 </body>
 </html>

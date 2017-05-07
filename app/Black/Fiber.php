@@ -4,12 +4,12 @@ namespace App\Black;
 
 use Illuminate\Database\Eloquent\Model;
 
-class File extends Model
+class Fiber extends Model
 {
     //
-    protected $table = 'files';
+    protected $table = 'fibers';
 
     protected $fillable = [
-        'name','file', 'key', 'type', 'size',
+        'id'
     ];
 }

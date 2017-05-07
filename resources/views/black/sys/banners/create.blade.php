@@ -1,8 +1,6 @@
-@extends('layouts.black.slicklab', ['title' => 'Banners'])
+@extends('layouts.black.slicklab', ['title' => 'Adicionar novo banner'])
 
 @section('content')
-
-@include('shared.errors')
 
 <!-- page head start-->
 <div class="page-head">
@@ -15,13 +13,14 @@
 <div class="wrapper">
 	<div class="col-md-10 col-centered">
 		<div class="row">
+			@include('shared.errors')
 			{{Form::open(array('route'=>'admin.banners.store','method'=>'POST'))}}
 			<section class="panel">
 				<div class="panel-body">
 					<div class="col-xs-12 col-sm-4">
 						<div class="form-group">
 							<p>Sua foto ou logo:</p>
-							<input type="file" class="dropify" name="file" id="file"  data-default-file="" />
+							<input type="file" class="dropify" name="file" id="file"  data-default-file="" disabled />
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-8">
@@ -99,24 +98,3 @@
 </div>
 </div>
 @endsection
-
-@section('scripts')
-<script type="text/javascript">
-	$(document).ready(function(){
-                // Basic
-                $('.dropify').dropify();
-
-
-                // Used events
-                var drEvent = $('.dropify-event').dropify();
-
-                drEvent.on('dropify.beforeClear', function(event, element){
-                	return confirm("Do you really want to delete \"" + element.filename + "\" ?");
-                });
-
-                drEvent.on('dropify.afterClear', function(event, element){
-                	alert('File deleted');
-                });
-            });
-        </script>
-        @endsection

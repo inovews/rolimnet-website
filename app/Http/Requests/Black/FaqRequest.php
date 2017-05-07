@@ -4,7 +4,7 @@ namespace App\Http\Requests\Black;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class BannerRequest extends FormRequest
+class FaqRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class BannerRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return true; 
     }
 
     /**
@@ -25,7 +25,15 @@ class BannerRequest extends FormRequest
     {
         return [
             //
-            'name' => 'required'
+            'user_id' => 'required',
+            'title' => 'required',
+            'status' => 'required',
+            'category_id' => 'required',
+            'slug' => 'required',
+            'content' => 'required',
+            'html_content' => 'required',
+            'description' => 'required',
+
         ];
     }
 
@@ -33,18 +41,14 @@ class BannerRequest extends FormRequest
     {
         return [
             //
-            'file' => $this->input('file') ?? false,
-            'name' => $this->input('name'),
+            'user_id' => $this->input('user_id') ?? false,
+            'title' => $this->input('title'),
             'status' => $this->input('status'),
-            'star' => $this->input('star'),
-            'place' => $this->input('place'),
+            'category_id' => $this->input('category_id'),
             'slug' => $this->input('slug'),
-            'price' => $this->input('price'),
+            'content' => $this->input('content'),
+            'html_content' => $this->input('html_content'),
             'description' => $this->input('description'),
-            'subdescription' => $this->input('subdescription'),
-            'published_at' => $this->input('published_at'),
-            'until_then' => $this->input('until_then'),
-            'target' => $this->input('target'),
         ];
     }
 }

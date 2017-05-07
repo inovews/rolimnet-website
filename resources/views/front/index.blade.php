@@ -143,7 +143,7 @@
                                                 <label  class="col-sm-2">Estados</label>
                                                 <div class="col-sm-4">
                                                     <div class="iconic-input">
-                                                        <select class="form-control m-bot15" name="planos_uf" id="planos_uf">
+                                                        <select class="form-control m-bot15" name="planos_uf" id="planos_uf" disabled>
                                                             <option value="0">Selecione o Estado</option>
                                                             <option value='23' >RO</option>
                                                         </select>

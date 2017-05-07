@@ -5,15 +5,8 @@ namespace App\Http\Controllers\Black\Sys;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\Black\BannerRequest;
-use App\Black\Banner;
-
-class BannerController extends Controller
+class PlanController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth:admin'); 
-    }
     /**
      * Display a listing of the resource.
      *
@@ -22,8 +15,6 @@ class BannerController extends Controller
     public function index()
     {
         //
-        $banner = Banner::orderBy('created_at','desc')->paginate(10);
-        return view('black.sys.banners.index')->withBanners($banner); 
     }
 
     /**
@@ -34,7 +25,6 @@ class BannerController extends Controller
     public function create()
     {
         //
-        return view('black.sys.banners.create');
     }
 
     /**
@@ -43,12 +33,9 @@ class BannerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BannerRequest $banner)
+    public function store(Request $request)
     {
         //
-        $banner = Banner::create($banner->getValidRequest());
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
@@ -71,8 +58,6 @@ class BannerController extends Controller
     public function edit($id)
     {
         //
-        $banner = Banner::findOrFail($id);
-        return view('black.sys.banners.edit', compact('banner'));
     }
 
     /**
@@ -82,13 +67,9 @@ class BannerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BannerRequest $banner, $id)
+    public function update(Request $request, $id)
     {
         //
-        $banner = Banner::find($id)->fill($banner->getValidRequest());
-        $banner->save();
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item editado com sucesso.');
     }
 
     /**
@@ -100,10 +81,5 @@ class BannerController extends Controller
     public function destroy($id)
     {
         //
-        $banners = Banner::findOrFail($id);
-        //$post->tags()->detach(); // Depois eu vejo isso.
-        $banners->delete();
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item removido com sucesso.');
     }
 }

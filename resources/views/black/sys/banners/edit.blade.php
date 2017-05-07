@@ -1,4 +1,4 @@
-@extends('layouts.black.slicklab', ['title' => 'Banners'])
+@extends('layouts.black.slicklab', ['title' => 'Editar banner'])
 
 @section('content')
 
@@ -6,8 +6,8 @@
 
 <!-- page head start-->
 <div class="page-head">
-	<h1 class="text-center">Adicionar novo banner</h1>
-	<p class="lead text-center">Crie um novo banner ou promoção e escolha sua melhor localização para exibi-lo.</p>
+	<h1 class="text-center">Editar banner</h1>
+	<p class="lead text-center">Edite seu banner ou promoção, mantenha ele sempre atualizado.</p>
 </div>
 <!-- page head end-->
 
@@ -15,13 +15,13 @@
 <div class="wrapper">
 	<div class="col-md-10 col-centered">
 		<div class="row">
-		{{ Form::open(['route' => ['admin.banners.update', $banner->id], 'method' => 'POST' ]) }}
+		{{ Form::open(['route' => ['admin.banners.update', $banner->id], 'method' => 'PUT' ]) }}
 			<section class="panel">
 				<div class="panel-body">
 					<div class="col-xs-12 col-sm-4">
 						<div class="form-group">
 							<p>Sua foto ou logo:</p>
-							<input type="file" class="dropify" name="file" id="file"  data-default-file="" />
+							<input type="file" class="dropify" name="file" id="file"  data-default-file="" disabled/>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-8">

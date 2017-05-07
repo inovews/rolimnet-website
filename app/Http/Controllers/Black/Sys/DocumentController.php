@@ -34,29 +34,6 @@ class DocumentController extends Controller
         //
     }
 
-    public function upload(UploadRequest $request){
-        $extension = Input::file('file')->getClientOriginalExtension();
-        $filename = rand(11111111, 99999999). '.' . $extension;
-        Input::file('file')->move(
-          base_path().'/public/files/uploads/', $filename
-        );
-        if(\Auth::user()->level == 2) {
-            $approved = $request['approved'];
-        } else {
-            $approved = 3;
-        }
-        $fullPath = '/public/files/uploads/' . $filename;
-        $upload = new Uploads(array(
-            'name' => $request['name'],
-            'format' => $extension,
-            'path' => $fullPath,
-            'approved' => $approved,
-        ));
-        $upload->save();
-        $uploads = Uploads::orderBy('approved')->get();
-        return view('uploadspanel.index', compact('uploads'));
-    }
-
     /**
      * Store a newly created resource in storage.
      *

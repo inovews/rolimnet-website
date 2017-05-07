@@ -5,15 +5,18 @@ namespace App\Http\Controllers\Black\Sys;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\Black\BannerRequest;
-use App\Black\Banner;
+use App\Http\Requests\Black\FileRequest;
+use App\Black\File;
 
-class BannerController extends Controller
+
+class FileController extends Controller
 {
     public function __construct()
     {
         $this->middleware('auth:admin'); 
     }
+
+    private $folder = 'arquivos/documentos-publicos';
     /**
      * Display a listing of the resource.
      *
@@ -22,8 +25,8 @@ class BannerController extends Controller
     public function index()
     {
         //
-        $banner = Banner::orderBy('created_at','desc')->paginate(10);
-        return view('black.sys.banners.index')->withBanners($banner); 
+        $file = File::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.files.index')->withFiles($file); 
     }
 
     /**
@@ -34,7 +37,7 @@ class BannerController extends Controller
     public function create()
     {
         //
-        return view('black.sys.banners.create');
+        return view('black.sys.files.create');
     }
 
     /**
@@ -43,12 +46,9 @@ class BannerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BannerRequest $banner)
+    public function store(FileRequest $file)
     {
         //
-        $banner = Banner::create($banner->getValidRequest());
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
@@ -71,8 +71,6 @@ class BannerController extends Controller
     public function edit($id)
     {
         //
-        $banner = Banner::findOrFail($id);
-        return view('black.sys.banners.edit', compact('banner'));
     }
 
     /**
@@ -82,13 +80,9 @@ class BannerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BannerRequest $banner, $id)
+    public function update(Request $request, $id)
     {
         //
-        $banner = Banner::find($id)->fill($banner->getValidRequest());
-        $banner->save();
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item editado com sucesso.');
     }
 
     /**
@@ -100,10 +94,17 @@ class BannerController extends Controller
     public function destroy($id)
     {
         //
-        $banners = Banner::findOrFail($id);
-        //$post->tags()->detach(); // Depois eu vejo isso.
-        $banners->delete();
-
-        return redirect()->route('admin.banners.index')->with('message', 'Item removido com sucesso.');
     }
+
+    /*protected function upload($file)
+    {
+        if ($file->isValid()) {
+            $fileName = (new \DateTime())->format('d.m.Y-hsi').'.'.$file->guessExtension();
+            $file->move(storage_path() . '/uploads', $fileName);
+            return storage_path() . '/uploads/' . $fileName;
+        } else {
+            return \Redirect::route('contato.index')
+                ->with('message', 'O arquivo enviado não é válido!');
+        }        
+    }*/
 }

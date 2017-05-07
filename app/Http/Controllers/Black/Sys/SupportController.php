@@ -5,10 +5,10 @@ namespace App\Http\Controllers\Black\Sys;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\Black\BannerRequest;
-use App\Black\Banner;
+use App\Http\Requests\Black\SupportRequest;
+use App\Black\Support;
 
-class BannerController extends Controller
+class SupportController extends Controller
 {
     public function __construct()
     {
@@ -22,8 +22,8 @@ class BannerController extends Controller
     public function index()
     {
         //
-        $banner = Banner::orderBy('created_at','desc')->paginate(10);
-        return view('black.sys.banners.index')->withBanners($banner); 
+        $support = Support::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.supports.index')->withSupports($support); 
     }
 
     /**
@@ -34,7 +34,7 @@ class BannerController extends Controller
     public function create()
     {
         //
-        return view('black.sys.banners.create');
+        return view('black.sys.supports.create');
     }
 
     /**
@@ -43,12 +43,12 @@ class BannerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BannerRequest $banner)
+    public function store(BannerRequest $support)
     {
         //
-        $banner = Banner::create($banner->getValidRequest());
+        $support = Support::create($support->getValidRequest());
 
-        return redirect()->route('admin.banners.index')->with('message', 'Item adicionado com sucesso.');
+        return redirect()->route('admin.supports.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
@@ -71,8 +71,8 @@ class BannerController extends Controller
     public function edit($id)
     {
         //
-        $banner = Banner::findOrFail($id);
-        return view('black.sys.banners.edit', compact('banner'));
+        $support = Support::findOrFail($id);
+        return view('black.sys.supports.edit', compact('support'));
     }
 
     /**
@@ -82,13 +82,13 @@ class BannerController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BannerRequest $banner, $id)
+    public function update(SupportRequest $support, $id)
     {
         //
-        $banner = Banner::find($id)->fill($banner->getValidRequest());
-        $banner->save();
+        $support = Support::find($id)->fill($support->getValidRequest());
+        $support->save();
 
-        return redirect()->route('admin.banners.index')->with('message', 'Item editado com sucesso.');
+        return redirect()->route('admin.supports.index')->with('message', 'Item editado com sucesso.');
     }
 
     /**
@@ -100,10 +100,10 @@ class BannerController extends Controller
     public function destroy($id)
     {
         //
-        $banners = Banner::findOrFail($id);
+        $support = Support::findOrFail($id);
         //$post->tags()->detach(); // Depois eu vejo isso.
-        $banners->delete();
+        $support->delete();
 
-        return redirect()->route('admin.banners.index')->with('message', 'Item removido com sucesso.');
+        return redirect()->route('admin.supports.index')->with('message', 'Item removido com sucesso.');
     }
 }
