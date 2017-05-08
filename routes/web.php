@@ -26,7 +26,7 @@ Route::group(['prefix' => 'produtos', 'as' => 'produtos.'], function() // PRODUT
 Route::group(['prefix' => 'fibra', 'as' => 'fibra.'], function() // FIBRA
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\FiberController@index']);
-	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\ContactController@store']);
+	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\FiberController@store']);
 });
 
 Route::group(['prefix' => 'contato', 'as' => 'contato.'], function() // CONTATO
