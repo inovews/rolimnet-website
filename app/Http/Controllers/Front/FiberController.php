@@ -42,7 +42,7 @@ class FiberController extends Controller
         //
         $fiber = Fiber::create($fiber->getValidRequest());
 
-        return redirect()->route('fibers.index')->with('message', 'Item adicionado com sucesso.');
+        return redirect()->route('fibra.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
