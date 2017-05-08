@@ -13,7 +13,7 @@ class PlanRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,19 @@ class PlanRequest extends FormRequest
     {
         return [
             //
+        ];
+    }
+
+    public function getValidRequest()
+    {
+        return [
+            //
+            'file' => $this->input('file') ?? false,
+            'name' => $this->input('name'),
+            'price' => $this->input('price'),
+            'slug' => $this->input('slug'),
+            'zone' => $this->input('zone'),
+            'plan_city_id' => $this->input('plan_city_id'),
         ];
     }
 }

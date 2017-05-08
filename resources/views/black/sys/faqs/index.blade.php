@@ -5,7 +5,7 @@
 <div class="page-head">
 	<div class="text-center">
 		<h1 style="margin:0">
-		Listagem de Perguntas Frequentes
+		Lista de Perguntas Frequentes
 		</h1>
 	</div>
 </div>

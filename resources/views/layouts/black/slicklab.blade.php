@@ -85,65 +85,48 @@
                     <li>
                         <h3 class="navigation-title">Painel do Usuário</h3>
                     </li>
-                    <li class="active"><a href="{{ url('/admin') }}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
-                    <li class="menu-list">
+                    <li class="{{ active('admin.') }}"><a href="{{ url('/admin') }}"><i class="fa fa-home"></i> <span>Dashboard</span></a></li>
+                    <li class="menu-list {{ active('admin.banners.*') }}">
                         <a href=""><i class="fa fa-laptop"></i>  <span>Banners</span></a>
                         <ul class="child-list">
-                            <li><a href="{{route('admin.banners.create')}}"> Adicionar</a></li>
-                            <li><a href="{{route('admin.banners.index')}}"> Listar</a></li>
+                            <li class="{{ active('admin.banners.create') }}"><a href="{{route('admin.banners.create')}}"> Adicionar</a></li>
+                            <li class="{{ active('admin.banners.index') }}"><a href="{{route('admin.banners.index')}}"> Listar</a></li>
                             <li><a href="#"> Categorias</a></li>
                         </ul>
                     </li>
-                    <li class="menu-list"><a href=""><i class="fa fa-cloud-upload"></i> <span>Documentos Publicos</span></a>
+                    <li class="menu-list {{ active('admin.documents.*') }}"><a href=""><i class="fa fa-cloud-upload"></i> <span>Documentos Publicos</span></a>
                         <ul class="child-list">
-                            <li><a href="{{route('admin.documents.create')}}"> Adicionar</a></li>
-                            <li><a href="{{route('admin.documents.index')}}"> Listar</a></li>
-                            <li><a href="{{route('admin.files.index')}}"> Arquivos</a></li>
+                            <li class="{{ active('admin.documents.create') }}"><a href="{{route('admin.documents.create')}}"> Adicionar</a></li>
+                            <li class="{{ active('admin.documents.index') }}"><a href="{{route('admin.documents.index')}}"> Listar</a></li>
+                            <li class="{{ active('admin.files.index') }}"><a href="{{route('admin.files.index')}}"> Arquivos</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{route('admin.fibers.index')}}"><i class="fa fa-bolt"></i> <span>Fibra</span></a></li>
-                    <li class="menu-list"><a href=""><i class="fa fa-tags"></i> <span>Planos</span></a>
+                    <li class="{{ active('admin.fibers.index') }}"><a href="{{route('admin.fibers.index')}}"><i class="fa fa-bolt"></i> <span>Fibra</span></a></li>
+                    <li class="menu-list {{ active('admin.plans.*') }}"><a href=""><i class="fa fa-tags"></i> <span>Planos</span></a>
                         <ul class="child-list">
-                            <li><a href="{{route('admin.faqs.create')}}"> Adicionar</a></li>
-                            <li><a href="{{route('admin.faqs.index')}}"> Listar</a></li>
-                            <li><a href="#"> Categorias</a></li>
+                            <li class="{{ active('admin.plans.create') }}"><a href="{{route('admin.plans.create')}}"> Adicionar</a></li>
+                            <li class="{{ active('admin.plans.index') }}"><a href="{{route('admin.plans.index')}}"> Listar</a></li>
+                            <li><a href="#"> Cidades</a></li>
                         </ul>
                     </li>
-                    <li class="menu-list"><a href=""><i class="fa fa-book"></i> <span>Perguntas Frequentes</span></a>
+                    <li class="menu-list {{ active('admin.faqs.*') }}"><a href=""><i class="fa fa-book"></i> <span>Perguntas Frequentes</span></a>
                         <ul class="child-list">
-                            <li><a href="{{route('admin.faqs.create')}}"> Adicionar</a></li>
-                            <li><a href="{{route('admin.faqs.index')}}"> Listar</a></li>
-                            <li><a href="#"> Categorias</a></li>
+                            <li class="{{ active('admin.faqs.create') }}"><a href="{{route('admin.faqs.create')}}"> Adicionar</a></li>
+                            <li class="{{ active('admin.faqs.index') }}"><a href="{{route('admin.faqs.index')}}"> Listar</a></li>
+                            <li class="{{ active('admin.banners.index') }}"><a href="#"> Categorias</a></li>
                         </ul>
                     </li>
-                    <li><a href="{{route('admin.supports.index')}}"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
+                    <li class="{{ active('admin.supports.index') }}"><a href="{{route('admin.supports.index')}}"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
 
                     <li>
                         <h3 class="navigation-title">Extra</h3>
                     </li>
-                    <!--
-                    <li class="menu-list"><a href="javascript:;"><i class="fa fa-envelope-o"></i> <span>Email <span class="label noti-arrow bg-danger pull-right">4 Unread</span> </span></a>
-                        <ul class="child-list">
-                            <li><a href="inbox.html"> Inbox</a></li>
-                            <li><a href="inbox-details.html"> View Mail</a></li>
-                            <li><a href="inbox-compose.html"> Compose Mail</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-list"><a href="javascript:;"><i class="fa fa-map-marker"></i> <span>Maps</span></a>
-                        <ul class="child-list">
-                            <li><a href="google-map.html"> Google Map</a></li>
-                            <li><a href="vector-map.html"> Vector Map</a></li>
-                        </ul>
-                    </li>
-                    -->
                     <li class="menu-list"><a href=""><i class="fa fa-file-text"></i> <span>Páginas Extras</span></a>
                         <ul class="child-list">
                             <li><a href="#"> Empresa</a></li>
                             <li><a href="#"> Produtos</a></li>
                         </ul>
                     </li>
-
                 </ul>
                 <!--sidebar nav end-->
 

@@ -1,4 +1,4 @@
-@extends('layouts.black.slicklab', ['title' => 'Banners'])
+@extends('layouts.black.slicklab', ['title' => 'Fibra Óptica'])
 
 @section('content')
 <!-- page head start-->

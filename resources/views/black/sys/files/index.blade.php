@@ -1,11 +1,11 @@
-@extends('layouts.black.slicklab', ['title' => 'Banners'])
+@extends('layouts.black.slicklab', ['title' => 'Arquivos'])
 
 @section('content')
 <!-- page head start-->
 <div class="page-head">
 	<div class="text-center">
 		<h1 style="margin:0">
-		Listagem de Banners
+		Lista de Arquivos
 		</h1>
 	</div>
 </div>

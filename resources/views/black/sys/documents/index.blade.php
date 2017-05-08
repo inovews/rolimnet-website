@@ -1,101 +1,73 @@
-@extends('layouts.black.black', ['title' => 'Dashboard'])
+@extends('layouts.black.slicklab', ['title' => 'Documentos Publicos'])
 
 @section('content')
-<div class="container-fluid main-container">
-    <div class="col-md-2 sidebar">
-        <div class="row">
-            <!-- Menu -->
-            <div class="side-menu">
-                <nav class="navbar navbar-default" role="navigation">
-                    <!-- Main Menu -->
-                    <div class="side-menu-container">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Active Link</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> Link</a></li>
-
-                            <!-- Dropdown-->
-                            <li class="panel panel-default" id="dropdown">
-                                <a data-toggle="collapse" href="#dropdown-lvl1">
-                                    <span class="glyphicon glyphicon-user"></span> Sub Level <span class="caret"></span>
-                                </a>
-
-                                <!-- Dropdown level 1 -->
-                                <div id="dropdown-lvl1" class="panel-collapse collapse">
-                                    <div class="panel-body">
-                                        <ul class="nav navbar-nav">
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-                                            <li><a href="#">Link</a></li>
-
-                                            <!-- Dropdown level 2 -->
-                                            <li class="panel panel-default" id="dropdown">
-                                                <a data-toggle="collapse" href="#dropdown-lvl2">
-                                                    <span class="glyphicon glyphicon-off"></span> Sub Level <span class="caret"></span>
-                                                </a>
-                                                <div id="dropdown-lvl2" class="panel-collapse collapse">
-                                                    <div class="panel-body">
-                                                        <ul class="nav navbar-nav">
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                            <li><a href="#">Link</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li><a href="#"><span class="glyphicon glyphicon-signal"></span> Link</a></li>
-
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </nav>
-
-            </div>
-        </div>
-    </div>
-    <div class="col-md-10">
-    {!! Form::open(
-   array(
-     'url' => 'admin/documentos/upload',
-     'method' => 'post',
-      'class' => 'form',
-      'novalidate' => 'novalidate',
-      'files' => true)) !!}
-<div class="form-group">
-    {!! Form::label('name', 'Name:') !!}
-    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+<!-- page head start-->
+<div class="page-head">
+	<div class="text-center">
+		<h1 style="margin:0">
+		Lista de Documentos Publicos
+		</h1>
+	</div>
 </div>
+<!-- page head end-->
+<!--body wrapper start-->
+<div class="wrapper">
+	<div class="row">
+		<div class="col-lg-12">
+			<section class="panel">
+				<header class="panel-heading head-border">
+					<a class="btn btn-info btn-sm" href="{{route('admin.documents.create')}}">Adicionar novo</a>
+					<a class="btn btn-gray btn-sm" href="#">Todos</a>
+					<a class="btn btn-gray btn-sm" href="#?status=aprovados">Aprovados</a>
+					<a class="btn btn-gray btn-sm" href="#?status=nao-aprovados">Não aprovados</a>
+					<a class="btn btn-gray btn-sm" href="#?status=aguardando-aprovacao">Aguardando</a>
+				</header>
+				<div class="table-responsive">
+				@if($documents)
+					@if (Session::has('message'))
+					<div class="alert alert-success">
+						{{ Session::get('message') }}
+					</div>
+					@endif
+					<table class="table">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Título</th>
+								<th>Chave</th>
+								<th>Data de criação</th>
+								<th>Tipo</th>
+								<th colspan="3">Ações</th>
+							</tr>
+						</thead>
+						<tbody>
+						@foreach($documents as $document)
+							<tr>
+								<th>{{ $document->id }}</th>
+								<th><a href="{{ route('admin.documents.edit' , $document->id) }}">{{ $document->name }}</a></th>
+								<th>{{ $document->key }}</th>
+								<th>{{ $document->created_at}}</th>
+								<th>{{ $document->type}}</th>
 
-<div class="form-group">
-    {!! Form::label('file', 'Bestand:') !!}
-    {!! Form::file('file',null,['class'=>'form-control']) !!}
+								<th colspan="3">
+									{!! Form::open([
+									'route' => array('admin.documents.destroy', $document->id), 'method' => 'DELETE']) !!}
+									</a>
+									<button type="submit" class="btn btn-xs btn-danger">
+										<span class="fa fa-remove" aria-hidden="true"></span> Deletar
+									</button>
+									{!! Form::close() !!}
+								</th>
+							</tr>
+						@endforeach
+						</tbody>
+					</table>
+					@endif
+				</div>
+			</section>
+		</div>
+	</div>
 </div>
-
-@if(\Auth::user()->level == 2)
-    <div class="form-group">
-        {{ Form::label('approved', 'Beschikbaar voor:') }}
-        {{ Form::select('approved', array(1 => 'Iedereen', 2 => 'monteurs', 3 => 'concept'), null, ['class' => 'form-control']) }}
-    </div>
-@else
-    {{ Form::hidden('approved', 3) }}
-@endif
-
-<div class="form-group">
-    {!! Form::submit('Upload',['class' => 'btn btn-primary form-control']) !!}
-</div>
-</div>
-{!! Form::close() !!}
-</div>
-<footer class="pull-left footer">
-    <p class="col-md-12">
-        <hr class="divider">
-        Todos os direitos reservados &copy; 2017 NOC | <a href="#">Rolim Net</a>
-    </p>
-</footer>
-</div>
+<!--body wrapper end-->
 @endsection
 

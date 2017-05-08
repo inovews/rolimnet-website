@@ -5,13 +5,14 @@ namespace App\Http\Controllers\Black\Sys;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use Storage;
+use App\Http\Requests\Black\DocumentRequest;
+use App\Black\Document;
 
 class DocumentController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:admin');
+        $this->middleware('auth:admin'); 
     }
     /**
      * Display a listing of the resource.
@@ -21,7 +22,8 @@ class DocumentController extends Controller
     public function index()
     {
         //
-        return view('black.sys.documents.index');
+        $document = Document::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.documents.index')->withDocuments($document); 
     }
 
     /**
@@ -32,6 +34,7 @@ class DocumentController extends Controller
     public function create()
     {
         //
+        return view('black.sys.documents.create');
     }
 
     /**
@@ -40,9 +43,12 @@ class DocumentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(BannerRequest $document)
     {
         //
+        $document = Document::create($document->getValidRequest());
+
+        return redirect()->route('admin.documents.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
@@ -65,6 +71,8 @@ class DocumentController extends Controller
     public function edit($id)
     {
         //
+        $document = Document::findOrFail($id);
+        return view('black.sys.documents.edit', compact('document'));
     }
 
     /**
@@ -74,9 +82,13 @@ class DocumentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(BannerRequest $document, $id)
     {
         //
+        $document = Document::find($id)->fill($document->getValidRequest());
+        $document->save();
+
+        return redirect()->route('admin.documents.index')->with('message', 'Item editado com sucesso.');
     }
 
     /**
@@ -88,5 +100,10 @@ class DocumentController extends Controller
     public function destroy($id)
     {
         //
+        $document = Document::findOrFail($id);
+        //$post->tags()->detach(); // Depois eu vejo isso.
+        $document->delete();
+
+        return redirect()->route('admin.documents.index')->with('message', 'Item removido com sucesso.');
     }
 }

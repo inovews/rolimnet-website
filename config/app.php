@@ -182,6 +182,8 @@ return [
 
         Clarification\MailDrivers\Sparkpost\SparkpostServiceProvider::class,
 
+        Watson\Active\ActiveServiceProvider::class,
+
     ],
 
     /*
@@ -232,6 +234,8 @@ return [
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+
+        'Active' => Watson\Active\Facades\Active::class,
 
     ],
 

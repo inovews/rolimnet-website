@@ -9,7 +9,8 @@
         "clarification/sparkpost-laravel-driver": "^1.2",
         "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.3.*",
-        "laravelcollective/html": "^5.3.0"
+        "laravelcollective/html": "^5.3.0",
+        "watson/active": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

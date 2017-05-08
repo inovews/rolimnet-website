@@ -5,7 +5,7 @@
 <div class="page-head">
 	<div class="text-center">
 		<h1 style="margin:0">
-		Listagem de Banners
+		Lista de Banners
 		</h1>
 	</div>
 </div>

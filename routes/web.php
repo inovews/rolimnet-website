@@ -85,5 +85,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 	Route::resource('fibers', 'Black\Sys\FiberController');
 	Route::resource('supports', 'Black\Sys\SupportController');
 	Route::resource('documents', 'Black\Sys\DocumentController');
+	Route::resource('plans', 'Black\Sys\PlanController');
 
 });
