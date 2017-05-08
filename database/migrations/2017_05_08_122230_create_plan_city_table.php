@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlan_CityTable extends Migration
+class CreatePlanCityTable extends Migration
 {
     /**
      * Run the migrations.
