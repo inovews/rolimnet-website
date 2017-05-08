@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\Front\FiberRequest;
+use App\Front\Fiber;
+
 class FiberController extends Controller
 {
     /**
@@ -34,9 +37,12 @@ class FiberController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FiberRequest $fiber)
     {
         //
+        $fiber = Fiber::create($fiber->getValidRequest());
+
+        return redirect()->route('fibers.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**

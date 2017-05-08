@@ -13,7 +13,7 @@ class FiberRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,25 @@ class FiberRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'address' => 'required',
+            'number' => 'required',
+            'neighborhood' => 'required',
+            'phone' => 'required',
+            'email' => 'email:required',
+        ];
+    }
+
+    public function getValidRequest()
+    {
+        return [
+            //
+            'name' => $this->input('file') ?? false,
+            'address' => $this->input('name'),
+            'number' => $this->input('status'),
+            'neighborhood' => $this->input('star'),
+            'phone' => $this->input('place'),
+            'email' => $this->input('slug'),
         ];
     }
 }

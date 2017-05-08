@@ -22,7 +22,12 @@ Route::group(['prefix' => 'produtos', 'as' => 'produtos.'], function() // PRODUT
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\ProductController@index']);
 });
 
-Route::get('/fibra', ['as' => 'fibra.index', 'uses' => 'Front\FiberController@index']); // FIBRA
+//Route::get('/fibra', ['as' => 'fibra.index', 'uses' => 'Front\FiberController@index']); // FIBRA
+Route::group(['prefix' => 'fibra', 'as' => 'fibra.'], function() // FIBRA
+{
+	Route::get('/', ['as' => 'index', 'uses' => 'Front\FiberController@index']);
+	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\ContactController@store']);
+});
 
 Route::group(['prefix' => 'contato', 'as' => 'contato.'], function() // CONTATO
 {
