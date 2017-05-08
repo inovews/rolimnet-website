@@ -19,5 +19,7 @@ class VerifyCsrfToken extends BaseVerifier
     	'ouvidoria/enviar',
         'suporte',
     	'suporte/enviar',
+        'fibra',
+        'fibra/enviar',
     ];
 }
