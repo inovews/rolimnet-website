@@ -58,6 +58,11 @@ Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // SUPORTE
 	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\SupportController@send']);
 });
 
+Route::get('/planos/cidades/{id}', function($id = null){
+    return Response()->json(\App\Front\Plan::where('plan_city_id', $id)->orderBy('name')->get());
+    //return Response()->json(\App\Front\Plan::pluck('id','name')->all()); 
+});
+
 // BLACK CENTRAL-DO-CLIENTE
 Auth::routes();
 Route::get('/home', 'HomeController@index');

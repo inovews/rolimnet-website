@@ -9,8 +9,6 @@ use App\Http\Requests\Black\PlanRequest;
 use App\Black\Plan;
 use App\Black\PlanCity;
 
-use Illuminate\Support\Str;
-
 class PlanController extends Controller
 {
     public function __construct()

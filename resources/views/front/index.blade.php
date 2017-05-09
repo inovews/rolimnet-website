@@ -152,9 +152,7 @@
                                                 <label  class="col-sm-2">Cidade</label>
                                                 <div class="col-sm-4">
                                                     <div class="iconic-input">
-                                                        <select class="form-control m-bot15" name="planos_cidade" id="planos_cidade">
-                                                            <option value='0'>Selecione a Cidade</option>
-                                                        </select>
+                                                        {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
                                                     </div>
                                                 </div>
                                             </div>
@@ -162,67 +160,12 @@
                                     </div>
                                     <div class="col-sm-12">
                                         <div class="row">
-                                            <div id='planos' class="col-md-4 md-margin-b-30">
-                                                <!-- Pricing List v4 -->
-                                                <div class="pricing-list-v4 radius-10">
-                                                    <div class="pricing-list-v4-header">
-                                                        <h4 class="pricing-list-v4-title">3mega</h4>
-                                                        <span class="pricing-list-v4-subtitle">Urbano</span>
-                                                    </div>
-                                                    <div class="pricing-list-v4-content">
-                                                        <div class="margin-b-40">
-                                                            <span class="pricing-list-v4-price-sign">R$</span>
-                                                            <span class="pricing-list-v4-price">99,</span>
-                                                            <span class="pricing-list-v4-subprice">00</span>
-                                                            <span class="pricing-list-v4-price-info">mês</span>
-                                                        </div>
-                                                        <div class="">
-                                                            <button type="button" class="btn btn-primary raised">Assinar</button>
-                                                        </div>
-                                                    </div>
+                                            <div class="col-md-4 md-margin-b-30" name="planos" id="planos"> 
+                                                <div >
+                                                    
                                                 </div>
-                                                <!-- End Pricing List v4 -->
-                                            </div>
-                                            <div class="col-md-4 md-margin-b-30">
                                                 <!-- Pricing List v4 -->
-                                                <div class="pricing-list-v4 radius-10">
-                                                    <div class="pricing-list-v4-header">
-                                                        <h4 class="pricing-list-v4-title">5mega</h4>
-                                                        <span class="pricing-list-v4-subtitle">Urbano</span>
-                                                    </div>
-                                                    <div class="pricing-list-v4-content">
-                                                        <div class="margin-b-40">
-                                                            <span class="pricing-list-v4-price-sign">R$</span>
-                                                            <span class="pricing-list-v4-price">149,</span>
-                                                            <span class="pricing-list-v4-subprice">00</span>
-                                                            <span class="pricing-list-v4-price-info">mês</span>
-                                                        </div>
-                                                        <div class="center-block">
-                                                            <button type="button" class="btn btn-primary raised">Assinar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Pricing List v4 -->
-                                            </div>
-                                            <div class="col-md-4 md-margin-b-30">
-                                                <!-- Pricing List v4 -->
-                                                <div class="pricing-list-v4 radius-10">
-                                                    <div class="pricing-list-v4-header">
-                                                        <h4 class="pricing-list-v4-title">10mega</h4>
-                                                        <span class="pricing-list-v4-subtitle">Urbano</span>
-                                                    </div>
-                                                    <div class="pricing-list-v4-content">
-                                                        <div class="margin-b-40">
-                                                            <span class="pricing-list-v4-price-sign">R$</span>
-                                                            <span class="pricing-list-v4-price">199,</span>
-                                                            <span class="pricing-list-v4-subprice">00</span>
-                                                            <span class="pricing-list-v4-price-info">mês</span>
-                                                        </div>
-                                                        <div class="center-block">
-                                                            <button type="button" class="btn btn-primary raised">Assinar</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                                 <!-- End Pricing List v4 -->
                                             </div>
                                         </div>
@@ -558,5 +501,4 @@
         </div>
     </div>
 </div>
-
 @endsection

@@ -69,24 +69,56 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ url('assets/js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url('assets/js/jquery-2.2.3.min.js') }}"></script>
     <script src="{{ url('assets/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ url('assets/js/jquery.parallax.min.js') }}" type="text/javascript"></script>
 
     <script src="{{ url('assets/js/index.js') }}" type="text/javascript"></script>
 
     <script type='text/javascript'>//<![CDATA[
-        $(window).load(function(){
-            $(document).on('change', '.atendimento-cidade-div', function() {
-              var target = $(this).data('target');
-              var show = $("option:selected", this).data('show');
-              $(target).children().addClass('hide');
-              $(show).removeClass('hide');
-            });
+        $(document).on('change', '.atendimento-cidade-div', function() {
+            var target = $(this).data('target');
+            var show = $("option:selected", this).data('show');
+            $(target).children().addClass('hide');
+          $(show).removeClass('hide');
+        });
             $(document).ready(function(){
                 $('.atendimento-cidade-div').trigger('change');
+        });
+
+        $('#plan_cities').on('change',function (e) {
+            //console.log(e);
+            var plan_city_id = e.target.value;
+
+            //ajax
+            $.get('/planos/cidades/' + plan_city_id, function(data){
+                //success data
+                console.log(data);
+                $('#planos').empty();
+                $.each(data, function(index, planObj){
+                   //$('#planos').append('My content here :-) '+ planObj.name +'<br>');
+                   $('#planos').append(
+                    "<div class='pricing-list-v4 radius-10'>"
+                        +"<div class='pricing-list-v4-header'>"
+                            +"<h4 class='pricing-list-v4-title'>"+ planObj.name +"</h4>"
+                            +"<span class='pricing-list-v4-subtitle'>"+ planObj.zone +"</span>"
+                        +"</div>"
+                        +"<div class='pricing-list-v4-content'>"
+                            +"<div class='margin-b-40'>"
+                                +"<span class='pricing-list-v4-price-sign'>R$</span>"
+                                +"<span class='pricing-list-v4-price'>"+ planObj.price +"</span>"
+                                +"<span class='pricing-list-v4-subprice'>00</span>"
+                                +"<span class='pricing-list-v4-price-info'>mês</span>"
+                            +"</div>"
+                            +"<div class=''>"
+                                +"<button type='button' class='btn btn-primary raised'>Assinar</button>"
+                            +"</div>"
+                        +"</div>"
+                    +"</div>"
+                    );
+                });
             });
-        });//]]> 
+        });
     </script>
 </body>
 </html>
