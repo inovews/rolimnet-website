@@ -49,6 +49,9 @@ class FileController extends Controller
     public function store(FileRequest $file)
     {
         //
+        $file = File::create($file->getValidRequest());
+
+        return redirect()->route('admin.files.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**

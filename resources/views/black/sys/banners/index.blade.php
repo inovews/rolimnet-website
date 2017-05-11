@@ -53,8 +53,8 @@
 									<span class="label label-success bg-success">ativo</span>
 									@else
 									<span class="label label-danger bg-danger">inativo</span>
-									@endif</th>
-
+									@endif
+								</th>
 								<th colspan="3">
 									{!! Form::open([
 									'route' => array('admin.banners.destroy', $banner->id), 'method' => 'DELETE']) !!}

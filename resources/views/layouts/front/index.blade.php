@@ -86,7 +86,7 @@
                 $('.atendimento-cidade-div').trigger('change');
         });
 
-        $('#plan_cities').on('change',function (e) {
+        /*$('#plan_cities').on('change',function (e) {
             //console.log(e);
             var plan_city_id = e.target.value;
 
@@ -98,27 +98,31 @@
                 $.each(data, function(index, planObj){
                    //$('#planos').append('My content here :-) '+ planObj.name +'<br>');
                    $('#planos').append(
-                    "<div class='pricing-list-v4 radius-10'>"
-                        +"<div class='pricing-list-v4-header'>"
-                            +"<h4 class='pricing-list-v4-title'>"+ planObj.name +"</h4>"
-                            +"<span class='pricing-list-v4-subtitle'>"+ planObj.zone +"</span>"
-                        +"</div>"
-                        +"<div class='pricing-list-v4-content'>"
-                            +"<div class='margin-b-40'>"
-                                +"<span class='pricing-list-v4-price-sign'>R$</span>"
-                                +"<span class='pricing-list-v4-price'>"+ planObj.price +"</span>"
-                                +"<span class='pricing-list-v4-subprice'>00</span>"
-                                +"<span class='pricing-list-v4-price-info'>mês</span>"
+                    "<div class='col-md-4 md-margin-b-30'>"
+                        +"<!-- Pricing List v4 -->"
+                        +"<div class='pricing-list-v4 radius-10'>"
+                            +"<div class='pricing-list-v4-header'>"
+                                +"<h4 class=pricing-list-v4-title>5mega</h4>"
+                                +"<span class='pricing-list-v4-subtitle'>Urbano</span>"
                             +"</div>"
-                            +"<div class=''>"
-                                +"<button type='button' class='btn btn-primary raised'>Assinar</button>"
+                            +"<div class='pricing-list-v4-content'>"
+                                +"<div class='margin-b-40'>"
+                                    +"<span class='pricing-list-v4-price-sign'>R$</span>"
+                                    +"<span class='pricing-list-v4-price'>149,</span>"
+                                    +"<span class='pricing-list-v4-subprice'>00</span>"
+                                    +"<span class='pricing-list-v4-price-info'>mês</span>"
+                                +"</div>"
+                                +"<div class='center-block'>"
+                                    +"<button type='button' class='btn btn-primary raised'>Assinar</button>"
+                                +"</div>"
                             +"</div>"
                         +"</div>"
+                        +"<!-- End Pricing List v4 -->"
                     +"</div>"
                     );
                 });
             });
-        });
+        });*/
     </script>
 </body>
 </html>

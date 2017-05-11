@@ -160,5 +160,18 @@
 			</div>
 		</div>
 	</div>
+<style type="text/css">
+section.map{float:left;width:100%;position:relative;background-size:cover;padding:225px 0}
+.map-details{position:relative;background-color:#dc2c2c;font:600 17px Source Sans Pro,sans-serif;color:#fff;padding:5px 15px}
+.gmap{position:absolute;top:0;bottom:0;left:0;right:0;background:#ddd}
+.map-details h4{margin:5px 0 0;text-transform:uppercase;font-weight:600}
+.map-details p{margin:0;font-weight:300}
+</style>
+	<section class="map">
+	<div class="gmap" id="gmap"></div>
+</section>
+
+<script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
+<script src="//www.itobuz.com/_assets/js/main.min.js"></script>
 
 @endsection

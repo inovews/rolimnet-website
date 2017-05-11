@@ -152,22 +152,39 @@
                                                 <label  class="col-sm-2">Cidade</label>
                                                 <div class="col-sm-4">
                                                     <div class="iconic-input">
-                                                        {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
+                                                        {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control', 'disabled' => '']) !!}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
-                                        <div class="row">
-                                            <div class="col-md-4 md-margin-b-30" name="planos" id="planos"> 
-                                                <div >
-                                                    
-                                                </div>
+                                        <div class="row" >
+                                        <div  name="planos" id="planos">
+                                        @foreach( $plans as $plan)
+                                           <div class="col-md-4 md-margin-b-30">
                                                 <!-- Pricing List v4 -->
-
+                                                <div class="pricing-list-v4 radius-10">
+                                                    <div class="pricing-list-v4-header">
+                                                        <h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
+                                                        <span class="pricing-list-v4-subtitle">{{ $plan->zone }}</span>
+                                                    </div>
+                                                    <div class="pricing-list-v4-content">
+                                                        <div class="margin-b-40">
+                                                            <span class="pricing-list-v4-price-sign">R$</span>
+                                                            <span class="pricing-list-v4-price">{{ $plan->price }},</span>
+                                                            <span class="pricing-list-v4-subprice">00</span>
+                                                            <span class="pricing-list-v4-price-info">mês</span>
+                                                        </div>
+                                                        <div class="center-block">
+                                                            <button type="button" class="btn btn-primary raised">Assinar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <!-- End Pricing List v4 -->
                                             </div>
+                                        @endforeach
+                                        </div>
                                         </div>
                                         <!--// end row -->
                                     </div>

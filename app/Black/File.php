@@ -10,6 +10,6 @@ class File extends Model
     protected $table = 'files';
 
     protected $fillable = [
-        'name','file', 'key', 'type', 'size',
+        'name', 'file', 'key', 'type', 
     ];
 }

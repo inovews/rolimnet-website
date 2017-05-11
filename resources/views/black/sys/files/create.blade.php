@@ -4,8 +4,8 @@
 
 <!-- page head start-->
 <div class="page-head">
-	<h1 class="text-center">Adicionar novo banner</h1>
-	<p class="lead text-center">Crie um novo banner ou promoção e escolha sua melhor localização para exibi-lo.</p>
+	<h1 class="text-center">Adicionar novo arquivo</h1>
+	<p class="lead text-center">Crie um novo arquivo para que possa ficar salvo em nossa base de dados.</p>
 </div>
 <!-- page head end-->
 
@@ -30,14 +30,14 @@
 						<div class="row">
 							<div class="form-group col-xs-12 col-sm-6">
 								<small>Tipo</small>
-								{!! Form::select('type', ['' => '-', 'active' => 'Ativo', 'inactive' => 'Inativo'], null, ['class' => 'form-control']) !!}
+								{!! Form::select('type', ['' => '-', 'file' => 'Arquivo', 'images' => 'Image', 'pdf' => 'PDF'], null, ['class' => 'form-control']) !!}
 							</div>
 						</div>
 						<div class="form-group">
 							<small>Em fase de teste.</small>
 							<div class="input-group">
 								<span class="input-group-addon">chave</span>
-								<input class="form-control" placeholder="URL amigável" type="text" value="" name="key" id="key" />
+								<input class="form-control" placeholder="Chave única" type="text" value="" name="key" id="key" />
 							</div>
 						</div>
 						<hr class="hr-lg">

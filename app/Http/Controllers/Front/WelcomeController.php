@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Front\Banner;
+use App\Front\Plan;
 
 class WelcomeController extends Controller
 {
@@ -17,9 +18,14 @@ class WelcomeController extends Controller
     public function index()
     {
         //
-        //$banners = Banner::all();
+        /*$plans = [ ];
+        foreach ( Plan::all() as $plan ) :
+            $plans[$plan->id] = $plan->name;
+        endforeach;*/
+
         $banners = Banner::idDesc()->active()->get();
-        return view('front.index', compact('banners'));
+        $plans = Plan::all();
+        return view('front.index', compact('banners','plans'));
     }
 
     /**

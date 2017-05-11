@@ -1,11 +1,11 @@
-@extends('layouts.black.slicklab', ['title' => 'Documentos Publicos'])
+@extends('layouts.black.slicklab', ['title' => 'Documentos Públicos'])
 
 @section('content')
 <!-- page head start-->
 <div class="page-head">
 	<div class="text-center">
 		<h1 style="margin:0">
-		Lista de Documentos Publicos
+		Lista de Documentos Públicos
 		</h1>
 	</div>
 </div>
@@ -34,9 +34,8 @@
 							<tr>
 								<th>#</th>
 								<th>Título</th>
-								<th>Chave</th>
+								<th>Descrição</th>
 								<th>Data de criação</th>
-								<th>Tipo</th>
 								<th colspan="3">Ações</th>
 							</tr>
 						</thead>
@@ -45,9 +44,8 @@
 							<tr>
 								<th>{{ $document->id }}</th>
 								<th><a href="{{ route('admin.documents.edit' , $document->id) }}">{{ $document->name }}</a></th>
-								<th>{{ $document->key }}</th>
+								<th>{{ $document->description }}</th>
 								<th>{{ $document->created_at}}</th>
-								<th>{{ $document->type}}</th>
 
 								<th colspan="3">
 									{!! Form::open([

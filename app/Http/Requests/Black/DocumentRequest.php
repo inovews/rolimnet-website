@@ -13,7 +13,7 @@ class DocumentRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,22 @@ class DocumentRequest extends FormRequest
     {
         return [
             //
+            'name' => 'required',
+            'description' => 'required',
+            'file' => 'required',
+            'file_id' => 'required',
+
+        ];
+    }
+
+    public function getValidRequest()
+    {
+        return [
+            //
+            'name' => $this->input('name'),
+            'description' => $this->input('description'),
+            'file' => $this->input('file'),
+            'file_id' => $this->input('file_id') ?? false,
         ];
     }
 }

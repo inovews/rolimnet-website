@@ -25,7 +25,10 @@ class FileRequest extends FormRequest
     {
         return [
             //
-            'name' => 'required'
+            //'file' => 'required',
+            'name' => 'required',
+            'type' => 'required',
+            //'key' => 'required',
         ];
     }
 
@@ -33,11 +36,10 @@ class FileRequest extends FormRequest
     {
         return [
             //
-            'file' => $this->input('file') ?? false,
+            'file' => $this->input('file'),
             'name' => $this->input('name'),
-            'key' => $this->input('key'),
             'type' => $this->input('type'),
-            'size' => $this->input('size') ?? false,
+            'key' => $this->input('key'),
         ];
     }
 }

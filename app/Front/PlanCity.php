@@ -15,4 +15,5 @@ class PlanCity extends Model
 	{
 		return $this->hasMany('App\Front\Plan');
 	}
+	
 }
