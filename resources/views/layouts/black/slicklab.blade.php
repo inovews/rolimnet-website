@@ -241,28 +241,6 @@
 <!--Nice Scroll-->
 <script src="{{ url('slicklab/js/jquery.nicescroll.js') }}" type="text/javascript"></script>
 
-<!--right slidebar-->
-<script src="{{ url('slicklab/js/slidebars.min.js') }}"></script>
-
-<!--switchery-->
-<script src="{{ url('slicklab/js/switchery/switchery.min.js') }}"></script>
-<script src="{{ url('slicklab/js/switchery/switchery-init.js') }}"></script>
-
-<!--flot chart -->
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/flot-spline.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.resize.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.tooltip.min.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.pie.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.selection.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.stack.js') }}"></script>
-<script src="{{ url('slicklab/js/flot-chart/jquery.flot.crosshair.js') }}"></script>
-
-
-<!--earning chart init-->
-<script src="{{ url('slicklab/js/earning-chart-init.js') }}"></script>
-
-
 <!--Sparkline Chart-->
 <script src="{{ url('slicklab/js/sparkline/jquery.sparkline.js') }}"></script>
 <script src="{{ url('slicklab/js/sparkline/sparkline-init.js') }}"></script>
@@ -348,6 +326,11 @@
 
 <!--dropzone-->
 <script src="{{ url('slicklab/js/dropzone.js') }}"></script>
+
+<script src="{{ url('slicklab/js/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url('slicklab/js/datatables/dataTables.bootstrap.min.js') }}"></script>
+
+@stack('scripts')
 
 </body>
 </html>

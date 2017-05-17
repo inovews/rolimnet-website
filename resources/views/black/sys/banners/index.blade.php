@@ -29,7 +29,7 @@
 						{{ Session::get('message') }}
 					</div>
 					@endif
-					<table class="table">
+					<table class="table table-hover" id="rolestable">
 						<thead>
 							<tr>
 								<th>#</th>
@@ -75,5 +75,14 @@
 	</div>
 </div>
 <!--body wrapper end-->
+
+@push('scripts') 
+<script>
+  $(function () {
+    $("#rolestable").DataTable();
+  });
+</script>  
+@endpush
+
 @endsection
 

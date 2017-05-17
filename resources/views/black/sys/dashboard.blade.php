@@ -19,8 +19,8 @@
           <!--monthly page view start-->
           <ul class="monthly-page-view w-p-view-">
             <li class="pull-left page-view-label">
-            <span class="page-view-value">0</span>
-              <span>//.</span>
+            <span class="page-view-value">{{ $count_fiber }}</span>
+              <span>Registros Fibra.</span>
             </li>
             <li class="pull-right">
               <div id="m-g-light" class="chart"><canvas height="35" width="131" style="display: inline-block; width: 131px; height: 35px; vertical-align: top;"></canvas></div>

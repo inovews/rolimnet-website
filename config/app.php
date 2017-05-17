@@ -184,6 +184,8 @@ return [
 
         Watson\Active\ActiveServiceProvider::class,
 
+        Zizaco\Entrust\EntrustServiceProvider::class,
+
     ],
 
     /*
@@ -236,6 +238,8 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
 
         'Active' => Watson\Active\Facades\Active::class,
+
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 

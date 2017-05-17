@@ -20,7 +20,7 @@
 					<div class="col-xs-12 col-sm-4">
 						<div class="form-group">
 							<p>Sua foto ou logo:</p>
-							<input type="file" class="dropify" name="file" id="file"  data-default-file="" disabled />
+							<input type="file" class="dropify" name="file" id="file"  data-default-file="" />
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-8">

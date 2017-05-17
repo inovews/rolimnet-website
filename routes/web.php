@@ -57,15 +57,18 @@ Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // SUPORTE
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\SupportController@index']);
 	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\SupportController@send']);
 });
-
-Route::get('/planos/cidades/{id}', function($id = null){
-    return Response()->json(\App\Front\Plan::where('plan_city_id', $id)->orderBy('name')->get());
-    //return Response()->json(\App\Front\Plan::pluck('id','name')->all()); 
+Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
+{
+	Route::get('/', ['as' => 'index', 'uses' => 'Front\PlanController@index']);
+	Route::get('cidades/{id}', function($id = null){
+	    return Response()->json(\App\Front\Plan::where('plan_city_id', $id)->orderBy('name')->get());
+	    //return Response()->json(\App\Front\Plan::pluck('id','name')->all()); 
+	});
 });
 
 // BLACK CENTRAL-DO-CLIENTE
-Auth::routes();
-Route::get('/home', 'HomeController@index');
+//Auth::routes();
+//Route::get('/home', 'HomeController@index');
 
 // BLACK ADMIN
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
@@ -97,4 +100,24 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 	Route::resource('documents', 'Black\Sys\DocumentController');
 	Route::resource('plans', 'Black\Sys\PlanController');
 
+});
+
+
+// BLACK ADMIN
+Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], function()
+{
+
+	Route::get('/', 'HomeController@index');
+	Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
+	Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
+	Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+	Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+
+	Route::group(['prefix' => 'password', 'as' => 'password.'], function()
+	{
+		Route::post('email', ['as' => 'email', 'uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
+		Route::get('reset', ['as' => 'reset', 'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm']);
+		Route::post('reset', ['as' => 'reset', 'uses' => 'Auth\ResetPasswordController@reset']);
+		Route::get('reset/{token}', ['as' => 'reset', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
+	});
 });

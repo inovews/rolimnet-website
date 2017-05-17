@@ -15,6 +15,7 @@ class PlanController extends Controller
     public function index()
     {
         //
+        return view('front.plans.index');
     }
 
     /**

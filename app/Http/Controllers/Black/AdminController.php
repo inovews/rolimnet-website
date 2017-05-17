@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Support\Facades\Auth;
 
+use App\Black\Fiber;
+
 class AdminController extends Controller
 {
     public function __construct()
@@ -21,7 +23,9 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view('black.sys.dashboard');
+        $count_fiber = Fiber::all()->count();
+        
+        return view('black.sys.dashboard',compact('count_fiber'));
     }
 
     /**

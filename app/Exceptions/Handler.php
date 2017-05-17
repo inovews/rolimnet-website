@@ -69,7 +69,7 @@ class Handler extends ExceptionHandler
             break;
             
             default:
-                return redirect()->guest('login');
+                return redirect()->guest('central-cliente/login');
             break;
         }
 

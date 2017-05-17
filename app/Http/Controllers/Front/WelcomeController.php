@@ -23,7 +23,7 @@ class WelcomeController extends Controller
             $plans[$plan->id] = $plan->name;
         endforeach;*/
 
-        $banners = Banner::idDesc()->active()->get();
+        $banners = Banner::orderBy('created_at', 'desc')->get();
         $plans = Plan::all();
         return view('front.index', compact('banners','plans'));
     }
