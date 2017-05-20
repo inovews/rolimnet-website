@@ -111,6 +111,10 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 	Route::get('home', ['as' => 'home', 'uses' => 'Front\CentralCliente\DashboardController@index']);
 	Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
 	Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
+
+	Route::get('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@showRegistrationForm']);
+	Route::post('register', ['as' => 'register', 'uses' => 'Auth\RegisterController@register']);
+
 	Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
 	Route::group(['prefix' => 'password', 'as' => 'password.'], function()
