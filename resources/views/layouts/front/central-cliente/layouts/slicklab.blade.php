@@ -93,7 +93,7 @@
                             <li class="{{ active('centralcliente.tickets.index') }}"><a href="{{route('centralcliente.tickets.index')}}"> Listar</a></li>
                         </ul>
                     </li>
-                    <li class="{{ active('admin.supports.index') }}"><a href="{{route('admin.supports.index')}}"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
+                    <li class=""><a href="#"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
 
                     <li>
                         <h3 class="navigation-title">Extra</h3>

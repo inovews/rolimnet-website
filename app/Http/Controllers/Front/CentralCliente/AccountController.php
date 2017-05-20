@@ -16,7 +16,10 @@ class AccountController extends Controller
 
     public function __construct()
     {
+        $this->middleware('auth');
+
         $this->user = Auth::user();
+        $this->id = Auth::id();
         //$this->id = $this->user->id;
     }
 
