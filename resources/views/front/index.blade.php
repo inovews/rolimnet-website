@@ -96,7 +96,7 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="#" class="btn btn-lg btn-default raised">Acessar Central</a>
+                                <a href="{{ route('centralcliente.index')}}" class="btn btn-lg btn-default raised">Acessar Central</a>
                             </div>
                             <!--// end row -->
                         </div>

@@ -67,7 +67,7 @@ Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 });
 
 // BLACK CENTRAL-DO-CLIENTE
-//Auth::routes();
+Auth::routes();
 //Route::get('/home', 'HomeController@index');
 
 // BLACK ADMIN
@@ -107,8 +107,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], function()
 {
 
-	Route::get('/', 'HomeController@index');
-	Route::get('home', ['as' => 'home', 'uses' => 'HomeController@index']);
+	Route::get('/', ['as' => 'index', 'uses' => 'Front\CentralCliente\DashboardController@index']);
+	Route::get('home', ['as' => 'home', 'uses' => 'Front\CentralCliente\DashboardController@index']);
 	Route::post('login', ['as' => 'login', 'uses' => 'Auth\LoginController@login']);
 	Route::get('login', ['as' => 'login', 'uses' => 'Auth\LoginController@showLoginForm']);
 	Route::post('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
@@ -120,4 +120,7 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 		Route::post('reset', ['as' => 'reset', 'uses' => 'Auth\ResetPasswordController@reset']);
 		Route::get('reset/{token}', ['as' => 'reset', 'uses' => 'Auth\ResetPasswordController@showResetForm']);
 	});
+
+	Route::resource('tickets', 'Front\CentralCliente\TicketsController');
+	Route::resource('account', 'Front\CentralCliente\AccountController');
 });
