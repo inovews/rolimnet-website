@@ -152,7 +152,7 @@
                                                 <label  class="col-sm-2">Cidade</label>
                                                 <div class="col-sm-4">
                                                     <div class="iconic-input">
-                                                        {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control', 'disabled' => '']) !!}
+                                                        {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
                                                     </div>
                                                 </div>
                                             </div>
