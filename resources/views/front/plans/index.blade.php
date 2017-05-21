@@ -16,22 +16,13 @@
 				<div class="row">
 					<div class="internet">
 						<div class="col-sm-8">
-							<script type="text/javascript"></script>
-							<div class="row">
-								<div class="col-sm-12">
-									<div class="col-sm-12 cidades-uf">
-										<label  class="col-sm-2">Cidade</label>
-										<div class="col-sm-8">
-											<div class="iconic-input">
-												<select class="form-control m-bot15" name="planos_cidade" id="planos_cidade">
-													<option value='0'>Selecione a Cidade</option>
-												</select>
-											</div>
+							<div class="cidades-uf">
+								<div class="row">
+									<div class="form-group ">
+										<label class="col-sm-3">Você está em:</label>
+										<div class="col-lg-9">
+											{!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
 										</div>
-									</div>
-									<div class="text-center">
-									<span><a id="cast" href="#" class="label label-primary">Zona Urbana</a></span>
-									<span><a id="cast" href="#" class="label label-primary">Zona Rural</a></span>
 									</div>
 								</div>
 							</div>

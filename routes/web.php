@@ -60,6 +60,9 @@ Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // SUPORTE
 Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\PlanController@index']);
+	Route::get('cidades', function(){
+		return 'Hello World';
+	});
 	Route::get('cidades/{id}', function($id = null){
 	    return Response()->json(\App\Front\Plan::where('plan_city_id', $id)->orderBy('name')->get());
 	    //return Response()->json(\App\Front\Plan::pluck('id','name')->all()); 

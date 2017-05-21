@@ -999,8 +999,8 @@ h4 {
 .internet .cidades-uf {
   background: #0099cc;
   margin:15px;
-  padding:10px;
-  border-radius: 10px;
+  padding: 15px 8px 0 8px; 
+  border-radius: 6px;
 }
 
 .internet .cidades-uf p{
@@ -1011,6 +1011,7 @@ h4 {
 
 .internet .cidades-uf label{
   color: #fff;
+  padding: 15px;
   font-size: 22px;
 }
 
