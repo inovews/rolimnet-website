@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Front\PlanCity;
+use App\Front\Plan;
+
 class PlanController extends Controller
 {
     /**
@@ -15,7 +18,8 @@ class PlanController extends Controller
     public function index()
     {
         //
-        return view('front.plans.index');
+         $plan_city = PlanCity::all();
+        return view('front.plans.index', compact('plan_city'));
     }
 
     /**
@@ -45,9 +49,14 @@ class PlanController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($slug)
     {
         //
+        $plan_city = PlanCity::findBySlug($slug);
+        //$plans = Plan::all();
+        $plan_city_id = $plan_city->id;
+        $plans = Plan::where('plan_city_id', $plan_city_id)->orderBy('name')->get();
+        return view('front.plans.show', compact('plan_city', 'plans'));
     }
 
     /**

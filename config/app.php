@@ -186,6 +186,8 @@ return [
 
         Zizaco\Entrust\EntrustServiceProvider::class,
 
+        Cviebrock\EloquentSluggable\ServiceProvider::class,
+
     ],
 
     /*

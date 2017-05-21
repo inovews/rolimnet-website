@@ -29,7 +29,7 @@
 						{{ Session::get('message') }}
 					</div>
 					@endif
-					<table class="table-responsive">
+					<table class="table">
 						<thead>
 							<tr>
 								<th>#</th>

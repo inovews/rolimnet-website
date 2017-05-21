@@ -86,7 +86,8 @@ class FaqController extends Controller
     {
         //
         $faq = Faq::find($id)->fill($faq->getValidRequest());
-        $faq->save();
+        $faq->slug = null;
+        $faq->update();
 
         return redirect()->route('admin.faqs.index')->with('message', 'Item editado com sucesso.');
     }

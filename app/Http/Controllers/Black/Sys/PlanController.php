@@ -108,23 +108,4 @@ class PlanController extends Controller
 
         return redirect()->route('admin.plans.index')->with('message', 'Item removido com sucesso.');
     }
-
-    /*function slug( $name ) {
-
-    $slug = Str::slug( $name );
-    $slugs = $this->whereRaw("slug REGEXP '^{$slug}(-[0-9]*)?$'");
-
-    if ($slugs->count() === 0) {
-        return $slug;
-    }
-
-    // Get the last matching slug
-    $lastSlug = $slugs->orderBy('slug', 'desc')->first()->slug;
-
-    // Strip the number off of the last slug, if any
-    $lastSlugNumber = intval(str_replace($slug . '-', '', $lastSlug));
-
-    // Increment/append the counter and return the slug we generated
-    return $slug . '-' . ($lastSlugNumber + 1);
-}*/
 }

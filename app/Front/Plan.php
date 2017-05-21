@@ -11,14 +11,8 @@ class Plan extends Model
 
     protected $fillable = ['name', 'price', 'slug', 'zone', 'plan_city_id'];
 
-    public function plan_city()
+    public function city()
     {
-    	return $this->belongsTo('App\Front\PlanCity', 'plan_city_id', 'id');
+        return $this->belongsTo('App\Front\PlanCity', 'plan_city_id');
     }
-	
-    public function zone()
-    {
-       return $this->hasMany('App\Front\PlanCity', 'plan_city_id', 'id');
-    }
-
 }

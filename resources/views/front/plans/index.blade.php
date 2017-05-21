@@ -9,9 +9,11 @@
 	</div>
 </div>
 
+
 <div class="section-seperator">
 	<div class="container content">
 		<div class="row">
+		
 			<div class="tab-pane active" id="red">
 				<div class="row">
 					<div class="internet">
@@ -26,75 +28,37 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12">
-								<div class="row">
-									<div id='planos' class="col-md-4 md-margin-b-30">
-										<!-- Pricing List v4 -->
-										<div class="pricing-list-v4 radius-10">
-											<div class="pricing-list-v4-header">
-												<h4 class="pricing-list-v4-title">3mega</h4>
-												<span class="pricing-list-v4-subtitle">Urbano</span>
-											</div>
-											<div class="pricing-list-v4-content">
-												<div class="margin-b-40">
-													<span class="pricing-list-v4-price-sign">R$</span>
-													<span class="pricing-list-v4-price">99,</span>
-													<span class="pricing-list-v4-subprice">00</span>
-													<span class="pricing-list-v4-price-info">mês</span>
-												</div>
-												<div class="">
-													<button type="button" class="btn btn-primary raised">Assinar</button>
-												</div>
-											</div>
-										</div>
-										<!-- End Pricing List v4 -->
-									</div>
-									<div class="col-md-4 md-margin-b-30">
-										<!-- Pricing List v4 -->
-										<div class="pricing-list-v4 radius-10">
-											<div class="pricing-list-v4-header">
-												<h4 class="pricing-list-v4-title">5mega</h4>
-												<span class="pricing-list-v4-subtitle">Urbano</span>
-											</div>
-											<div class="pricing-list-v4-content">
-												<div class="margin-b-40">
-													<span class="pricing-list-v4-price-sign">R$</span>
-													<span class="pricing-list-v4-price">149,</span>
-													<span class="pricing-list-v4-subprice">00</span>
-													<span class="pricing-list-v4-price-info">mês</span>
-												</div>
-												<div class="center-block">
-													<button type="button" class="btn btn-primary raised">Assinar</button>
-												</div>
-											</div>
-										</div>
-										<!-- End Pricing List v4 -->
-									</div>
-									<div class="col-md-4 md-margin-b-30">
-										<!-- Pricing List v4 -->
-										<div class="pricing-list-v4 radius-10">
-											<div class="pricing-list-v4-header">
-												<h4 class="pricing-list-v4-title">10mega</h4>
-												<span class="pricing-list-v4-subtitle">Urbano</span>
-											</div>
-											<div class="pricing-list-v4-content">
-												<div class="margin-b-40">
-													<span class="pricing-list-v4-price-sign">R$</span>
-													<span class="pricing-list-v4-price">199,</span>
-													<span class="pricing-list-v4-subprice">00</span>
-													<span class="pricing-list-v4-price-info">mês</span>
-												</div>
-												<div class="center-block">
-													<button type="button" class="btn btn-primary raised">Assinar</button>
-												</div>
-											</div>
-										</div>
-										<!-- End Pricing List v4 -->
-									</div>
-								</div>
-								<!--// end row -->
-							</div>
 							<!-- End Pricing List v4 -->
+							<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/mouse.png') }}">
+							<h3>DÚVIDA POR E-MAIL</h3>
+							<p class="margin-b-30">
+								Entre em contato que teremos maior prazer em respondê-lo. <a href=" {{route('contato.index')}} ">Clique aqui.</a>
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/history-button.png') }}">
+							<h3>HORARIO DE ATENDIMENTO</h3>
+							<p class="margin-b-30">
+								Segunda a Sexta 08h as 18h<br>
+								Sábado 08 as 13h
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="text-center">
+							<img src="{{ url('assets/img/user.png') }}">
+							<h3>CHAT ONLINE</h3>
+							<p class="margin-b-0">
+								Converse com um de nossos atendentes agora!
+							</p>
+							<button class="btn btn-default">Iniciar chat</button>
+						</div>
+					</div>
+
 						</div>
 						<div class="col-sm-4">
 							<div class="row text-center">
@@ -104,6 +68,7 @@
 						<!--// end row -->
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>

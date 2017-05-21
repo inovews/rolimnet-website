@@ -91,7 +91,7 @@
             var plan_city_id = e.target.value;
 
             //ajax
-            $.get('/planos/cidades/' + plan_city_id, function(data){
+            $.get('/planos/city/' + plan_city_id, function(data){
                 //success data
                 console.log(data);
                 $('#planos').empty();

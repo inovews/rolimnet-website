@@ -11,9 +11,9 @@ class PlanCity extends Model
 
 	protected $fillable = ['id','name'];
 
-	public function plan()
-	{
-		return $this->hasMany('App\Front\Plan');
-	}
-	
+	public function scopeFindBySlug($query, $slug)
+    {
+        return $query->whereSlug($slug)->firstOrFail();
+    }
+
 }
