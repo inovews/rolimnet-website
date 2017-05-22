@@ -65,21 +65,52 @@
 <div class="row">
   <div class="col-md-6">
     <section class="panel">
-      <header class="panel-heading head-border">
-        Test 1
-        <span class="tools pull-right">
-        </span>
+      <header class="panel-heading ">
+        Financeiro
       </header>
+      <div class="panel-body">
+        <div class="btn-group">
+          <button class="btn btn-default" type="button">Opções</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+          </div><!-- /btn-group -->
+      </div>
     </section>
   </div>
   <div class="col-md-6">
     <section class="panel">
-      <header class="panel-heading head-border">
-        Test 2
-        <span class="tools pull-right">
-        </span>
+      <header class="panel-heading ">
+        Split Dropdowns Button
       </header>
-      <div class="noti-information notification-menu">
+      <div class="panel-body">
+        <div class="btn-group">
+          <button class="btn btn-default" type="button">Default</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
+        <div class="btn-group dropup">
+          <button class="btn btn-default" type="button">Dropup</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div><!-- /btn-group -->
       </div>
     </section>
   </div>
