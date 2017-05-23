@@ -134,7 +134,7 @@
                                     <div class="form-group ">
                                         <label class="col-sm-3">Você está em:</label>
                                         <div class="col-lg-9">
-                                            {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','id')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
+                                            {!! Form::select('plan_cities', [''=>'Selecione a Cidade']+App\Front\PlanCity::pluck('name','slug')->all(), null, ['id' => 'plan_cities','class' => 'form-control']) !!}
                                         </div>
                                     </div>
                                 </div>

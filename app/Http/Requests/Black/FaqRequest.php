@@ -41,7 +41,7 @@ class FaqRequest extends FormRequest
     {
         return [
             //
-            'user_id' => $this->input('user_id') ?? false,
+            'user_id' => $this->input('user_id'),
             'title' => $this->input('title'),
             'status' => $this->input('status'),
             'category_id' => $this->input('category_id'),

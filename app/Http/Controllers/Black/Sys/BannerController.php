@@ -86,7 +86,7 @@ class BannerController extends Controller
     {
         //
         $banner = Banner::find($id)->fill($banner->getValidRequest());
-        $banner->save();
+        $banner->update();
 
         return redirect()->route('admin.banners.index')->with('message', 'Item editado com sucesso.');
     }

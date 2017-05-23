@@ -86,7 +86,12 @@
                 $('.atendimento-cidade-div').trigger('change');
         });
 
-        $('#plan_cities').on('change',function (e) {
+        $('#plan_cities').on('change',function () {
+            var url = '/planos/cidade/';
+            document.location.href = url + this.value;
+        });
+
+        /*$('#plan_cities').on('change',function (e) {
             //console.log(e);
             var plan_city_id = e.target.value;
 
@@ -119,7 +124,7 @@
                     );
                 });
             });
-        });
+        });*/
     </script>
 </body>
 </html>

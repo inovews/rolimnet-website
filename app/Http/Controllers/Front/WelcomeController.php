@@ -24,7 +24,8 @@ class WelcomeController extends Controller
         endforeach;*/
 
         $banners = Banner::orderBy('created_at', 'desc')->get();
-        $plans = Plan::orderBy('created_at', 'desc')->get();
+        //$plans = Plan::orderBy('created_at', 'desc')->get();
+        $plans = Plan::where('plan_city_id', 1)->where('featured', 1)->orderBy('name')->take(3)->get();
         return view('front.index', compact('banners','plans'));
     }
 

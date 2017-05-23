@@ -32,7 +32,7 @@ class PlanRequest extends FormRequest
     {
         return [
             //
-            'file' => $this->input('file') ?? false,
+            'file' => $this->input('file'),
             'name' => $this->input('name'),
             'price' => $this->input('price'),
             'slug' => $this->input('slug'),

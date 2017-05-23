@@ -40,7 +40,7 @@ class DocumentRequest extends FormRequest
             'name' => $this->input('name'),
             'description' => $this->input('description'),
             'file' => $this->input('file'),
-            'file_id' => $this->input('file_id') ?? false,
+            'file_id' => $this->input('file_id'),
         ];
     }
 }

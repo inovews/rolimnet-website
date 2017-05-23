@@ -76,17 +76,10 @@
     <script src="{{ url('assets/js/index.js') }}" type="text/javascript"></script>
 
     <script type='text/javascript'>//<![CDATA[
-        $(window).load(function(){
-            $(document).on('change', '.atendimento-cidade-div', function() {
-              var target = $(this).data('target');
-              var show = $("option:selected", this).data('show');
-              $(target).children().addClass('hide');
-              $(show).removeClass('hide');
-            });
-            $(document).ready(function(){
-                $('.atendimento-cidade-div').trigger('change');
-            });
-        });//]]> 
+        $('#plan_cities').on('change',function () {
+            var url = '/planos/cidade/';
+            document.location.href = url + this.value;
+        });
     </script>
 </body>
 </html>
