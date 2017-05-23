@@ -180,7 +180,7 @@
     </div>
 </div>
 
-<div class="test" data-parallax="scroll" data-image-src="{{ url('assets/img/img-bg-2.jpg') }}">
+<div class="test" data-parallax="scroll" data-image-src="{{ url('assets/img/beard-2286440_1920.jpg') }}">
     <!-- http://www.flaticon.com/packs/web-navigation-line-craft -->
     <div class="container content-sm">
         <div class="row">
@@ -188,28 +188,19 @@
                 <div class="col-sm-4">
                     <div class="text-center">
                         <img src="{{ url('assets/img/favorites-button.png') }}">
-                        <h3 class="color-white">16,000+</h3>
-                        <span class="margin-b-30">
-                            Customers strong
-                        </span>
+                        <h3 class="color-white">6 Troféus ACIRM</h3>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <img src="{{ url('assets/img/settings.png') }}">
-                        <h3 class="color-white">24/7/365</h3>
-                        <span class="margin-b-30">
-                            Customers strong
-                        </span>
+                        <img src="{{ url('assets/img/pin.png') }}">
+                        <h3 class="color-white">7 Cidades</h3>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="text-center">
-                        <img src="{{ url('assets/img/chrome-logo.png') }}">
-                        <h3 class="color-white">Internet com mais velocidade.</h3>
-                        <span class="margin-b-0">
-                            E muito mais vantagens.
-                        </span>
+                        <img src="{{ url('assets/img/check-square.png') }}">
+                        <h3 class="color-white">Qualidade aprovada.</h3>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 
 use App\Front\Banner;
 use App\Front\Plan;
+use App\Front\PlanCity;
 
 class WelcomeController extends Controller
 {
@@ -18,11 +19,6 @@ class WelcomeController extends Controller
     public function index()
     {
         //
-        /*$plans = [ ];
-        foreach ( Plan::all() as $plan ) :
-            $plans[$plan->id] = $plan->name;
-        endforeach;*/
-
         $banners = Banner::orderBy('created_at', 'desc')->get();
         //$plans = Plan::orderBy('created_at', 'desc')->get();
         $plans = Plan::where('plan_city_id', 1)->where('featured', 1)->orderBy('name')->take(3)->get();
