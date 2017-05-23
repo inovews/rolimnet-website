@@ -39,6 +39,12 @@
 								{!! Form::select('zone', ['' => '-', 'urban' => 'Zona Urbana', 'countryside' => 'Zona Rural'], null, ['class' => 'form-control']) !!}
 							</div>
 						</div>
+						<div class="row">
+							<div class="form-group col-xs-12 col-sm-6">
+								<small>Destaque</small>
+								{!! Form::select('featured', ['' => '-', '1' => 'Sim', '0' => 'Não'], null, ['class' => 'form-control']) !!}
+							</div>
+						</div>
 						<div class="form-group">
 							<small>Em fase de teste.</small>
 							<div class="input-group">

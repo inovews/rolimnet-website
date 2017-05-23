@@ -16,6 +16,7 @@ class CreatePlansTable extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->boolean('featured')->default(2);
             $table->string('price');
             $table->string('slug', 150)->default('');
             $table->enum('zone', ['urban', 'countryside'])->default('urban');

@@ -9,7 +9,7 @@ class Plan extends Model
     //
     protected $table = 'plans';
 
-    protected $fillable = ['name', 'price', 'slug', 'zone', 'plan_city_id'];
+    protected $fillable = ['name', 'price', 'featured', 'slug', 'zone', 'plan_city_id'];
 
     public function plan_city()
     {
