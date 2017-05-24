@@ -22,7 +22,7 @@ class CreateFaqsTable extends Migration
             $table->string('slug')->unique();
             $table->longText('content')->nullable(false);
             $table->longText('html_content')->nullable(false);
-            $table->tinyInteger('status')->default(0);
+            $table->enum('status', ['active', 'inactive'])->default('active');
             $table->integer('view_count')->unsigned()->default(0);
             $table->timestamps();
             $table->timestamp('published_at')->nullable()->index();

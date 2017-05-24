@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Front\Faq;
+
 class FaqController extends Controller
 {
     /**
@@ -15,7 +17,10 @@ class FaqController extends Controller
     public function index()
     {
         //
-        return view('front.faq.index');
+        $faqs = Faq::orderBy('published_at', 'desc')
+            ->paginate(5);
+
+        return view('front.faq.index', compact('faqs'));
     }
 
     /**
@@ -48,6 +53,8 @@ class FaqController extends Controller
     public function show($id)
     {
         //
+        $faq = Faq::find($id);
+        return view('front.faq.show')->withFaq($faq);
     }
 
     /**

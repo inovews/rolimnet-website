@@ -29,10 +29,10 @@ class FaqRequest extends FormRequest
             'title' => 'required',
             'status' => 'required',
             'category_id' => 'required',
-            'slug' => 'required',
-            'content' => 'required',
+            //'slug' => 'required',
+            //'content' => 'required',
             'html_content' => 'required',
-            'description' => 'required',
+            //'description' => 'required',
 
         ];
     }
