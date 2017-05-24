@@ -13,11 +13,11 @@
 <div class="section-seperator">
 	<div class="container content">
 		<div class="row">
-		<div class="col-md-12">
-			<div class="thumbnail">
-                    <img class="img-responsive" src="http://placehold.it/984x170" alt="">
-            </div>
-		</div>
+			<div class="col-md-12">
+				<div class="thumbnail">
+					<img class="img-responsive" src="http://placehold.it/984x170" alt="">
+				</div>
+			</div>
 			<div class="tab-pane active" id="red">
 				<div class="row">
 					<div class="internet">
@@ -34,7 +34,8 @@
 							</div>
 							<div class="col-sm-12">
 								<div class="row">
-								@foreach($plans as $plan)
+									@if($plans->all())
+									@foreach($plans as $plan)
 									<div id='planos' class="col-md-4 md-margin-b-30">
 										<!-- Pricing List v4 -->
 										<div class="pricing-list-v4 radius-10">
@@ -57,6 +58,14 @@
 										<!-- End Pricing List v4 -->
 									</div>
 									@endforeach
+									<div class="text-center">
+										<div class="pagination">
+										<!-- Aqui vai a paginação -->
+										</div>
+									</div>
+									@else
+									<div class="text-center"><h2>Nenhum registro encontrado!</h2></div>
+									@endif
 								</div>
 								<!--// end row -->
 							</div>
