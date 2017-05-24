@@ -5,7 +5,7 @@
 <div class="page-head">
 	<div class="text-center">
 		<h1 style="margin:0">
-		Lista de Contato Suporte
+		Contato Suporte
 		</h1>
 	</div>
 </div>

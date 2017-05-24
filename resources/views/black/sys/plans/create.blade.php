@@ -5,7 +5,7 @@
 <!-- page head start-->
 <div class="page-head">
 	<h1 class="text-center">Adicionar novo plano</h1>
-	<p class="lead text-center">//</p>
+	<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 <!-- page head end-->
 

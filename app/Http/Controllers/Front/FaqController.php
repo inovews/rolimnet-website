@@ -17,8 +17,7 @@ class FaqController extends Controller
     public function index()
     {
         //
-        $faqs = Faq::orderBy('published_at', 'desc')
-            ->paginate(5);
+        $faqs = Faq::orderBy('published_at', 'desc')->paginate(5);
 
         return view('front.faq.index', compact('faqs'));
     }

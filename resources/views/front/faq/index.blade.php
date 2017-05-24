@@ -52,6 +52,7 @@
 				</div>
 			</div>
 			<div class="col-md-8">
+			@if($faqs->all())
 				@foreach($faqs as $faq)
 				<div class="page">
 					<h3>{{$faq->title}}</h3>
@@ -61,6 +62,14 @@
 					<h4><a href="{{route('faq.slug',$faq->id)}}">Veja mais...</a></h4>
 				</div>
 				@endforeach
+            <div class="text-center">
+                <div class="pagination">
+                    {!! $faqs->links() !!}
+                </div>
+            </div>
+            @else
+            <div class="text-center"><h2>No blogs to display</h2></div>
+            @endif
 			</div>
 			<div class="col-sm-4">
 				<div class="row text-center">
