@@ -67,7 +67,7 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 300;
   font-family: Hind, sans-serif;
   color: #515769;
   line-height: 1.4;
@@ -951,7 +951,7 @@ h4 {
 }
 
 .centraldocliente li:before {
-  font-family: 'Hind';
+  font-family: 'Hind', sans-serif;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1032,7 +1032,7 @@ h4 {
 }
 
 .internet .nota li:before {
-  font-family: 'Hind';
+  font-family: 'Hind', sans-serif;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -1279,7 +1279,26 @@ background: #f2f2f2;
 }
 
 
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+section.pad-large {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+section.duplicatable-content {
+  padding-bottom: 40px;
+}
+section:nth-of-type(odd) {
+  background: #f4f4f4;
+}
+section:nth-of-type(even) {
+  background: #ffffff;
+}
 
-
-
-
+.duplicatable-content .feature {
+  margin-bottom: 40px;
+}

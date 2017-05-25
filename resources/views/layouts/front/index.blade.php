@@ -23,6 +23,8 @@
 
     <link rel="shortcut icon" href="{{ url('assets/images/favicon.ico') }}"/>
 
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode(['csrfToken' => csrf_token(),]); ?>
