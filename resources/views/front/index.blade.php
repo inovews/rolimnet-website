@@ -45,13 +45,6 @@
     </div>
 </div>
 
-<!--<div class="container">
-    <div class="alert alert-warning alert-dismissible" role="alert">
-            <strong>Atenção!</strong> Devido à nova funcionalidade, algumas mensagens de erro podem aparecer.
-        </div>
-    </div>
-</div>-->
-
 <div id="empresa">
     <div class="container content-sm">
         <div class="row">
@@ -210,120 +203,120 @@
 </div>
 
 <div id="suporte">
-    <div class="bg-color-sky-light" data-auto-height="true">
-        <div class="container content-sm">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h2 class="content-heading">Suporte <span class="border-black"></span></h2>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12">
-                    <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
-                    <form class="form-group get-in-grid-right text-center">
-                        <div class="row">
-                            <div class="col-sm-5">
-                                <div class="input-with-icon">
-                                    <input id="" name="nome" type="text" placeholder="Seu Nome" />
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-with-icon">
-                                    <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
-                                </div>
-                            </div>
-                            <div class="col-sm-2">
-                                <input type="submit" class="btn btn-success raised" value="Enviar" >
+    <div class="container content-sm">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2 class="content-heading">Suporte <span class="border-black"></span></h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
+                <form class="form-group get-in-grid-right text-center">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="input-with-icon">
+                                <input id="" name="nome" type="text" placeholder="Seu Nome" />
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="suporte">
-                    <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="row">
-                            <div class="panel-group" id="accordion1">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Quero contratar internet Rolim Net Rádio</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_1" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Consulte em nosso site a área de cobertura de internet via rádio. Caso seu município/localidade tenha cobertura de sinal, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net.</p>
-                                            <p>A contratação dos planos é feita mediante teste de sinal.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Quero contratar internet Rolim Net Fibra</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Consulte em nosso site a área de cobertura de internet via fibra. Caso esteja dentro da área com internet, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net. Os consultores de vendas da Rolim Net entrarão em contato para lhe auxiliar na escolha do melhor plano.</p>
-                                            <p>Antes da instalação, serão feitos testes técnicos para confirmar a disponibilidade do serviço.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Meu município não está na área de cobertura Rolim Net. O que posso fazer?</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Você pode informar seu interesse em ter internet Rolim Net diretamente pelo site. Nossa área de cobertura, tanto de internet via fibra como internet via rádio, será ampliada conforme demanda, garantindo a viabilidade do sistema sem redução de qualidade.</p>
-                                            <p>Existe também a possibilidade de instalação de torres para internet via rádio sob demanda.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Não recebi a fatura/carne para pagamento. O que devo fazer?</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Você pode ligar para o Rolim Net, pelo telefone 69 3442-2779, e solicitar o carne para pagamento ou uma segunda via da fatura, que poderá ser enviada para seu e-mail.</p>
-                                            <p>Se preferir, acesse a nossa central de atendimento no site.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Testei minha velocidade e ela está abaixo do contratado, como medidir minha velocidade corretamente?</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_5" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Grande parte dos medidores de velocidade disponíveis na internet faz o teste da conexão do usuário através da média da velocidade de download de um arquivo. Porém, esse resultado pode ser afetado por vários fatores como a velocidade disponível no servidor do site e a quantidade de acessos simultâneos no momento do teste. Além disso, muitos destes medidores limitam a velocidade máxima de download ou simplesmente possuem conexão com a internet em velocidade inferior a que você tem com a Rolim Net.</p>
-                                            <p>Por isso, disponibilizamos em nosso site um medidor de velocidade.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h5 class="panel-title">
-                                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Qual o prazo para o atendimento de uma chamado técnico?</a>
-                                        </h5>
-                                    </div>
-                                    <div id="accordion1_6" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <p>Quando o assinante entra em contato com a Rolim Net relatando problemas em sua conexão é transferido para um atendente técnico que vai orientá-lo a fim de detectar a causa. Não sendo possível a solução por telefone, a Rolim Net tem até 72h, contando apenas dias úteis, para realizar o atendimento técnico presencial.</p>
-                                            <p>Seu problema não foi solucionado? Entre em contato com a ouvidoria aqui.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="col-sm-5">
+                            <div class="input-with-icon">
+                                <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="submit" class="btn btn-success raised" value="Enviar" >
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="suporte" id="accordion1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_1">Quero contratar internet Rolim Net Rádio</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Consulte em nosso site a área de cobertura de internet via rádio. Caso seu município/localidade tenha cobertura de sinal, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net.</p>
+                                <p>A contratação dos planos é feita mediante teste de sinal.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_2">Quero contratar internet Rolim Net Fibra</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Consulte em nosso site a área de cobertura de internet via fibra. Caso esteja dentro da área com internet, você pode contatar conosco diretamente pelo site, ou se preferir, ligue para a Rolim Net. Os consultores de vendas da Rolim Net entrarão em contato para lhe auxiliar na escolha do melhor plano.</p>
+                                <p>Antes da instalação, serão feitos testes técnicos para confirmar a disponibilidade do serviço.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_3">Meu município não está na área de cobertura Rolim Net. O que posso fazer?</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Você pode informar seu interesse em ter internet Rolim Net diretamente pelo site. Nossa área de cobertura, tanto de internet via fibra como internet via rádio, será ampliada conforme demanda, garantindo a viabilidade do sistema sem redução de qualidade.</p>
+                                <p>Existe também a possibilidade de instalação de torres para internet via rádio sob demanda.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_4">Não recebi a fatura/carne para pagamento. O que devo fazer?</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Você pode ligar para o Rolim Net, pelo telefone 69 3442-2779, e solicitar o carne para pagamento ou uma segunda via da fatura, que poderá ser enviada para seu e-mail.</p>
+                                <p>Se preferir, acesse a nossa central de atendimento no site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_5">Testei minha velocidade e ela está abaixo do contratado, como medidir minha velocidade corretamente?</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Grande parte dos medidores de velocidade disponíveis na internet faz o teste da conexão do usuário através da média da velocidade de download de um arquivo. Porém, esse resultado pode ser afetado por vários fatores como a velocidade disponível no servidor do site e a quantidade de acessos simultâneos no momento do teste. Além disso, muitos destes medidores limitam a velocidade máxima de download ou simplesmente possuem conexão com a internet em velocidade inferior a que você tem com a Rolim Net.</p>
+                                <p>Por isso, disponibilizamos em nosso site um medidor de velocidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 class="panel-title">
+                                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#accordion1_6">Qual o prazo para o atendimento de uma chamado técnico?</a>
+                            </h5>
+                        </div>
+                        <div id="accordion1_6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Quando o assinante entra em contato com a Rolim Net relatando problemas em sua conexão é transferido para um atendente técnico que vai orientá-lo a fim de detectar a causa. Não sendo possível a solução por telefone, a Rolim Net tem até 72h, contando apenas dias úteis, para realizar o atendimento técnico presencial.</p>
+                                <p>Seu problema não foi solucionado? Entre em contato com a ouvidoria aqui.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="suporte">
+    <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="container content-sm">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="row">
                     <div class="atendimento">
@@ -401,7 +394,6 @@
     </div>
 </div>
 
-
 <div id="fibra-up">
     <div class="bg-color-orange">
         <div class="container content-sm">
@@ -467,5 +459,6 @@
         </div>
     </div>
 </div>
+
 </div>
 @endsection
