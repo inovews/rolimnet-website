@@ -18,7 +18,7 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-6 text-center">
 						<!--<img src="assets/img/office-620822_640.jpg" alt="">-->
-						<img src="https://livedemo00.template-help.com/wt_58530/images/services-2.jpg" alt="">
+						<img src="/assets/img/office-620822_640.jpg" height="388" width="570" alt="">
 					</div>
 					<div class="col-sm-12 col-md-6 text-sm-left">
 						<p>A Rolim Net Informática ficou conhecida por ter iniciado em 2011 suas atividades oferecendo para os clientes descontos especiais em todo linha de produtos de informática e Telecom onde serva de 90% do nosso público são clientes de internet e provedores de internet, que procuram preço e qualidade.</p>
@@ -73,9 +73,9 @@
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,.
 				</p>
 			</div>
-			
+
 			<div class="col-sm-6 text-center">
-				<img alt="Product Image" class="product-image" src="http://pivot.mediumra.re/img/devices.png">
+			<img alt="Product Image" class="product-image" src="/assets/img/office-625892_640.jpg" height="388" width="570">
 			</div>
 		</div><!--end of row-->
 	</div><!--end of container-->
