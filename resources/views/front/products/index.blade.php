@@ -13,7 +13,7 @@
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<h2>Serviços</h2>
+				<h1>Advertise product features simply and elegantly with Pivot</h1>
 				<hr>
 				<div class="row">
 					<div class="col-sm-12 col-md-6 text-center">
@@ -69,7 +69,7 @@
 			<div class="col-sm-6 align-vertical no-align-mobile">
 				<h1>Advertise product features simply and elegantly with Pivot</h1>
 				<h6>Clean, Simple &amp; Impactful</h6>
-				<p class="lead">
+				<p>
 					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,.
 				</p>
 			</div>
