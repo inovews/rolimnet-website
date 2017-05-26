@@ -8,6 +8,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Black\FileRequest;
 use App\Black\File;
 
+use Illuminate\Support\Facades\Input;
+
 
 class FileController extends Controller
 {
@@ -49,6 +51,24 @@ class FileController extends Controller
     public function store(FileRequest $file)
     {
         //
+        $whitelist = array('jpg', 'JPG', 'jpeg', 'JPEG', 'png', 'PNG', 'pdf', 'PDF');
+        $img_name = $_FILES['file']['name'];
+        $file = Input::file("file");
+        
+        //process each file
+        if (!empty($img_name)) {
+            $rename_img = '';
+            $ext = pathinfo($img_name);
+            $ext = $ext['extension'];
+            if (in_array($ext, $whitelist)) {
+                $rename_img = "CRT" . date('YmdHis') . '.' . $ext;
+            } else {
+                return redirect()->back()->with('error', 'The image file must be jpg, jpeg, png format.');
+            }
+            $file->posts_picture = $rename_img;
+            $file->move(($folder), $rename_img);
+        }
+
         $file = File::create($file->getValidRequest());
 
         return redirect()->route('admin.files.index')->with('message', 'Item adicionado com sucesso.');

@@ -46,6 +46,8 @@ class DocumentController extends Controller
     public function store(BannerRequest $document)
     {
         //
+        
+            
         $document = Document::create($document->getValidRequest());
 
         return redirect()->route('admin.documents.index')->with('message', 'Item adicionado com sucesso.');
