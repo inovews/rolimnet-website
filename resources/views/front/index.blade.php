@@ -210,7 +210,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
-                <form class="form-group get-in-grid-right text-center">
+                {!! Form::open(array('route' => 'suporte.whatsapp', 'class' => 'form-group get-in-grid-right text-center', 'files' => true)) !!}
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="input-with-icon">

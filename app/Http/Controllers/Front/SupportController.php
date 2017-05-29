@@ -11,6 +11,7 @@ use Mail;
 use App\Mail\Front\Support;
 
 use App\Http\Requests\Front\SupportRequest;
+use App\Http\Requests\Front\SupportWppRequest;
 
 class SupportController extends Controller
 {
@@ -106,9 +107,7 @@ class SupportController extends Controller
                 $message->to('suporte@rolimnet.com.br', 'Rolim Net Suporte')->subject('Você recebeu uma nova mensagem, SITE: Suporte | Rolim Net!');
             }
         );
-
         return \Redirect::route('suporte.index')->with('message', 'Sua mensagem foi enviada com sucesso!');
-
     }
 
     protected function upload($file)
@@ -121,5 +120,13 @@ class SupportController extends Controller
             return \Redirect::route('suporte.index')
                 ->with('message', 'O arquivo enviado não é válido!');
         }        
+    }
+
+    public function whatsapp(SupportWppRequest $supportwpp)
+    {
+        //
+        $supportwpp = SupportWpp::create($supportwpp->getValidRequest());
+
+        return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
     }
 }
