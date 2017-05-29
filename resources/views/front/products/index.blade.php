@@ -67,10 +67,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 align-vertical no-align-mobile">
-				<h1>Advertise product features simply and elegantly with Pivot</h1>
-				<h6>Clean, Simple &amp; Impactful</h6>
+				<h1>A Rolim Net Fibra tem a solução ideal para impulsonar o seu negócio.</h1>
+				<h6>Evolução para seu negócio.</h6>
 				<p>
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,.
+					Os serviços empresariais da Rolim Net Fibra é a solução adequada para empresas que precisam
+					utilizar a internet com alta qualidade e com garantia de disponibilidade da banda contratada. Empresas de todos os tamanhos que desejam acessar a Internet para uso profissional, encontram em nossos serviços a solução ideal para conectar-se á Internet com possibilidade de oferecer acesso externo as informações e recursos da rede local.
 				</p>
 			</div>
 
@@ -86,50 +87,25 @@
 		<div class="row">
 			<div class="col-md-4 col-sm-6 clearfix">
 				<div class="feature feature-icon-small">
-					<h6 class="text-white">Fully Documented</h6>
+					<h6 class="text-white">Planos Fibra Empresarial</h6>
 					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
+						Tenologia 100% em fibra óptica que proporciona atigir alta velocidade na transmissão e recpção de dados. Mais econômico que uma conexão de garantia total de banda.
 					</p>
 				</div><!--end of feature-->
 			</div>
 			<div class="col-md-4 col-sm-6 clearfix">
 				<div class="feature feature-icon-small">
-					<h6 class="text-white">Page Builder Included&nbsp;</h6>
+					<h6 class="text-white">Link Dedicado sob Fibra Óptica</h6>
 					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
+						Garantia da banda contratada com simetria de download e upload, oferece privacidade, segurança e estabilidade pois o meio físico é único, exclusivo e estendido entre o assinante e o Provedor.
 					</p>
 				</div><!--end of feature-->
 			</div>
 			<div class="col-md-4 col-sm-6 clearfix">
 				<div class="feature feature-icon-small">
-					<h6 class="text-white">Multiple Colour Schemes&nbsp;</h6>
+					<h6 class="text-white">Serviçõs de VLAN de Alta Capacidade</h6>
 					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
-					</p>
-				</div><!--end of feature-->
-			</div>
-			<div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<h6 class="text-white">Support Form Access</h6>
-					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
-					</p>
-				</div><!--end of feature-->
-			</div>
-			<div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<h6 class="text-white">Less Files Included</h6>
-					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
-					</p>
-				</div><!--end of feature-->
-			</div>
-
-			<div class="col-md-4 col-sm-6 clearfix">
-				<div class="feature feature-icon-small">
-					<h6 class="text-white">Flexible &amp; Modular</h6>
-					<p class="text-white">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor.
+						Conseguimos transportar dados com segurança e alta velocidade dentro de nossas redes de fibra óptica e de rádio frequência de alta capacidade.
 					</p>
 				</div><!--end of feature-->
 			</div>
@@ -142,39 +118,13 @@
 		<h2>Outros Serviços</h2>
 		<hr>
 		<div class="row text-sm-left flow-offset-2">
-			<div class="col-xs-12 col-sm-6 col-lg-4">
-				<div class="media thumbnail-mod-2">
-					<div class="media-left"><span class="icon icon-success icon-sm fa-thumbs-o-up"></span></div>
-					<div class="media-body">
-						<h6 class="text-transform-none"><a href="#">Return of Material</a></h6>
-						<p>The goal of Retina Displays is to make the display of text extremely crisp, so pixels are not visible to the naked eye.</p>
-					</div>
-				</div>
-			</div>
+			
 			<div class="col-xs-12 col-sm-6 col-lg-4">
 				<div class="media thumbnail-mod-2">
 					<div class="media-left"><span class="icon icon-success icon-sm fa-truck"></span></div>
 					<div class="media-body">
 						<h6 class="text-transform-none"><a href="#">Delivery</a></h6>
 						<p>Some developers have a defined workflow and are used to using various tools independently.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-lg-4">
-				<div class="media thumbnail-mod-2">
-					<div class="media-left"><span class="icon icon-success icon-sm fa-bar-chart-o"></span></div>
-					<div class="media-body">
-						<h6 class="text-transform-none"><a href="#">Sales Management</a></h6>
-						<p>Problems with your website or email? Check our Knowledgebase or contact us. We're here to help!</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-lg-4">
-				<div class="media thumbnail-mod-2">
-					<div class="media-left"><span class="icon icon-success icon-sm fa-comments"></span></div>
-					<div class="media-body">
-						<h6 class="text-transform-none"><a href="#">Free Consultations</a></h6>
-						<p>Our company`s departments provide free consultations for entrepreneurs and owners of small businesses.</p>
 					</div>
 				</div>
 			</div>
