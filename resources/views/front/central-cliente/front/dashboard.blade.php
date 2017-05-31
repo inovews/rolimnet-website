@@ -13,26 +13,6 @@
 <!--body wrapper start-->
 <div class="wrapper">
   <div class="row state-overview">
-    <div class="col-lg-4 col-sm-6">
-      <section class="panel">
-        <div class="panel-body">
-          <!--monthly page view start-->
-          <ul class="monthly-page-view">
-            <li class="pull-left page-view-label">
-              <span class="page-view-value timer" data-from="0" data-to="93205"
-              data-speed="4000">
-              <!--93,205--> 0
-            </span>
-            <span>Ultimas Visitas</span>
-          </li>
-          <li class="pull-right">
-            <div id="page-view-graph" class="chart"></div>
-          </li>
-        </ul>
-        <!--monthly page view end-->
-      </div>
-    </section>
-  </div>
   <div class="col-lg-4 col-sm-6">
     <section class="panel green">
       <div class="symbol ">
@@ -70,51 +50,102 @@
       </header>
       <div class="panel-body">
         <div class="btn-group">
-          <button class="btn btn-default" type="button">Opções</button>
+          <button class="btn btn-default" type="button">Selecione a opção</button>
           <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
           <ul role="menu" class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Alterar vencimento</a></li>
+            <li><a href="#">2ª Via de Boleto</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Quitar Débitos</a></li>
           </ul>
-          </div><!-- /btn-group -->
+        </div>
       </div>
     </section>
   </div>
   <div class="col-md-6">
     <section class="panel">
       <header class="panel-heading ">
-        Split Dropdowns Button
+        Outros Serviços
       </header>
       <div class="panel-body">
         <div class="btn-group">
-          <button class="btn btn-default" type="button">Default</button>
+          <button class="btn btn-default" type="button">Selecione a opção</button>
           <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
           <ul role="menu" class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Alterar endereço</a></li>
+            <li><a href="#">Alterar plano</a></li>
+            <li><a href="#">2ª Via NF-e</a></li>
             <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group dropup">
-          <button class="btn btn-default" type="button">Dropup</button>
-          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button"><span class="caret"></span></button>
-          <ul role="menu" class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#">Cancelar Assinatura</a></li>
           </ul>
         </div><!-- /btn-group -->
       </div>
     </section>
   </div>
+  <div class="col-sm-12">
+    <div class="row state-overview state-alt">
+    <div class="col-lg-3 col-sm-6">
+                    <section class="panel b-border">
+                        <div class="symbol ">
+                            <span class="bg-info"><i class="fa fa-eye"></i></span>
+                        </div>
+                        <div class="value ">
+                            <h1 class="">
+                                0
+                            </h1>
+                            <p>Total Visitas</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel g-border">
+                        <div class="symbol">
+                            <span class="bg-success"><i class="fa fa-tag"></i></span>
+                        </div>
+                        <div class="value ">
+                            <h1 class="">
+                                0
+                            </h1>
+                            <p>Contratos Ativos</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel p-border">
+                        <div class="symbol ">
+                            <span class="bg-primary"><i class="fa fa-money"></i></span>
+                        </div>
+                        <div class="value ">
+                            <h1>
+                               0
+                            </h1>
+                            <p>Débitos</p>
+                        </div>
+                    </section>
+                </div>
+                
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <section class="panel">
+      <header class="panel-heading">
+        <i class="fa fa-line-chart" aria-hidden="true"></i> Consumo Tempo Real
+      </header>
+      <div class="panel-body">
+        <select class="form-control" id="interface" name="interface">
+          <option value='pppoe'>central-cliente@rolimnet.com.br</option>
+        </select>
+        <div id="multi-sates">
+          <div id="multi-states-container" class="f-c-space">
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
 </div>
+
 </div>
+
 <!--body wrapper end-->
 @endsection

@@ -55,7 +55,7 @@
 
 								</td>
 								<td>
-									<p class="bg-success"> Normal</p>
+									<span class="label label-success"> Normal</span>
 
 								</td>                                    
 								<td>1 hour ago</td>

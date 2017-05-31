@@ -3,8 +3,8 @@
 @section('content')
 <!-- page head start-->
 <div class="page-head">
-	<h1 class="text-center">Editar plano</h1>
-	<p class="lead text-center">//</p>
+	<h1 class="text-center">Criar ticket</h1>
+	<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 <!-- page head end-->
 
@@ -60,21 +60,7 @@
                                 @endif
 							</div>
 						</div>
-						<div class="form-group">
-							<small>Em fase de teste.</small>
-							<div class="input-group">
-								<span class="input-group-addon">http://rolimnet.com.br/planos/</span>
-								<input class="form-control" placeholder="URL amigável" type="text" value="" name="slug" id="slug" />
-							</div>
-						</div>
-						<div class="row">
-						<div class="form-group col-xs-12 col-sm-6">
-							<div class="input-group">
-								<span class="input-group-addon">R$</span>
-								<input class="form-control" placeholder="Valor" type="text" name="price" id="price" />
-							</div>
-						</div>
-						</div>
+						<textarea class="wysihtml5 form-control" rows="9" name="html_content" id="html_content"></textarea>
 						<hr class="hr-lg">
 					</div>
 				</div>
