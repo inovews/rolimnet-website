@@ -93,6 +93,13 @@
                             <li class="{{ active('centralcliente.tickets.index') }}"><a href="{{route('centralcliente.tickets.index')}}"> Listar</a></li>
                         </ul>
                     </li>
+                    <li class="menu-list {{ active('centralcliente.finance.*') }}">
+                        <a href=""><i class="fa fa-money"></i>  <span>Finaceiro</span></a>
+                        <ul class="child-list">
+                            <li class="{{ active('centralcliente.finance.index') }}"><a href="{{route('centralcliente.finance.index')}}"> Página Inicial</a></li>
+                            <li class="{{ active('centralcliente.finance.contract') }}"><a href="{{route('centralcliente.finance.contract')}}"> Contratos</a></li>
+                        </ul>
+                    </li>
                     <li class=""><a href="#"><i class="fa fa-phone"></i> <span>Suporte</span></a></li>
 
                     <li>

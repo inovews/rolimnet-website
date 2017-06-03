@@ -30,7 +30,7 @@
 							<div class="form-group col-xs-12 col-sm-6">
 								<small>Categoria</small>
 								<select id="category" type="category" class="form-control" name="category">
-                                    <option value="">Select Category</option>
+                                    <option value="">Selecione a Categoria</option>
                                     @foreach ($categories as $category)
                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
@@ -47,7 +47,7 @@
 							<div class="form-group col-xs-12 col-sm-6">
 								<small>Prioridade</small>
 								 <select id="priority" type="priority" class="form-control" name="priority">
-                                    <option value="">Select Priority</option>
+                                    <option value="">Selecione a Prioridade</option>
                                     @foreach ($prioritys as $priority)
                         <option value="{{ $priority->id }}">{{ $priority->name }}</option>
                                     @endforeach

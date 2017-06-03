@@ -130,4 +130,13 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 
 	Route::resource('tickets', 'Front\CentralCliente\TicketsController');
 	Route::resource('account', 'Front\CentralCliente\AccountController');
+	//Route::resource('finance', 'Front\CentralCliente\FinanceController');
+
+	Route::group(['prefix' => 'finance', 'as' => 'finance.'], function()
+	{
+		Route::get('/', ['as' => 'index', 'uses' => 'Front\CentralCliente\FinanceController@index']);
+
+		Route::get('contract', ['as' => 'contract', 'uses' => 'Front\CentralCliente\FinancesContractController@index']);
+		Route::get('cancel', ['as' => 'cancel', 'uses' => 'Front\CentralCliente\FinanceController@cancel']);
+	});
 });
