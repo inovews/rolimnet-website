@@ -1304,3 +1304,6 @@ section:nth-of-type(even) {
 }
 
 
+.portfolioFilter{font-size:15px;text-align: center;margin:10px auto 30px auto;font-family: "Raleway",arial;text-transform: uppercase;}
+.portfolioFilter a{color:#8C8C8C;margin-right:20px;margin-left: 20px; text-decoration:none;font-weight:600; letter-spacing: 1px;}
+.portfolioFilter a.current, .portfolioFilter a:hover{color:#5299C7;}

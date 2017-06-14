@@ -33,6 +33,13 @@
 								</div>
 							</div>
 							<div class="col-sm-12">
+								<div class="portfolioFilter">
+									<a href="#" data-filter="*" class="current">Todos</a>
+									<a href="#" data-filter=".urbano">Urbano</a>
+									<a href="#" data-filter=".rural">Rural</a>
+								</div>
+                            </div>
+							<div class="col-sm-12">
 								<div class="row">
 									@if($plans->all())
 									@foreach($plans as $plan)
