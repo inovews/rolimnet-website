@@ -33,7 +33,7 @@
 								</div>
 							</div>
 							<div class="col-sm-12">
-								<div class="portfolioFilter">
+								<div class="">
 									<a href="#" data-filter="*" class="current">Todos</a>
 									<a href="#" data-filter=".urbano">Urbano</a>
 									<a href="#" data-filter=".rural">Rural</a>

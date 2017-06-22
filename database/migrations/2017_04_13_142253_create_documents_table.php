@@ -18,8 +18,8 @@ class CreateDocumentsTable extends Migration
             $table->string('name');
             $table->string('description')->nullable(false);
             $table->string('file')->nullable(false);
-            $table->integer('file_id')->unsigned()->default(0);
-            $table->foreign('file_id')->references('id')->on('files');
+            #$table->integer('file_id')->unsigned()->default(0);
+            #$table->foreign('file_id')->references('id')->on('files');
             $table->timestamps();
         });
     }

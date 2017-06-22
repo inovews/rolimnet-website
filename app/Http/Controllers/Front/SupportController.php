@@ -125,8 +125,8 @@ class SupportController extends Controller
     public function whatsapp(SupportWppRequest $supportwpp)
     {
         //
-        $supportwpp = SupportWpp::create($supportwpp->getValidRequest());
+        $supportwpp = SupportWppRequest::create($supportwpp->getValidRequest());
 
-        return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
+        //return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
     }
 }

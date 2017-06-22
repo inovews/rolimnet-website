@@ -140,3 +140,6 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 		Route::get('cancel', ['as' => 'cancel', 'uses' => 'Front\CentralCliente\FinanceController@cancel']);
 	});
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

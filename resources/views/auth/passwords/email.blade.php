@@ -1,4 +1,4 @@
-@extends('layouts.black.index', ['title' => 'Dashboard'])
+@extends('layouts.app')
 
 <!-- Main Content -->
 @section('content')
