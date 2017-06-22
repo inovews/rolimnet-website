@@ -32,7 +32,9 @@
     </script>
 </head>
 <body id="body" data-spy="scroll" data-target=".header">
+
     <header class="header navbar-fixed-top">
+        
         <nav class="navbar" role="navigation">
             <div class="container">
                 <div class="menu-container js_nav-item">
