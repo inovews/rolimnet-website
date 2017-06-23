@@ -15,8 +15,8 @@
 				<div class="col-sm-12">
 					<h3>Canal de comunicação</h3>
 					<h2>Ouvidoria</h2>
-					<p class="tt16">Caso tenha algum problema não resolvido pelo serviço de atendimento normal da Rolim net, enviando mensagem à Ouvidoria, você estará relatando o seu problema diretamente à diretoria da Rolim Net.</p>
-					<p class="tt16">A Rolim Net sempre trabalha para oferecer para nossos Assinantes um serviço de qualidade e de excelência! Durante nossa história recebemos várias mensagens com elogios, sugestões e críticas, pois somente assim, com a sua participação podemos crescer e oferecer serviços e atendimento com a qualidade que você merece. Por esse motivo a OUVIDORIA é um canal de comunicação para que você possa relatar algum problema (técnico, financeiro, comercial) não resolvido pelo atendimento normal diretamente para um Gestor ou Diretor da empresa.</p>
+					<p class="text-justify">Caso tenha algum problema não resolvido pelo serviço de atendimento normal da Rolim net, enviando mensagem à Ouvidoria, você estará relatando o seu problema diretamente à diretoria da Rolim Net.</p>
+					<p class="text-justify">A Rolim Net sempre trabalha para oferecer para nossos Assinantes um serviço de qualidade e de excelência! Durante nossa história recebemos várias mensagens com elogios, sugestões e críticas, pois somente assim, com a sua participação podemos crescer e oferecer serviços e atendimento com a qualidade que você merece. Por esse motivo a OUVIDORIA é um canal de comunicação para que você possa relatar algum problema (técnico, financeiro, comercial) não resolvido pelo atendimento normal diretamente para um Gestor ou Diretor da empresa.</p>
 				</div>
 				<div class="col-sm-12">
 				<h2>Quer entrar em contato com a gente?</h2>
