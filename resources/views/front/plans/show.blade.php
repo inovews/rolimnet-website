@@ -31,23 +31,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
-							<section class="section-portfolio p-b-10 bg-gray-light">
-                                      <div>
-                                        <div class="portfolioFilter">
-                                          <a href="#" data-filter="*" class="current">Todos</a>
-                                          <a href="#" data-filter=".f-countryside">Rural</a>
-                                          <a href="#" data-filter=".f-urban">Urbano</a>
-                                      </div>
-                                  </div>
-                              </section>
-							<div class="col-sm-12">
-								<div class="">
-									<a href="#" data-filter="*" class="current">Todos</a>
-									<a href="#" data-filter=".urbano">Urbano</a>
-									<a href="#" data-filter=".rural">Rural</a>
-								</div>
-                            </div>
+							</div>							
 							<div class="col-sm-12">
 								<div class="row">
 									@if($plans->all())

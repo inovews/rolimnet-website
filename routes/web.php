@@ -95,7 +95,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 		Route::get('/', ['as' => 'index', 'uses' => 'Black\Sys\BannerController@index']);
 		Route::post('enviar', ['as' => 'enviar', 'uses' => 'Black\Sys\BannerController@send']);
 	});*/
-	Route::resource('banners', 'Black\Sys\BannerController');
+	Route::resource('banners', 'Black\Sys\BannerController'); 
 	Route::resource('faqs', 'Black\Sys\FaqController');
 	Route::resource('files', 'Black\Sys\FileController');
 	Route::resource('fibers', 'Black\Sys\FiberController');
