@@ -38,6 +38,7 @@
 						<h3>Você Conectado</h3>
 						<ul class="soc">
 							<li><a class="soc-facebook" href="http://www.facebook.com/rolimnet"></a></li>
+							<li><a class="soc-instagram" href="http://www.instagram.com/rolim_net/"></a></li>
 						</ul>
 					</div>
 				</div>
