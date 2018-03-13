@@ -38,7 +38,7 @@ class FiberRequest extends FormRequest
     {
         return [
             //
-            'name' => $this->input('name') ?? false,
+            'name' => $this->input('name'),
             'address' => $this->input('address'),
             'number' => $this->input('number'),
             'neighborhood' => $this->input('neighborhood'),

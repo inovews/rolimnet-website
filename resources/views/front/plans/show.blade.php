@@ -32,6 +32,15 @@
 									</div>
 								</div>
 							</div>
+							<section class="section-portfolio p-b-10 bg-gray-light">
+                                      <div>
+                                        <div class="portfolioFilter">
+                                          <a href="#" data-filter="*" class="current">Todos</a>
+                                          <a href="#" data-filter=".f-countryside">Rural</a>
+                                          <a href="#" data-filter=".f-urban">Urbano</a>
+                                      </div>
+                                  </div>
+                              </section>
 							<div class="col-sm-12">
 								<div class="">
 									<a href="#" data-filter="*" class="current">Todos</a>
@@ -45,7 +54,7 @@
 									@foreach($plans as $plan)
 									<div id='planos' class="col-md-4 md-margin-b-30">
 										<!-- Pricing List v4 -->
-										<div class="pricing-list-v4 radius-10">
+										<div class="pricing-list-v4 radius-10 f-{{ $plan->zone }}">
 											<div class="pricing-list-v4-header">
 												<h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
 												<span class="pricing-list-v4-subtitle">@if ($plan->zone == 'urban') Zona Urbana @else Zona Rural @endif</span>

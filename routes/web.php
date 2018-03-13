@@ -61,6 +61,7 @@ Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // SUPORTE
 Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\PlanController@index']);
+	Route::get('/cidade', ['as' => 'index', 'uses' => 'Front\PlanController@index']);
 	Route::get('cidade/{slug}',['as' => 'cidade', 'uses' => 'Front\PlanController@show'])->where('slug', '[A-Za-z0-9-_]+');
 	Route::get('city/{id}', function($id = null){
 	    return Response()->json(\App\Front\Plan::where('plan_city_id', $id)->orderBy('name')->get());

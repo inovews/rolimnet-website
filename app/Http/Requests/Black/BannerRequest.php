@@ -33,7 +33,7 @@ class BannerRequest extends FormRequest
     {
         return [
             //
-            'file' => $this->input('file'), 
+            //'file' => $this->input('file'), 
             'name' => $this->input('name'),
             'status' => $this->input('status'),
             'star' => $this->input('star'),

@@ -137,43 +137,45 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="row" >
-                                    <div  name="planos" id="planos">
-                                        @foreach( $plans as $plan)
-                                        <div class="col-md-4 md-margin-b-30">
-                                            <!-- Pricing List v4 -->
-                                            <div class="pricing-list-v4 radius-10">
-                                                <div class="pricing-list-v4-header">
-                                                    <h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
-                                                    <span class="pricing-list-v4-subtitle">{{ $plan->zone }}</span>
+
+                                    
+                                  <div  name="planos" id="planos">
+                                    @foreach( $plans as $plan)
+                                    <div class="col-md-4 md-margin-b-30">
+                                        <!-- Pricing List v4 -->
+                                        <div class="pricing-list-v4 radius-10">
+                                            <div class="pricing-list-v4-header">
+                                                <h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
+                                                <span class="pricing-list-v4-subtitle">{{ $plan->zone }}</span>
+                                            </div>
+                                            <div class="pricing-list-v4-content">
+                                                <div class="margin-b-40">
+                                                    <span class="pricing-list-v4-price-sign">R$</span>
+                                                    <span class="pricing-list-v4-price">{{ $plan->price }},</span>
+                                                    <span class="pricing-list-v4-subprice">00</span>
+                                                    <span class="pricing-list-v4-price-info">mês</span>
                                                 </div>
-                                                <div class="pricing-list-v4-content">
-                                                    <div class="margin-b-40">
-                                                        <span class="pricing-list-v4-price-sign">R$</span>
-                                                        <span class="pricing-list-v4-price">{{ $plan->price }},</span>
-                                                        <span class="pricing-list-v4-subprice">00</span>
-                                                        <span class="pricing-list-v4-price-info">mês</span>
-                                                    </div>
-                                                    <div class="center-block">
-                                                        <button type="button" class="btn btn-primary raised">Assinar</button>
-                                                    </div>
+                                                <div class="center-block">
+                                                    <button type="button" class="btn btn-primary raised">Assinar</button>
                                                 </div>
                                             </div>
-                                            <!-- End Pricing List v4 -->
                                         </div>
-                                        @endforeach
+                                        <!-- End Pricing List v4 -->
                                     </div>
+                                    @endforeach
                                 </div>
-                                <!--// end row -->
                             </div>
-                            <!-- End Pricing List v4 -->
+                            <!--// end row -->
                         </div>
-                        <!--// end row -->
+                        <!-- End Pricing List v4 -->
                     </div>
+                    <!--// end row -->
                 </div>
             </div>
         </div>
-        <!--// end row -->
     </div>
+    <!--// end row -->
+</div>
 </div>
 
 <div class="test" data-parallax="scroll" data-image-src="{{ url('assets/img/beard-2286440_1920.jpg') }}">
