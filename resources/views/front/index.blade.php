@@ -47,14 +47,13 @@
 <div id="empresa">
     <div class="container content-sm">
         <div class="row">
-            <div class="alert alert-warning no-margin text-center" role="alert">
                 <strong>Atenção</strong> essa é uma versão BETA! <br>
                 Alguns erros podem aparecer :D
             </div>
             <div class="col-sm-4 col-lg-offset-1">
                 <div class="text-center sm-text-left">
                     <h1 class="color-blue margin-b-0">Bem-Vindo!</h1>
-                    <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014, 2015 e 2016.</p>
+                    <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014, 2015, 2016 e 2017.</p>
                     <p class="text-right"><a href="{{ route('empresa.index') }}" class="color-blue">...mais sobre a empresa</a></p>
                 </div>
             </div>
@@ -92,7 +91,8 @@
 
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="{{ route('centralcliente.index')}}" class="btn btn-lg btn-default raised">Acessar Central</a>
+                                <!--<a href="{{ route('centralcliente.index')}}" class="btn btn-lg btn-default raised">Acessar Central</a>-->
+                                <a target="_blank" href="http://mksolutions.rolimnet.com.br:60280/sac" class="btn btn-lg btn-default raised"></a>
                             </div>
                             <!--// end row -->
                         </div>
@@ -331,13 +331,14 @@
                         <div class="col-xs-12 col-sm-8 col-md-8">
                             <select class="atendimento-cidade-div" data-target=".atendimento-cidade-dados">
                                 <option selected data-show=".defalt">Selecione a Cidade </option>
-                                <option value="orange" data-show=".cao">Cacoal</option>
-                                <option value="orange" data-show=".cas">Castanheiras</option>
-                                <option value="orange" data-show=".mdc">Presidente Medíci</option>
-                                <option value="lemon" data-show=".nho">Novo Horizonte d' Oeste</option>
-                                <option value="apple" data-show=".rlm">Rolim de Moura</option>
-                                <option value="pear" data-show=".stl">Santa Luzia d' Oeste</option>
-                                <option value="pear" data-show=".ser">Seringueiras</option>
+                                <option data-show=".cao">Cacoal</option>
+                                <option data-show=".cas">Castanheiras</option>
+                                <option data-show=".mdc">Presidente Medíci</option>
+                                <option data-show=".nho">NovA Brasilandia d' Oeste</option>
+                                <option data-show=".nho">Novo Horizonte d' Oeste</option>
+                                <option data-show=".rlm">Rolim de Moura</option>
+                                <option data-show=".stl">Santa Luzia d' Oeste</option>
+                                <option data-show=".ser">Seringueiras</option>
                             </select>
                         </div>
                     </div>
@@ -354,23 +355,27 @@
                             <h3 class="margin-b-0">Rolim Net</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas atendimento na zona rural.</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na zona rural próxmo ao distrito de Estrela Rondônia.</p>
                         </div>
                         <div class="cas hide">
-                            <h3 class="margin-b-0">InfoCast</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <h3 class="margin-b-0">Adam</h3>
+                            <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
                             <p>adamjhosua@rolimnet.com.br</p>
                         </div>
                         <div class="mdc hide">
                             <h3 class="margin-b-0">Rolim Net</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas atendimento na zona rural.</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na zona rural próxmo ao distrito de Estrela Rondônia.</p>
+                        </div>
+                        <div class="nbo hide">
+                            <h3 class="margin-b-0">Carlos</h3>
+                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p>carlosdiniz@rolimnet.com.br</p>
                         </div>
                         <div class="nho hide">
-                            <h3 class="margin-b-0">Rolim Net</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
-                            <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                            <h3 class="margin-b-0">Adam</h3>
+                            <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
                             <hr>
                             <h3 class="margin-b-0">João</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
