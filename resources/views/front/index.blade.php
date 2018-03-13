@@ -47,9 +47,10 @@
 <div id="empresa">
     <div class="container content-sm">
         <div class="row">
+            <!--<div class="alert alert-warning no-margin text-center" role="alert">
                 <strong>Atenção</strong> essa é uma versão BETA! <br>
                 Alguns erros podem aparecer :D
-            </div>
+            </div>-->
             <div class="col-sm-4 col-lg-offset-1">
                 <div class="text-center sm-text-left">
                     <h1 class="color-blue margin-b-0">Bem-Vindo!</h1>
