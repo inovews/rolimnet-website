@@ -93,7 +93,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <!--<a href="{{ route('centralcliente.index')}}" class="btn btn-lg btn-default raised">Acessar Central</a>-->
-                                <a target="_blank" href="http://mksolutions.rolimnet.com.br:60280/sac" class="btn btn-lg btn-default raised"></a>
+                                <a target="_blank" href="http://mksolutions.rolimnet.com.br:60280/sac" class="btn btn-lg btn-default raised">Central do Cliente </a>
                             </div>
                             <!--// end row -->
                         </div>
@@ -335,7 +335,7 @@
                                 <option data-show=".cao">Cacoal</option>
                                 <option data-show=".cas">Castanheiras</option>
                                 <option data-show=".mdc">Presidente Medíci</option>
-                                <option data-show=".nho">NovA Brasilandia d' Oeste</option>
+                                <option data-show=".nbo">Nova Brasilandia d' Oeste</option>
                                 <option data-show=".nho">Novo Horizonte d' Oeste</option>
                                 <option data-show=".rlm">Rolim de Moura</option>
                                 <option data-show=".stl">Santa Luzia d' Oeste</option>
