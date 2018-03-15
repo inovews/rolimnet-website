@@ -47,7 +47,7 @@
 					<img class="logo" src="{{ url('assets/img/logo-dark.png') }}" >	
 						<div class="copyright-breather text-center">
 							<p>
-								Todos os direitos reservados &copy; 2008 - 2017 NOC | Rolim Net.
+								Todos os direitos reservados &copy; 2008 - 2018 NOC | Rolim Net.
 							<br>
 								<a href="http://www.rolimsoft.com.br/"> RolimSOFT</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
 							</p>
