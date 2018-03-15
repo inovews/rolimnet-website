@@ -357,6 +357,7 @@
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
                             <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na zona rural próxmo ao distrito de Estrela Rondônia.</p>
+                            <p>geral@rolimnet.com.br</p>
                         </div>
                         <div class="cas hide">
                             <h3 class="margin-b-0">Adam</h3>
@@ -371,30 +372,32 @@
                         </div>
                         <div class="nbo hide">
                             <h3 class="margin-b-0">Carlos</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p class="margin-b-0">Telefones: 69 9 8447-3680</p>
                             <p>carlosdiniz@rolimnet.com.br</p>
                         </div>
                         <div class="nho hide">
                             <h3 class="margin-b-0">Adam</h3>
                             <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
+                            <p>adamjhosua@rolimnet.com.br</p>
                             <hr>
                             <h3 class="margin-b-0">João</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p class="margin-b-0">Telefones: 69 9 8451-6449</p>
                             <p>joaobatista@rolimnet.com.br</p>
                         </div>
                         <div class="rlm hide">
                             <h3 class="margin-b-0">Rolim Net</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
+                            <p>geral@rolimnet.com.br</p>
                         </div>
                         <div class="stl hide">
                             <h3 class="margin-b-0">Marcos André</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p class="margin-b-0">Telefones: 69 9 8494-0150</p>
                             <p>marcosandre@rolimnet.com.br</p>
                         </div>
                         <div class="ser hide">
                             <h3 class="margin-b-0">Laercio Degasperi</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p class="margin-b-0">Telefones: 69 9 8474-1741</p>
                             <p>laercio@rolimnet.com.br</p>
                         </div>
                     </div>
