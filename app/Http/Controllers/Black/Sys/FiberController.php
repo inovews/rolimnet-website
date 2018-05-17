@@ -43,7 +43,7 @@ class FiberController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BannerRequest $fiber)
+    public function store(FiberRequest $fiber)
     {
         //
         $fiber = Fiber::create($fiber->getValidRequest());
@@ -82,7 +82,7 @@ class FiberController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BannerRequest $fiber, $id)
+    public function update(FiberRequest $fiber, $id)
     {
         //
         $fiber = Fiber::find($id)->fill($fiber->getValidRequest());

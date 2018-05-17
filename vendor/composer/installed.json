@@ -4152,5 +4152,112 @@
             "laravel",
             "slug"
         ]
+    },
+    {
+        "name": "google/recaptcha",
+        "version": "1.1.3",
+        "version_normalized": "1.1.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/recaptcha.git",
+            "reference": "5a56d15ca10a7b75158178752b2ad8f755eb4f78"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/recaptcha/zipball/5a56d15ca10a7b75158178752b2ad8f755eb4f78",
+            "reference": "5a56d15ca10a7b75158178752b2ad8f755eb4f78",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8"
+        },
+        "time": "2017-03-09T18:44:34+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "ReCaptcha\\": "src/ReCaptcha"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Client library for reCAPTCHA, a free service that protect websites from spam and abuse.",
+        "homepage": "http://www.google.com/recaptcha/",
+        "keywords": [
+            "Abuse",
+            "captcha",
+            "recaptcha",
+            "spam"
+        ]
+    },
+    {
+        "name": "buzz/laravel-google-captcha",
+        "version": "v2.1.10",
+        "version_normalized": "2.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thinhbuzz/laravel-google-captcha.git",
+            "reference": "d6e8efdd11475cd590acf3041976f996e52fb5df"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thinhbuzz/laravel-google-captcha/zipball/d6e8efdd11475cd590acf3041976f996e52fb5df",
+            "reference": "d6e8efdd11475cd590acf3041976f996e52fb5df",
+            "shasum": ""
+        },
+        "require": {
+            "google/recaptcha": "1.*",
+            "illuminate/support": "5.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2018-04-18T15:56:14+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Buzz\\LaravelGoogleCaptcha\\CaptchaServiceProvider"
+                ],
+                "aliases": {
+                    "Captcha": "Buzz\\LaravelGoogleCaptcha\\CaptchaFacade"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Buzz\\LaravelGoogleCaptcha\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "ThinhBuzz",
+                "email": "mr.thinhbuzz@gmail.com",
+                "homepage": "https://www.facebook.com/thinh.buzz"
+            }
+        ],
+        "description": "Google captcha for laravel 5.*",
+        "homepage": "https://github.com/thinhbuzz/laravel-google-captcha",
+        "keywords": [
+            "captcha",
+            "google-captcha",
+            "laravel",
+            "laravel5",
+            "no-captcha",
+            "recaptcha"
+        ]
     }
 ]

@@ -60,7 +60,7 @@
 									@endforeach
 									<div class="text-center">
 										<div class="pagination">
-										<!-- Aqui vai a paginação -->
+											<!-- Aqui vai a paginação -->
 										</div>
 									</div>
 									@else
@@ -73,7 +73,9 @@
 						</div>
 						<div class="col-sm-4">
 							<div class="row text-center">
-								<img src="{{ url('assets/img/banner-rolimnet-fibra.jpg') }}" width="368" height="100%">
+								<div class="thumbnail">
+									<img class="img-responsive" src="http://placehold.it/480x368" alt="">
+								</div>
 							</div>
 						</div>
 						<!--// end row -->

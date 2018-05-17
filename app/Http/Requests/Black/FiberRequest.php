@@ -27,4 +27,19 @@ class FiberRequest extends FormRequest
             //
         ];
     }
+
+        public function getValidRequest()
+    {
+        return [
+            //
+            //'file' => $this->input('file'), 
+            'name' => $this->input('name'),
+            'address' => $this->input('address'),
+            'number' => $this->input('number'),
+            'neighborhood' => $this->input('neighborhood'),
+            'phone' => $this->input('phone'),
+            'installed' => $this->input('installed'),
+            'email' => $this->input('email'),
+        ];
+    }
 }

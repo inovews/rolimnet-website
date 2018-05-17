@@ -13,7 +13,7 @@
 <div class="section-seperator">
 	<div class="container content">
 		<div class="row">
-		
+			
 			<div class="tab-pane active" id="red">
 				<div class="row">
 					<div class="internet">
@@ -30,39 +30,41 @@
 							</div>
 							<!-- End Pricing List v4 -->
 							<div class="col-sm-4">
-						<div class="text-center">
-							<img src="{{ url('assets/img/mouse.png') }}">
-							<h3>DÚVIDA POR E-MAIL</h3>
-							<p class="margin-b-30">
-								Entre em contato que teremos maior prazer em respondê-lo. <a href=" {{route('contato.index')}} ">Clique aqui.</a>
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="text-center">
-							<img src="{{ url('assets/img/history-button.png') }}">
-							<h3>HORARIO DE ATENDIMENTO</h3>
-							<p class="margin-b-30">
-								Segunda a Sexta 08h as 18h<br>
-								Sábado 08 as 13h
-							</p>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class="text-center">
-							<img src="{{ url('assets/img/user.png') }}">
-							<h3>CHAT ONLINE</h3>
-							<p class="margin-b-0">
-								Converse com um de nossos atendentes agora!
-							</p>
-							<button class="btn btn-default">Iniciar chat</button>
-						</div>
-					</div>
+								<div class="text-center">
+									<img src="{{ url('assets/img/mouse.png') }}">
+									<h3>DÚVIDA POR E-MAIL</h3>
+									<p class="margin-b-30">
+										Entre em contato que teremos maior prazer em respondê-lo. <a href=" {{route('contato.index')}} ">Clique aqui.</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="text-center">
+									<img src="{{ url('assets/img/history-button.png') }}">
+									<h3>HORARIO DE ATENDIMENTO</h3>
+									<p class="margin-b-30">
+										Segunda a Sexta 08h as 18h<br>
+										Sábado 08 as 13h
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="text-center">
+									<img src="{{ url('assets/img/user.png') }}">
+									<h3>CHAT ONLINE</h3>
+									<p class="margin-b-0">
+										Converse com um de nossos atendentes agora!
+									</p>
+									<button class="btn btn-default">Iniciar chat</button>
+								</div>
+							</div>
 
 						</div>
 						<div class="col-sm-4">
 							<div class="row text-center">
-								<img src="{{ url('assets/img/banner-rolimnet-fibra.jpg') }}" width="368" height="100%">
+								<div class="thumbnail">
+									<img class="img-responsive" src="http://placehold.it/480x368" alt="">
+								</div>
 							</div>
 						</div>
 						<!--// end row -->

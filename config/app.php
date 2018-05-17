@@ -188,6 +188,8 @@ return [
 
         Cviebrock\EloquentSluggable\ServiceProvider::class,
 
+        Buzz\LaravelGoogleCaptcha\CaptchaServiceProvider::class,
+
     ],
 
     /*

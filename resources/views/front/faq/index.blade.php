@@ -3,36 +3,36 @@
 @section('content')
 
 <style type="text/css">
-	/* ------ main-banner ------ */
-	.main-banner{
-		margin-bottom:20px;
-	}
+/* ------ main-banner ------ */
+.main-banner{
+	margin-bottom:20px;
+}
 
-	/* ------ page ------ */
-	.page{
-		background-color:#fff;
-		padding:10px 7px;
-		margin-bottom:3px;
-	}
+/* ------ page ------ */
+.page{
+	background-color:#fff;
+	padding:10px 7px;
+	margin-bottom:3px;
+}
 
-	.page .details ul{
-		list-style: none;
-		padding-left: 0px;
-		margin-bottom:18px;
-	}
-	.page .details ul li{
-		float:left;
-		padding-right:15px;
-		font-size: 13px;
-		font-weight: 600;
-	}
-	.page .details ul li:last-child {
-		float: inherit;
-	}
-	.page h4{
-		font-size:13px;
-		font-weight:600;
-	}
+.page .details ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom:18px;
+}
+.page .details ul li{
+	float:left;
+	padding-right:15px;
+	font-size: 13px;
+	font-weight: 600;
+}
+.page .details ul li:last-child {
+	float: inherit;
+}
+.page h4{
+	font-size:13px;
+	font-weight:600;
+}
 
 </style>
 
@@ -73,7 +73,9 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="row text-center">
-					<img src="{{ url('assets/img/banner-rolimnet-fibra.jpg') }}" width="368" height="100%">
+					<div class="thumbnail">
+						<img class="img-responsive" src="http://placehold.it/480x368" alt="">
+					</div>
 				</div>
 			</div>
 		</div>

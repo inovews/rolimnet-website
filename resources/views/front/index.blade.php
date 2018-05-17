@@ -187,13 +187,13 @@
                 <div class="col-sm-4">
                     <div class="text-center">
                         <img src="{{ url('assets/img/favorites-button.png') }}">
-                        <h3 class="color-white">6 Troféus ACIRM</h3>
+                        <h3 class="color-white">7 Troféus ACIRM</h3>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="text-center">
                         <img src="{{ url('assets/img/pin.png') }}">
-                        <h3 class="color-white">7 Cidades</h3>
+                        <h3 class="color-white">10 Cidades</h3>
                     </div>
                 </div>
                 <div class="col-sm-4">

@@ -63,6 +63,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         ),
         'R' => 
         array (
+            'ReCaptcha\\' => 10,
             'Ramsey\\Uuid\\' => 12,
         ),
         'P' => 
@@ -109,6 +110,10 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
             'ClassPreloader\\' => 15,
             'Clarification\\MailDrivers\\Sparkpost\\' => 36,
             'Carbon\\' => 7,
+        ),
+        'B' => 
+        array (
+            'Buzz\\LaravelGoogleCaptcha\\' => 26,
         ),
         'A' => 
         array (
@@ -207,6 +212,10 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/SuperClosure/src',
         ),
+        'ReCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -294,6 +303,10 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'Carbon\\' => 
         array (
             0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
+        ),
+        'Buzz\\LaravelGoogleCaptcha\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/buzz/laravel-google-captcha/src',
         ),
         'App\\' => 
         array (
@@ -388,6 +401,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Http\\Controllers\\Black\\Sys\\FaqController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/FaqController.php',
         'App\\Http\\Controllers\\Black\\Sys\\FiberController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/FiberController.php',
         'App\\Http\\Controllers\\Black\\Sys\\FileController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/FileController.php',
+        'App\\Http\\Controllers\\Black\\Sys\\PlanCityController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/PlanCityController.php',
         'App\\Http\\Controllers\\Black\\Sys\\PlanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/PlanController.php',
         'App\\Http\\Controllers\\Black\\Sys\\SupportController' => __DIR__ . '/../..' . '/app/Http/Controllers/Black/Sys/SupportController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -395,6 +409,8 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Http\\Controllers\\Front\\BannerController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/BannerController.php',
         'App\\Http\\Controllers\\Front\\CentralCliente\\AccountController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/CentralCliente/AccountController.php',
         'App\\Http\\Controllers\\Front\\CentralCliente\\DashboardController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/CentralCliente/DashboardController.php',
+        'App\\Http\\Controllers\\Front\\CentralCliente\\FinanceController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/CentralCliente/FinanceController.php',
+        'App\\Http\\Controllers\\Front\\CentralCliente\\FinancesContractController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/CentralCliente/FinancesContractController.php',
         'App\\Http\\Controllers\\Front\\CentralCliente\\TicketsController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/CentralCliente/TicketsController.php',
         'App\\Http\\Controllers\\Front\\ContactController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/ContactController.php',
         'App\\Http\\Controllers\\Front\\DocumentController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/DocumentController.php',
@@ -404,6 +420,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Http\\Controllers\\Front\\PlanController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/PlanController.php',
         'App\\Http\\Controllers\\Front\\ProductController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/ProductController.php',
         'App\\Http\\Controllers\\Front\\SupportController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/SupportController.php',
+        'App\\Http\\Controllers\\Front\\SupportWppController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/SupportWppController.php',
         'App\\Http\\Controllers\\Front\\WelcomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/Front/WelcomeController.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
@@ -415,6 +432,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Http\\Requests\\Black\\FaqRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/FaqRequest.php',
         'App\\Http\\Requests\\Black\\FiberRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/FiberRequest.php',
         'App\\Http\\Requests\\Black\\FileRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/FileRequest.php',
+        'App\\Http\\Requests\\Black\\PlanCityRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/PlanCityRequest.php',
         'App\\Http\\Requests\\Black\\PlanRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/PlanRequest.php',
         'App\\Http\\Requests\\Black\\SupportRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Black/SupportRequest.php',
         'App\\Http\\Requests\\Front\\AboutRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/AboutRequest.php',
@@ -430,6 +448,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Http\\Requests\\Front\\PlanRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/PlanRequest.php',
         'App\\Http\\Requests\\Front\\ProductRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/ProductRequest.php',
         'App\\Http\\Requests\\Front\\SupportRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/SupportRequest.php',
+        'App\\Http\\Requests\\Front\\SupportWppRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/SupportWppRequest.php',
         'App\\Http\\Requests\\Front\\WelcomeRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Front/WelcomeRequest.php',
         'App\\Mail\\Front\\Contact' => __DIR__ . '/../..' . '/app/Mail/Front/Contact.php',
         'App\\Mail\\Front\\Ombudsman' => __DIR__ . '/../..' . '/app/Mail/Front/Ombudsman.php',
@@ -440,6 +459,10 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'Buzz\\LaravelGoogleCaptcha\\Captcha' => __DIR__ . '/..' . '/buzz/laravel-google-captcha/src/Captcha.php',
+        'Buzz\\LaravelGoogleCaptcha\\CaptchaFacade' => __DIR__ . '/..' . '/buzz/laravel-google-captcha/src/CaptchaFacade.php',
+        'Buzz\\LaravelGoogleCaptcha\\CaptchaServiceProvider' => __DIR__ . '/..' . '/buzz/laravel-google-captcha/src/CaptchaServiceProvider.php',
+        'Buzz\\LaravelGoogleCaptcha\\Option' => __DIR__ . '/..' . '/buzz/laravel-google-captcha/src/Option.php',
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
@@ -2791,6 +2814,15 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'Ramsey\\Uuid\\UuidFactory' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactory.php',
         'Ramsey\\Uuid\\UuidFactoryInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidFactoryInterface.php',
         'Ramsey\\Uuid\\UuidInterface' => __DIR__ . '/..' . '/ramsey/uuid/src/UuidInterface.php',
+        'ReCaptcha\\ReCaptcha' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/ReCaptcha.php',
+        'ReCaptcha\\RequestMethod' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod.php',
+        'ReCaptcha\\RequestMethod\\Curl' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod/Curl.php',
+        'ReCaptcha\\RequestMethod\\CurlPost' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod/CurlPost.php',
+        'ReCaptcha\\RequestMethod\\Post' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod/Post.php',
+        'ReCaptcha\\RequestMethod\\Socket' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod/Socket.php',
+        'ReCaptcha\\RequestMethod\\SocketPost' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestMethod/SocketPost.php',
+        'ReCaptcha\\RequestParameters' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/RequestParameters.php',
+        'ReCaptcha\\Response' => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha/Response.php',
         'SebastianBergmann\\CodeCoverage\\CodeCoverage' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/CodeCoverage.php',
         'SebastianBergmann\\CodeCoverage\\CoveredCodeNotExecutedException' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Exception/CoveredCodeNotExecutedException.php',
         'SebastianBergmann\\CodeCoverage\\Driver\\Driver' => __DIR__ . '/..' . '/phpunit/php-code-coverage/src/Driver/Driver.php',

@@ -9,5 +9,5 @@ class Fiber extends Model
     //
     protected $table = 'fibers';
 
-    protected $fillable = ['id'];
+    protected $fillable = ['id', 'installed'];
 }

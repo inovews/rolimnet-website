@@ -51,10 +51,10 @@
 								<th>{{ $fiber->phone}}</th>
 								<th>{{ $fiber->email}}</th>
 								<th>{{ $fiber->created_at}}</th>
-								<th>@if ($fiber->status == 'active')
-									<span class="label label-success bg-success">ativo</span>
+								<th>@if ($fiber->installed == '1')
+									<span class="label label-success bg-success">Instalado</span>
 									@else
-									<span class="label label-danger bg-danger">inativo</span>
+									<span class="label label-danger bg-danger">Não Instalado</span>
 									@endif
 								</th>
 

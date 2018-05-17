@@ -1127,6 +1127,7 @@ h4 {
   padding: 0;
 }
 
+
 .suporte .panel-default > .panel-heading + .panel-collapse .panel-body {
   border: none;
   padding: 0 0 0 32px;
@@ -1158,9 +1159,7 @@ h4 {
   font-family: FontAwesome;
   content: "\f055";
 }
-.suporte .panel-default .panel-title:hover .collapsed:before {
-  background-color: #e54a1a;
-}
+
 .suporte .panel-default .accordion-toggle,
 .suporte .suporte .panel-default .accordion-toggle:focus,
 .suporte .panel-default .accordion-toggle:hover,
