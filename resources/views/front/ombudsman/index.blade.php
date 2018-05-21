@@ -66,7 +66,7 @@
 									</div>
 								</div>
 								<div class="col-md-12">
-									{!! Captcha::display() !!}
+									{!! Captcha::display($attributes) !!}
 								</div>
 								<div class="col-md-12">
 									<input type="submit" class="btn btn-block btn-success raised" value="Enviar Mensagem">
