@@ -25,7 +25,7 @@ class SupportController extends Controller
         //
         $attributes = [
             'data-theme' => 'white',
-            'data-type' => 'audio',
+            //'data-type' => 'audio',
         ];
 
         return view('front.support.index', compact('attributes'));

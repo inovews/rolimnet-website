@@ -24,7 +24,7 @@ class ContactController extends Controller
         //
         $attributes = [
             'data-theme' => 'white',
-            'data-type' => 'audio',
+            //'data-type' => 'audio',
         ];
         
         return view('front.contact.index', compact('attributes'));
