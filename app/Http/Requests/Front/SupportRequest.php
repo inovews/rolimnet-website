@@ -29,6 +29,7 @@ class SupportRequest extends FormRequest
             'name'      => 'required',
             'email'     => 'email|required',
             'phone'     => 'required',
+            'g-recaptcha-response' => 'required|captcha',
             'message'   => 'required'
         ];
     }

@@ -30,7 +30,8 @@ class FiberRequest extends FormRequest
             'number' => 'required',
             'neighborhood' => 'required',
             'phone' => 'required',
-            'email' => 'email:required',
+            'g-recaptcha-response' => 'required|captcha',
+            'email' => 'email:required'
         ];
     }
 
