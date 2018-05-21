@@ -100,6 +100,7 @@ class SupportController extends Controller
                 'phone' => $request->get('phone'),
                 'subject_matter' => $request->get('subject'),
                 'msg' => $request->get('message'),
+                'g-recaptcha-response' => 'required|captcha',
                 //'file' => $filePath,
             ), function($message) 
             {

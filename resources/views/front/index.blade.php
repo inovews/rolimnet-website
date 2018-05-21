@@ -464,6 +464,9 @@
                     <div class="form-group">
                         <textarea name="message" id="" cols="30" rows="5" class="form-control input-lg" placeholder="Mensagem" required></textarea>
                     </div>
+                    <div class="form-group">
+                        {!! Captcha::display() !!}
+                    </div>
                     <div class="text-center">
                         <button type="submit" class="btn btn-block btn-success raised">Enviar Mensagem</button>
                     </div>

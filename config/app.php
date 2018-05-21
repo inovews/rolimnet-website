@@ -245,6 +245,8 @@ return [
 
         'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
+        'Captcha' => Buzz\LaravelGoogleCaptcha\CaptchaFacade::class,
+
     ],
 
 ];
