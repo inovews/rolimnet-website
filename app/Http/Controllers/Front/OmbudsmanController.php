@@ -22,7 +22,12 @@ class OmbudsmanController extends Controller
     public function index()
     {
         //
-        return view('front.ombudsman.index');
+        $attributes = [
+            'data-theme' => 'white',
+            'data-type' => 'audio',
+        ];
+        
+        return view('front.ombudsman.index', compact('attributes'));
     }
 
     /**

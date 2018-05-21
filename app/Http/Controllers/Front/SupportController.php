@@ -23,7 +23,12 @@ class SupportController extends Controller
     public function index()
     {
         //
-        return view('front.support.index');
+        $attributes = [
+            'data-theme' => 'white',
+            'data-type' => 'audio',
+        ];
+
+        return view('front.support.index', compact('attributes'));
     }
 
     /**
@@ -95,18 +100,18 @@ class SupportController extends Controller
     public function send(SupportRequest $request)
     {
         \Mail::send('mails.support', array(
-                'name' => $request->get('name'),
-                'email' => $request->get('email'),
-                'phone' => $request->get('phone'),
-                'subject_matter' => $request->get('subject'),
-                'msg' => $request->get('message'),
+            'name' => $request->get('name'),
+            'email' => $request->get('email'),
+            'phone' => $request->get('phone'),
+            'subject_matter' => $request->get('subject'),
+            'msg' => $request->get('message'),
                 //'file' => $filePath,
-            ), function($message) 
-            {
-                $message->from('no-reply@rolimnet.com.br', 'No reply');
-                $message->to('suporte@rolimnet.com.br', 'Rolim Net Suporte')->subject('Você recebeu uma nova mensagem, SITE: Suporte | Rolim Net!');
-            }
-        );
+        ), function($message) 
+        {
+            $message->from('no-reply@rolimnet.com.br', 'No reply');
+            $message->to('suporte@rolimnet.com.br', 'Rolim Net Suporte')->subject('Você recebeu uma nova mensagem, SITE: Suporte | Rolim Net!');
+        }
+    );
         return \Redirect::route('suporte.index')->with('message', 'Sua mensagem foi enviada com sucesso!');
     }
 
@@ -118,7 +123,7 @@ class SupportController extends Controller
             return storage_path() . '/uploads/' . $fileName;
         } else {
             return \Redirect::route('suporte.index')
-                ->with('message', 'O arquivo enviado não é válido!');
+            ->with('message', 'O arquivo enviado não é válido!');
         }        
     }
 

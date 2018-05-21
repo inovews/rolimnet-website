@@ -22,7 +22,12 @@ class ContactController extends Controller
     public function index()
     {
         //
-        return view('front.contact.index');
+        $attributes = [
+            'data-theme' => 'white',
+            'data-type' => 'audio',
+        ];
+        
+        return view('front.contact.index', compact('attributes'));
     }
 
     /**
