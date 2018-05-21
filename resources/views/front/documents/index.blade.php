@@ -5,7 +5,7 @@
 <div class="banner-index" data-parallax="scroll" data-image-src="{{ url('assets/img/1920x1080/04.jpg') }}">
 	<div class="container content-sm">
 		<h1>Documentos Públicos</h1>
-		<p class="margin-t-20">Texto provisório.</p>
+		<p class="margin-t-20">Rolim Net Tecnologia LTDA.</p>
 	</div>
 </div>
 
@@ -25,11 +25,13 @@
 				<div class="col-sm-9">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title text-center">CONTRATO SCM CARTORIO</h3>
+							<h3 class="panel-title text-center">CONTRATO SCM CARTÓRIO</h3>
 						</div>
 						<div class="panel-body">
 							<h2>CONTRATO</h2>
-							<p>Texto falando do contrato.</p>
+							<p>CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE COMUNICAÇÃO E MULTIMÍDIA CPSCM-18/02/2016</p>
+							<p>Contrato SCM – ROLIM NET TECNOLOGIA LTDA - ME – Página 1 de 12</p>
+							<p>Pelo presente instrumento, de um lado a doravante denominada PRESTADORA, libera para downloado o seguinte contrato a seguir:</p>
 							<h4><a href="arquivos/doc-publicos/contrato_scm_cartorio.pdf" class="label label-primary">Download</a></h4>
 						</div>
 					</div>

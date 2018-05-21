@@ -147,7 +147,7 @@
                                         <div class="pricing-list-v4 radius-10">
                                             <div class="pricing-list-v4-header">
                                                 <h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
-                                                <span class="pricing-list-v4-subtitle">{{ $plan->zone }}</span>
+                                                <span class="pricing-list-v4-subtitle">@if ($plan->zone == 'urban') Zona Urbana @else Zona Rural @endif</span>
                                             </div>
                                             <div class="pricing-list-v4-content">
                                                 <div class="margin-b-40">
