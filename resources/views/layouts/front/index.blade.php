@@ -130,7 +130,5 @@
             });
         });*/
     </script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <div class="g-recaptcha" data-sitekey="6Lfxa-cSAAAAAJXBvGtYtRXuup_xJXuyw_dMYgGs"></div>
 </body>
 </html>
