@@ -31,7 +31,7 @@
 							<h2>CONTRATO</h2>
 							<p>CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE COMUNICAÇÃO E MULTIMÍDIA CPSCM-18/02/2016</p>
 							<p>Contrato SCM – ROLIM NET TECNOLOGIA LTDA - ME – Página 1 de 12</p>
-							<p>Pelo presente instrumento, de um lado a doravante denominada PRESTADORA, libera para downloado o seguinte contrato a seguir:</p>
+							<p>Pelo presente instrumento, de um lado a doravante denominada PRESTADORA, libera para download o seguinte contrato a seguir:</p>
 							<h4><a href="arquivos/doc-publicos/contrato_scm_cartorio.pdf" class="label label-primary">Download</a></h4>
 						</div>
 					</div>
