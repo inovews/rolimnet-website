@@ -139,7 +139,7 @@
                             <div class="col-sm-12">
                                 <div class="row" >
 
-                                    
+
                                   <div  name="planos" id="planos">
                                     @foreach( $plans as $plan)
                                     <div class="col-md-4 md-margin-b-30">
@@ -356,7 +356,7 @@
                             <h3 class="margin-b-0">Rolim Net</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na zona rural próxmo ao distrito de Estrela Rondônia.</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
                             <p>geral@rolimnet.com.br</p>
                         </div>
                         <div class="cas hide">
@@ -368,7 +368,8 @@
                             <h3 class="margin-b-0">Rolim Net</h3>
                             <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na zona rural próxmo ao distrito de Estrela Rondônia.</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
+                            <p>geral@rolimnet.com.br</p>
                         </div>
                         <div class="nbo hide">
                             <h3 class="margin-b-0">Carlos</h3>
@@ -380,7 +381,7 @@
                             <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
                             <p>adamjhosua@rolimnet.com.br</p>
                             <hr>
-                            <h3 class="margin-b-0">João</h3>
+                            <h3 class="margin-b-0">João <span>Distrito Migrantinópolis</span></h3>
                             <p class="margin-b-0">Telefones: 69 9 8451-6449</p>
                             <p>joaobatista@rolimnet.com.br</p>
                         </div>
@@ -391,8 +392,9 @@
                             <p>geral@rolimnet.com.br</p>
                         </div>
                         <div class="stl hide">
-                            <h3 class="margin-b-0">Marcos André</h3>
+                            <h3 class="margin-b-0">Norte Tel - Santa Luzia d' Oeste</h3>
                             <p class="margin-b-0">Telefones: 69 9 8494-0150</p>
+                            <p class="margin-b-0">Endereço: Rua Dom Pedro I, nº. 2541, Centro "<i>Rua da Feira</i>"</p>
                             <p>marcosandre@rolimnet.com.br</p>
                         </div>
                         <div class="ser hide">
