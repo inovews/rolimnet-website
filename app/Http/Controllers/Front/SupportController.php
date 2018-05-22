@@ -132,6 +132,6 @@ class SupportController extends Controller
         //
         $supportwpp = SupportWppRequest::create($supportwpp->getValidRequest());
 
-        //return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
+        return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
     }
 }

@@ -25,8 +25,17 @@ class SupportWppRequest extends FormRequest
     {
         return [
             //
-            'name'      => 'required',
-            'phone'     => 'required',
+            'namewpp'      => 'required',
+            'phonewpp'     => 'required',
+        ];
+    }
+
+    public function getValidRequest()
+    {
+        return [
+            //
+            'namewpp' => $this->input('namewpp'),
+            'phonewpp' => $this->input('phonewpp'),
         ];
     }
 }

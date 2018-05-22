@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Front;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
+use App\Http\Requests\Front\SupportWppRequest;
+
 class SupportWppController extends Controller
 {
     /**
@@ -33,9 +35,12 @@ class SupportWppController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SupportWppRequest $supportwpp)
     {
         //
+        $supportwpp = SupportWppRequest::create($supportwpp->getValidRequest());
+
+        return redirect()->route('suporte.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**

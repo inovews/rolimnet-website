@@ -18,7 +18,7 @@ class PlanController extends Controller
     public function index()
     {
         //
-         $plan_city = PlanCity::all();
+        $plan_city = PlanCity::all();
         return view('front.plans.index', compact('plan_city'));
     }
 

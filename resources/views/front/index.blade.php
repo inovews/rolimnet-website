@@ -216,20 +216,23 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
+                <div class="text-center">
+                    <img src="{{ url('assets/img/wpp.png') }}">
+                </div>
                 {!! Form::open(array('route' => 'suporte.whatsapp', 'class' => 'form-group get-in-grid-right text-center', 'files' => true)) !!}
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="input-with-icon">
-                            <input id="" name="nome" type="text" placeholder="Seu Nome" />
+                            <input name="namewpp" type="text" placeholder="Seu Nome" disabled />
                         </div>
                     </div>
                     <div class="col-sm-5">
                         <div class="input-with-icon">
-                            <input id="" name="telefone" type="text" placeholder="Seu Telefone" />
+                            <input name="phonewpp" type="text" placeholder="Seu Telefone" disabled />
                         </div>
                     </div>
                     <div class="col-sm-2">
-                        <input type="submit" class="btn btn-success raised" value="Enviar" >
+                        <input type="submit" class="btn btn-success raised" value="Enviar" disabled >
                     </div>
                 </div>
             </form>

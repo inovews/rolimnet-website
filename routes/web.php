@@ -56,7 +56,7 @@ Route::group(['prefix' => 'suporte', 'as' => 'suporte.'], function() // SUPORTE
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\SupportController@index']);
 	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\SupportController@send']);
-	Route::post('whatsapp', ['as' => 'whatsapp', 'uses' => 'Front\SupportController@whatsapp']);
+	Route::post('whatsapp', ['as' => 'whatsapp', 'uses' => 'Front\SupportWppController@store']);
 });
 Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 {
