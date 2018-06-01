@@ -37,6 +37,7 @@ class PlanRequest extends FormRequest
             'price' => $this->input('price'),
             'slug' => $this->input('slug'),
             'zone' => $this->input('zone'),
+            'type' => $this->input('type'),
             'featured' => $this->input('featured'),
             'plan_city_id' => $this->input('plan_city_id'),
         ];

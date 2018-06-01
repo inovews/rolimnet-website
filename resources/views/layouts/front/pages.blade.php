@@ -69,17 +69,41 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ url('assets/js/jquery.min.js') }}" type="text/javascript"></script>
+    <script src="{{ url('//code.jquery.com/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
     <script src="{{ url('assets/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ url('assets/js/jquery.parallax.min.js') }}" type="text/javascript"></script>
 
     <script src="{{ url('assets/js/index.js') }}" type="text/javascript"></script>
 
     <script type='text/javascript'>//<![CDATA[
-        $('#plan_cities').on('change',function () {
-            var url = '/planos/cidade/';
-            document.location.href = url + this.value;
-        });
+    $('#plan_cities').on('change',function () {
+        var url = '/planos/cidade/';
+        document.location.href = url + this.value;
+    });
+
+
+    $(document).ready(function(){
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            if(value == "all")
+            {
+            $('.filter').show('1000');
+        }
+        else
+        {
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
     </script>
+
 </body>
 </html>

@@ -31,14 +31,25 @@
 										</div>
 									</div>
 								</div>
-							</div>							
+							</div>
+							<div class="col-sm-12">
+								<div align="center">
+									<button class="btn btn-default filter-button" data-filter="all">Todos</button>
+									<button class="btn btn-default filter-button" data-filter="urban">Zona Urbana</button>
+									<button class="btn btn-default filter-button" data-filter="countryside">Zona Rural</button>
+								</div>
+								<div align="center">
+									<button class="btn btn-success btn-xs filter-button" data-filter="fiber">Fibra Óptica</button>
+									<button class="btn btn-success btn-xs filter-button" data-filter="wireless">Wireless</button>
+								</div>
+							</div>
 							<div class="col-sm-12">
 								<div class="row">
 									@if($plans->all())
 									@foreach($plans as $plan)
 									<div id='planos' class="col-md-4 md-margin-b-30">
 										<!-- Pricing List v4 -->
-										<div class="pricing-list-v4 radius-10 f-{{ $plan->zone }}">
+										<div class="pricing-list-v4 radius-10 filter {{ $plan->zone }} {{ $plan->type }}">
 											<div class="pricing-list-v4-header">
 												<h4 class="pricing-list-v4-title">{{ $plan->name }}</h4>
 												<span class="pricing-list-v4-subtitle">@if ($plan->zone == 'urban') Zona Urbana @else Zona Rural @endif</span>
@@ -86,5 +97,6 @@
 		</div>
 	</div>
 </div>
+
 
 @endsection			
