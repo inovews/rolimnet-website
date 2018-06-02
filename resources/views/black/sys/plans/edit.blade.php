@@ -41,6 +41,12 @@
 						</div>
 						<div class="row">
 							<div class="form-group col-xs-12 col-sm-6">
+								<small>Tipo</small>
+								{!! Form::select('type', ['' => '-', 'fiber' => 'Fibra Óptica', 'wireless' => 'Wireless'], $plan->type, ['class' => 'form-control']) !!}
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-12 col-sm-6">
 								<small>Destaque</small>
 								{!! Form::select('featured', ['' => '-', '1' => 'Sim', '0' => 'Não'], $plan->featured, ['class' => 'form-control']) !!}
 							</div>

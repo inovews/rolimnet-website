@@ -42,7 +42,7 @@
 						<div class="row">
 							<div class="form-group col-xs-12 col-sm-6">
 								<small>Tipo</small>
-								{!! Form::select('zone', ['' => '-', 'fiber' => 'Fibra Óptica', 'wireless' => 'Wireless'], null, ['class' => 'form-control']) !!}
+								{!! Form::select('type', ['' => '-', 'fiber' => 'Fibra Óptica', 'wireless' => 'Wireless'], null, ['class' => 'form-control']) !!}
 							</div>
 						</div>
 						<div class="row">
