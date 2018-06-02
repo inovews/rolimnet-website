@@ -142,6 +142,7 @@
 
                                   <div  name="planos" id="planos">
                                     @foreach( $plans as $plan)
+                                    @if (isset($plan->featured))
                                     <div class="col-md-4 md-margin-b-30">
                                         <!-- Pricing List v4 -->
                                         <div class="pricing-list-v4 radius-10">
@@ -163,6 +164,7 @@
                                         </div>
                                         <!-- End Pricing List v4 -->
                                     </div>
+                                    @endif
                                     @endforeach
                                 </div>
                             </div>
