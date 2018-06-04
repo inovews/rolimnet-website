@@ -116,7 +116,7 @@
                 <div class="row">
                     <div class="internet">
                         <div class="col-sm-4">
-                            <h2>Escolha o plano ideal para o seu você.</h2>
+                            <h2>Escolha o plano ideal para você.</h2>
                             <p>Acesso à Internet 24 horas por dia.</p>
                             <p>Navegue e baixe todos os arquivos dos quais você necessitar: sem franquia e sem tarifas adicionais por tráfego.</p>
                             <ul class="nota">
