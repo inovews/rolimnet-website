@@ -218,11 +218,30 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <p>Deixe seu numero de telefone/<i class="fa fa-whatsapp" aria-hidden="true"></i> que entraremos em contato o mais rapido possível.</p>
-                <div class="text-center">
-                    <img src="{{ url('assets/img/wpp.png') }}">
-                </div>
+
                 {!! Form::open(array('route' => 'suporte.whatsapp', 'class' => 'form-group get-in-grid-right text-center', 'files' => true)) !!}
                 <div class="row">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="col-sm-2 col-sm-pull-1">
+                                <img src="{{ url('assets/img/wpp-cell.png') }}">
+                            </div>
+                            <div class="col-sm-8 col-sm-pull-1 text-left">
+                                <h2>Agora ficou mais prático conversa com a gente.</h2>
+                            </div>
+                            <div class="col-sm-10 col-sm-pull-1 text-justify">Agora você pode tirar suas dúvidas com a nossa equipe de atendimento de uma maneira mais rápida e prática. 😁</div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="col-sm-6 col-sm-offset-6 text-right">
+                                <h3>Atendimento ao Cliente.</h3>
+                            </div>
+                            <div class="col-sm-12">
+                                    <div class="col-sm-12 text-right">
+                                        <h1 class="content-heading">(69) 3442-2779 <span class="border-black"></span></h1>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-5">
                         <div class="input-with-icon">
                             <input name="namewpp" type="text" placeholder="Seu Nome" disabled />
