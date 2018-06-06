@@ -47,7 +47,7 @@
 					<img class="logo" src="{{ url('assets/img/logo-dark.png') }}" >	
 						<div class="copyright-breather text-center">
 							<p>
-								Todos os direitos reservados &copy; 2008 - 2018 NOC | Rolim Net.
+								Todos os direitos reservados &copy; 2008 - 2018 CGR.ROLIM NET (Centro de Gerência de Redes)
 							<br>
 								<a href="http://www.agenciaevak.com/"> EvaK</a>, feito com <i class="fa fa-heart heart" alt="love"></i>.
 							</p>
