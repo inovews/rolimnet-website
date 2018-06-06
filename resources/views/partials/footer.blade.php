@@ -19,7 +19,7 @@
 								<li><a href="{{ route('produtos.index') }}">Produtos</a></li>
 								<li><a href="#">Loja</a></li>
 								<li><a href="{{ route('empresa.index') }}">Empresa</a></li>
-								<li><a href="{{ route('documentos.index') }}">Documentos Publicos</a></li>
+								<li><a href="{{ route('documentos.index') }}">Documentos Públicos</a></li>
 								<li><a href="#">Blog</a></li>
 							</ul>
 						</div>
@@ -49,7 +49,7 @@
 							<p>
 								Todos os direitos reservados &copy; 2008 - 2018 NOC | Rolim Net.
 							<br>
-								<a href="http://www.rolimsoft.com.br/"> RolimSOFT</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+								<a href="http://www.agenciaevak.com/"> EvaK</a>, feito com <i class="fa fa-heart heart" alt="love"></i>.
 							</p>
 						</div>
 					</div>
