@@ -28,6 +28,8 @@
         window.Laravel = <?php echo json_encode(['csrfToken' => csrf_token(),]); ?>
 
     </script>
+
+    @yield('styles')
 </head>
 <body id="body" data-spy="scroll" data-target=".header">
     <header class="header navbar-fixed-top">
@@ -104,6 +106,8 @@
 
     });
     </script>
+
+    @yield('scripts')
 
 </body>
 </html>

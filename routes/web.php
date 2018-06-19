@@ -69,9 +69,10 @@ Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 	});
 });
 
+Route::get('/costamarques', ['as' => 'welcome.index', 'uses' => 'Front\CostaMarquesController@index']);
+
 // BLACK CENTRAL-DO-CLIENTE
 Auth::routes();
-//Route::get('/home', 'HomeController@index');
 
 // BLACK ADMIN
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
@@ -141,6 +142,5 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 		Route::get('cancel', ['as' => 'cancel', 'uses' => 'Front\CentralCliente\FinanceController@cancel']);
 	});
 });
-Auth::routes();
 
 Route::get('/home', 'HomeController@index');
