@@ -58,6 +58,8 @@
 
     <!--dropzone-->
     <link href="{{ url('slicklab/css/dropzone.css') }}" rel="stylesheet">
+
+    @yield('styles')
 </head>
 
 <body class="sticky-header">
@@ -332,6 +334,7 @@
 <script src="{{ url('slicklab/js/datatables/dataTables.bootstrap.min.js') }}"></script>
 
 @stack('scripts')
+@yield('scripts')
 
 </body>
 </html>
