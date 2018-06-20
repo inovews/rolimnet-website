@@ -69,7 +69,11 @@ Route::group(['prefix' => 'planos', 'as' => 'planos.'], function() // SUPORTE
 	});
 });
 
-Route::get('/costamarques', ['as' => 'welcome.index', 'uses' => 'Front\CostaMarquesController@index']);
+Route::group(['prefix' => 'costamarques', 'as' => 'costamarques.'], function() // FIBRA
+{
+	Route::get('/', ['as' => 'index', 'uses' => 'Front\CostaMarquesController@index']);
+	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\CostaMarquesController@store']);
+});
 
 // BLACK CENTRAL-DO-CLIENTE
 Auth::routes();
@@ -104,6 +108,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 	Route::resource('documents', 'Black\Sys\DocumentController');
 	Route::resource('plans', 'Black\Sys\PlanController');
 	Route::resource('planscities', 'Black\Sys\PlanCityController');
+
+	Route::resource('costamarques', 'Black\Sys\CostaMarquesController');
 
 });
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Front;
+namespace App\Http\Controllers\Black\Sys;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use App\Http\Requests\Front\CostaMarquesRequest;
-use App\Front\CostaMarques;
+use App\Http\Requests\Black\CostaMarquesRequest;
+use App\Black\CostaMarques;
 
 class CostaMarquesController extends Controller
 {
@@ -18,7 +18,8 @@ class CostaMarquesController extends Controller
     public function index()
     {
         //
-        return view('front.costamarques.index');
+        $fiber = CostaMarques::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.costamarques.index')->withFibers($fiber); 
     }
 
     /**
@@ -37,12 +38,9 @@ class CostaMarquesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CostaMarquesRequest $costams)
+    public function store(Request $request)
     {
         //
-        $costams = CostaMarques::create($costams->getValidRequest());
-
-        return redirect()->route('costamarques.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**

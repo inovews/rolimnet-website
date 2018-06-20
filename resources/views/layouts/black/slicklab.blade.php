@@ -102,6 +102,7 @@
                         </ul>
                     </li>
                     <li class="{{ active('admin.fibers.index') }}"><a href="{{route('admin.fibers.index')}}"><i class="fa fa-bolt"></i> <span>Fibra</span></a></li>
+                    <li class="{{ active('admin.costamarques.index') }}"><a href="{{route('admin.costamarques.index')}}"><i class="fa fa-bolt"></i> <span>Fibra Costa Marques</span></a></li>
                     <li class="menu-list {{ active('admin.plans*.*') }}"><a href=""><i class="fa fa-tags"></i> <span>Planos</span></a>
                         <ul class="child-list">
                             <li class="{{ active('admin.plans.create') }}"><a href="{{route('admin.plans.create')}}"> Adicionar</a></li>

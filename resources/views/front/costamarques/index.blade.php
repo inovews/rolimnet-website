@@ -53,6 +53,12 @@
 		<hr>
 		<div class="row text-sm-left flow-offset-2">
 			<div class="col-sm-12 form-box">
+				@if (Session::has('message'))
+				<div class="alert alert-success">
+					{{ Session::get('message') }}
+				</div>
+				@endif
+				{{Form::open(array('route'=>'costamarques.enviar','method'=>'POST'))}}
 				<div class="form-top">
 					<div class="form-top-left">
 						<p>Preencha sem compromisso o formulário abaixo e ajude sua rua ou avenida ser contemplada com essa tecnologia.</p>
@@ -107,20 +113,24 @@
 					<hr>
 					<div class="form-group">
 						<label class="sr-only" for="lat">Latitude </label>
-						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" disabled>
+						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat">
 					</div>
 
 					<div class="form-group">
 						<label class="sr-only" for="lng">Longitude </label>
-						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" disabled>
+						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng">
 					</div>
+					<div class="col-md-12">
+							{!! Captcha::display() !!}
+						</div>
 					<div class="col-md-12">
 						<input type="submit" class="btn btn-block btn-success raised" value="Registrar">
 					</div>
 				</div>
 			</div>
-		</div>
+		</form>
 	</div>
+</div>
 </section>
 
 @endsection
