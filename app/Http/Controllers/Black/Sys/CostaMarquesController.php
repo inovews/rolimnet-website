@@ -87,7 +87,7 @@ class CostaMarquesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(CostaMarques $costamarque, $id)
+    public function update(CostaMarquesRequest $costamarque, $id)
     {
         //
         $costamarque = CostaMarques::find($id)->fill($costamarque->getValidRequest());
