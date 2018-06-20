@@ -3,9 +3,8 @@
 @section('styles')
 <style type="text/css">
 	#map-canvas{
-		width: 612px;
 		height: 600px;
-		margin: 0 0 -15px -5px ;
+	width: auto;
 	}
 </style>
 @endsection
