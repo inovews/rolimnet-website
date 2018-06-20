@@ -40,6 +40,7 @@ class CostaMarquesRequest extends FormRequest
             'email' => $this->input('email'), 
             'lat' => $this->input('lat'), 
             'lng' => $this->input('lng'), 
+            'installed' => $this->input('installed'),
             'whatsapp' => $this->input('whatsapp'), 
         ];
     }
