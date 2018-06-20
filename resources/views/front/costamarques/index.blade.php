@@ -120,10 +120,10 @@
 						<label class="sr-only" for="lng">Longitude </label>
 						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng">
 					</div>
-					<div class="col-md-12">
+					<div class="form-group">
 							{!! Captcha::display() !!}
 						</div>
-					<div class="col-md-12">
+					<div class="form-group">
 						<input type="submit" class="btn btn-block btn-success raised" value="Registrar">
 					</div>
 				</div>
