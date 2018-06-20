@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class CostaMarques extends Model
 {
     //
-    protected $table = 'costa_maques';
+    protected $table = 'costa_marques';
 
-    protected $fillable = ['name', 'address', 'number', 'neighborhood', 'phone', 'email'];
+    protected $fillable = ['name', 'address', 'number', 'neighborhood', 'phone', 'email', 'whatsapp', 'lat', 'lng'];
 }
