@@ -104,7 +104,7 @@
 			lat: lat,
 			lng: lng
 		},
-		zoom: 20,
+		zoom: 17,
 		mapTypeId: google.maps.MapTypeId.HYBRID
 	});
 	var marker = new google.maps.Marker({
