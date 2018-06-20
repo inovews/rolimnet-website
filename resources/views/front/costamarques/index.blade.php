@@ -39,7 +39,7 @@
 				<div class="row">
 					<div class="col-sm-12 text-sm-left">
 						<p class="text-justify">Escolhemos vocês, cidade histórica Brasileira e Rondoniense para receber a melhor e mais moderna rede de internet por fibra óptica da região.</p>
-						<p class="text-justify">A Rolim Net — com sede em Rolim de Moura, iniciou o trabalho de cabeamento de fibra pela cidade. Contaremos com a mais moderna rede em Fibra Óptica com cobertura de 100% da cidade — estaremos ligando a cidade de Rolim de Moura ao município de Costa Marques levando o que a melhor qualidade de serviço, atendimento, VELOCIDADE no padrão Rolim Net de serviço!</p>
+						<p class="text-justify">A Rolim Net — com sede em Rolim de Moura, iniciou o trabalho de cabeamento de fibra pela cidade. Contaremos com a mais moderna rede em Fibra Óptica com cobertura de 100% da cidade — estaremos ligando a cidade de Rolim de Moura ao município de Costa Marques levando a melhor qualidade de serviço, atendimento, VELOCIDADE no padrão Rolim Net de serviço!</p>
 					</div>
 				</div>
 			</div>
