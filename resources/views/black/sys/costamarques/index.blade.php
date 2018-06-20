@@ -1,4 +1,4 @@
-@extends('layouts.black.slicklab', ['title' => 'Fibra Óptica'])
+@extends('layouts.black.slicklab', ['title' => 'Costa Marques'])
 
 @section('content')
 <!-- page head start-->
@@ -16,14 +16,14 @@
 		<div class="col-lg-12">
 			<section class="panel">
 				<header class="panel-heading head-border">
-					<a class="btn btn-info btn-sm" disabled href="{{route('admin.fibers.create')}}">Adicionar novo</a>
+					<a class="btn btn-info btn-sm" disabled href="{{route('admin.costamarques.create')}}">Adicionar novo</a>
 					<a class="btn btn-gray btn-sm" href="#">Todos</a>
 					<a class="btn btn-gray btn-sm" href="#?status=aprovados">Aprovados</a>
 					<a class="btn btn-gray btn-sm" href="#?status=nao-aprovados">Não aprovados</a>
 					<a class="btn btn-gray btn-sm" href="#?status=aguardando-aprovacao">Aguardando</a>
 				</header>
 				<div class="table-responsive">
-				@if($fibers)
+				@if($costamarques)
 					@if (Session::has('message'))
 					<div class="alert alert-success">
 						{{ Session::get('message') }}
@@ -43,15 +43,15 @@
 							</tr>
 						</thead>
 						<tbody>
-						@foreach($fibers as $fiber)
+						@foreach($costamarques as $costamarque)
 							<tr>
-								<th>{{ $fiber->id }}</th>
-								<th><a disabled href="{{ route('admin.fibers.edit' , $fiber->id) }}">{{ $fiber->name }}</a></th>
-								<th>{{ $fiber->address }}, {{ $fiber->number }}, {{ $fiber->neighborhood }}</th>
-								<th>{{ $fiber->phone}}</th>
-								<th>{{ $fiber->email}}</th>
-								<th>{{ $fiber->created_at}}</th>
-								<th>@if ($fiber->installed == '1')
+								<th>{{ $costamarque->id }}</th>
+								<th><a disabled href="{{ route('admin.costamarques.edit' , $costamarque->id) }}">{{ $costamarque->name }}</a></th>
+								<th>{{ $costamarque->address }}, {{ $costamarque->number }}, {{ $costamarque->neighborhood }}</th>
+								<th>{{ $costamarque->phone}}</th>
+								<th>{{ $costamarque->email}}</th>
+								<th>{{ $costamarque->created_at}}</th>
+								<th>@if ($costamarque->installed == '1')
 									<span class="label label-success bg-success">Instalado</span>
 									@else
 									<span class="label label-danger bg-danger">Não Instalado</span>
@@ -60,7 +60,7 @@
 
 								<th colspan="3">
 									{!! Form::open([
-									'route' => array('admin.fibers.destroy', $fiber->id), 'method' => 'DELETE']) !!}
+									'route' => array('admin.costamarques.destroy', $costamarque->id), 'method' => 'DELETE']) !!}
 									</a>
 									<button disabled type="submit" class="btn btn-xs btn-danger">
 										<span class="fa fa-remove" aria-hidden="true"></span> Deletar

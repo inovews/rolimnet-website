@@ -32,14 +32,15 @@ class CostaMarquesRequest extends FormRequest
     {
         return [
             //
-            //'file' => $this->input('file'), 
             'name' => $this->input('name'),
             'address' => $this->input('address'),
             'number' => $this->input('number'),
             'neighborhood' => $this->input('neighborhood'),
             'phone' => $this->input('phone'),
-            'installed' => $this->input('installed'),
-            'email' => $this->input('email'),
+            'email' => $this->input('email'), 
+            'lat' => $this->input('lat'), 
+            'lng' => $this->input('lng'), 
+            'whatsapp' => $this->input('whatsapp'), 
         ];
     }
 }

@@ -15,11 +15,20 @@ class CostaMarquesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth:admin'); 
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
         //
-        $fiber = CostaMarques::orderBy('created_at','desc')->paginate(10);
-        return view('black.sys.costamarques.index')->withFibers($fiber); 
+        $costamarques = CostaMarques::orderBy('created_at','desc')->paginate(10);
+        return view('black.sys.costamarques.index')->withCostamarques($costamarques); 
     }
 
     /**
@@ -30,6 +39,7 @@ class CostaMarquesController extends Controller
     public function create()
     {
         //
+        return view('black.sys.costamarques.create');
     }
 
     /**
@@ -38,9 +48,12 @@ class CostaMarquesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FiberRequest $costamarque)
     {
         //
+        $costamarque = CostaMarques::create($costamarque->getValidRequest());
+
+        return redirect()->route('admin.costamarques.index')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
@@ -63,6 +76,8 @@ class CostaMarquesController extends Controller
     public function edit($id)
     {
         //
+        $costamarque = CostaMarques::findOrFail($id);
+        return view('black.sys.costamarques.edit', compact('costamarque'));
     }
 
     /**
@@ -72,9 +87,13 @@ class CostaMarquesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(FiberRequest $costamarque, $id)
     {
         //
+        $costamarque = CostaMarques::find($id)->fill($costamarque->getValidRequest());
+        $costamarque->save();
+
+        return redirect()->route('admin.costamarques.index')->with('message', 'Item editado com sucesso.');
     }
 
     /**
@@ -86,5 +105,10 @@ class CostaMarquesController extends Controller
     public function destroy($id)
     {
         //
+        $costamarque = CostaMarques::findOrFail($id);
+        //$post->tags()->detach(); // Depois eu vejo isso.
+        $costamarque->delete();
+
+        return redirect()->route('admin.costamarques.index')->with('message', 'Item removido com sucesso.');
     }
 }
