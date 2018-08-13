@@ -73,6 +73,7 @@ Route::group(['prefix' => 'costamarques', 'as' => 'costamarques.'], function() /
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\CostaMarquesController@index']);
 	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\CostaMarquesController@store']);
+	Route::get('obrigado', ['as' => 'obrigado', 'uses' => 'Front\CostaMarquesController@obrigado']);
 });
 
 // BLACK CENTRAL-DO-CLIENTE

@@ -21,6 +21,12 @@ class CostaMarquesController extends Controller
         return view('front.costamarques.index');
     }
 
+    public function obrigado()
+    {
+        //
+        return view('front.costamarques.obrigado');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -42,7 +48,7 @@ class CostaMarquesController extends Controller
         //
         $costams = CostaMarques::create($costams->getValidRequest());
 
-        return redirect()->route('costamarques.index')->with('message', 'Item adicionado com sucesso.');
+        return redirect()->route('costamarques.obrigado')->with('message', 'Item adicionado com sucesso.');
     }
 
     /**
