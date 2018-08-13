@@ -67,13 +67,13 @@
 				<div class="form-bottom">
 					<div class="form-group">
 						<label class="sr-only" for="name">Nome</label>
-						<input type="text" name="name" placeholder="Nome" class="form-control" id="name">
+						<input type="text" name="name" placeholder="Nome" class="form-control" id="name" required>
 					</div>
 					<div class="form-group">
 						<div class="row">
 							<div class="col-md-9">
 								<label class="sr-only" for="phone">Telefone</label>
-								<input type="number" pattern="^[0-9]" name="phone" placeholder="Telefone" class="form-control" id="phone">
+								<input type="number" pattern="^[0-9]" name="phone" placeholder="Telefone" class="form-control" id="phone" required>
 							</div>
 							<div class="col-md-3 text-right">
 								<label>WhatsApp</label>
@@ -83,7 +83,7 @@
 					</div>
 					<div class="form-group">
 						<label class="sr-only" for="email">E-mail</label>
-						<input type="text" name="email" placeholder="E-mail" class="form-control" id="email">
+						<input type="text" name="email" placeholder="E-mail" class="form-control" id="email" required>
 					</div>
 					<div class="panel panel-default">
 						<div class="panel-heading">Endereço:</div>
@@ -92,19 +92,19 @@
 								<div class="col-md-12">
 									<div class="form-group">
 										<label class="sr-only" for="address">Endereço</label>
-										<input type="text" name="address" placeholder="Endereço" class="form-control" id="address">
+										<input type="text" name="address" placeholder="Endereço" class="form-control" id="address" required>
 									</div>
 								</div>
 								<div class="col-md-4">
 									<div class="form-group">
 										<label class="sr-only" for="number">Número</label>
-										<input type="number" pattern="^[0-9]" name="number" placeholder="Número" class="form-control" id="number">
+										<input type="number" pattern="^[0-9]" name="number" placeholder="Número" class="form-control" id="number" required>
 									</div>
 								</div>
 								<div class="col-md-8">
 									<div class="form-group">
 										<label class="sr-only" for="neighborhood">Bairro</label>
-										<input type="text" name="neighborhood" placeholder="Bairro" class="form-control" id="neighborhood">
+										<input type="text" name="neighborhood" placeholder="Bairro" class="form-control" id="neighborhood" required>
 									</div>
 								</div>
 							</div>
@@ -113,12 +113,12 @@
 					<hr>
 					<div class="form-group">
 						<label class="sr-only" for="lat">Latitude </label>
-						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" value="-12.435708175456028">
+						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" value="-12.435708175456028" required>
 					</div>
 
 					<div class="form-group">
 						<label class="sr-only" for="lng">Longitude </label>
-						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" value="-64.22940379431225">
+						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" value="-64.22940379431225" required>
 					</div>
 					<div class="form-group">
 							{!! Captcha::display() !!}
