@@ -135,33 +135,3 @@
 
 @endsection
 
-@section('scripts')
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA8QI_S7N-WnyBaZtxRuolkTcLzjbk0fw&libraries=places" type="text/javascript"></script>
-<script>
-	var map = new google.maps.Map(document.getElementById('map-canvas'),{
-		center:{
-			lat: -12.435708175456028,
-			lng: -64.22940379431225
-		},
-		zoom:15,
-		mapTypeId: google.maps.MapTypeId.HYBRID
-	});
-	var marker = new google.maps.Marker({
-		position: {
-			lat: -12.435708175456028,
-			lng: -64.22940379431225
-		},
-		map: map,
-		draggable: true
-	});
-
-	google.maps.event.addListener(marker,'position_changed',function(){
-		var lat = marker.getPosition().lat();
-		var lng = marker.getPosition().lng();
-		$('#lat').val(lat);
-		$('#lng').val(lng);
-	});
-</script>
-
-@endsection
