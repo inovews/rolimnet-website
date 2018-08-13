@@ -48,7 +48,7 @@ class CostaMarquesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(FiberRequest $costamarque)
+    public function store(CostaMarquesRequest $costamarque)
     {
         //
         $costamarque = CostaMarques::create($costamarque->getValidRequest());

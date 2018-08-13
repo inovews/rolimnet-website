@@ -24,7 +24,7 @@
 			<div class="col-md-12 col-sm-12">
 				<h1>Rolim Net Fibra</h1>
 				<hr>
-				<!--<div class="row">
+				<div class="row">
 					<div class="col-sm-12  googlemaps">
 						<div class="panel panel-default">
 							<div class="panel-body">
@@ -35,7 +35,7 @@
 							<div class="panel-footer">Localize aqui sua residência.</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 				<div class="row">
 					<div class="col-sm-12 text-sm-left">
 						<p class="text-justify">Escolhemos vocês, cidade histórica Brasileira e Rondoniense para receber a melhor e mais moderna rede de internet por fibra óptica da região.</p>
@@ -111,15 +111,15 @@
 						</div>
 					</div>
 					<hr>
-					<!--<div class="form-group">
+					<div class="form-group">
 						<label class="sr-only" for="lat">Latitude </label>
-						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat">
+						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" value="-12.435708175456028">
 					</div>
 
 					<div class="form-group">
 						<label class="sr-only" for="lng">Longitude </label>
-						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng">
-					</div>-->
+						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" value="-64.22940379431225">
+					</div>
 					<div class="form-group">
 							{!! Captcha::display() !!}
 						</div>
@@ -135,3 +135,33 @@
 
 @endsection
 
+@section('scripts')
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA8QI_S7N-WnyBaZtxRuolkTcLzjbk0fw&libraries=places" type="text/javascript"></script>
+<script>
+	var map = new google.maps.Map(document.getElementById('map-canvas'),{
+		center:{
+			lat: -12.435708175456028,
+			lng: -64.22940379431225
+		},
+		zoom:15,
+		mapTypeId: google.maps.MapTypeId.HYBRID
+	});
+	var marker = new google.maps.Marker({
+		position: {
+			lat: -12.435708175456028,
+			lng: -64.22940379431225
+		},
+		map: map,
+		draggable: true
+	});
+
+	google.maps.event.addListener(marker,'position_changed',function(){
+		var lat = marker.getPosition().lat();
+		var lng = marker.getPosition().lng();
+		$('#lat').val(lat);
+		$('#lng').val(lng);
+	});
+</script>
+
+@endsection
