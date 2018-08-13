@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="row  ">
-                <div class="col-sm-6 pull-right">
+                <!--<div class="col-sm-6 pull-right">
                     <img class="img-thumbnail" src="{{ url('arquivos/banners/36877504_1294146260716666_130867786653106176_n.jpg') }}">
-                </div>
+                </div>-->
                 <div class="col-sm-7 pull-right">
                 <!--<div class="logo-rolimnet-fibra pull-right">-->
                     <img class="img-responsive" src="{{ url('assets/img/logo-rolimnet-fibra.png') }}">
