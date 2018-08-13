@@ -27,7 +27,7 @@ class CostaMarquesController extends Controller
     public function index()
     {
         //
-        $costamarques = CostaMarques::orderBy('created_at','desc')->paginate(10);
+        $costamarques = CostaMarques::orderBy('created_at','desc')->paginate(250);
         return view('black.sys.costamarques.index')->withCostamarques($costamarques); 
     }
 

@@ -7,8 +7,14 @@
     <div class="container content-sm">
         <div class="row">
             <div class="col-sm-6">
-                <div class="logo-rolimnet-fibra pull-right">
+                <div class="row  ">
+                <div class="col-sm-6 pull-right">
+                    <img class="img-thumbnail" src="{{ url('arquivos/banners/36877504_1294146260716666_130867786653106176_n.jpg') }}">
+                </div>
+                <div class="col-sm-7 pull-right">
+                <!--<div class="logo-rolimnet-fibra pull-right">-->
                     <img class="img-responsive" src="{{ url('assets/img/logo-rolimnet-fibra.png') }}">
+                </div>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -41,7 +47,6 @@
                 </div>
             </div>
         </div>
-        <!--// end row -->
     </div>
 </div>
 <div id="empresa">
@@ -236,9 +241,9 @@
                                 <h3>Atendimento ao Cliente.</h3>
                             </div>
                             <div class="col-sm-12">
-                                    <div class="col-sm-12 text-right">
-                                        <h1 class="content-heading">(69) 3442-2779 <span class="border-black"></span></h1>
-                                    </div>
+                                <div class="col-sm-12 text-right">
+                                    <h1 class="content-heading">(69) 3442-2779 <span class="border-black"></span></h1>
+                                </div>
                             </div>
                         </div>
                     </div>
