@@ -58,6 +58,15 @@
 					{{ Session::get('message') }}
 				</div>
 				@endif
+				@if (count($errors) > 0)
+				<div class="alert alert-danger">
+					<ul>
+						@foreach($errors->all() as $error)
+						<li>{{ $error }}</li>
+						@endforeach
+					</ul>
+				</div>
+				@endif
 				{{Form::open(array('route'=>'costamarques.enviar','method'=>'POST'))}}
 				<div class="form-top">
 					<div class="form-top-left">

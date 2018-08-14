@@ -25,13 +25,13 @@ class CostaMarquesRequest extends FormRequest
     {
         return [
             //
-            'name' => 'required',
+            /*'name' => 'required',
             'address' => 'required',
             'number' => 'required',
             'neighborhood' => 'required',
             'phone' => 'required',
             'email' => 'required',
-            'email' => 'required'
+            'email' => 'required'*/
         ];
     }
 

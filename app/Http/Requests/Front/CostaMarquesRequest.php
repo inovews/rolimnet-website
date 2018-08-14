@@ -30,9 +30,9 @@ class CostaMarquesRequest extends FormRequest
             'number' => 'required',
             'neighborhood' => 'required',
             'phone' => 'required',
-            'lat' => 'required',
-            'lng' => 'required',
-            'whatsapp' => 'required',
+            //'lat' => 'required',
+            //'lng' => 'required',
+            //'whatsapp' => 'required',
             'g-recaptcha-response' => 'required|captcha',
             'email' => 'email:required'
         ];
