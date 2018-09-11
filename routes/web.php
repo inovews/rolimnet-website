@@ -13,6 +13,7 @@
 
 // FRONT
 Route::get('/', ['as' => 'welcome.index', 'uses' => 'Front\WelcomeController@index']);
+
 Route::group(['prefix' => 'empresa', 'as' => 'empresa.'], function() // EMPRESA
 {
 	Route::get('/', ['as' => 'index', 'uses' => 'Front\AboutController@index']);
@@ -149,5 +150,7 @@ Route::group(['prefix' => 'central-cliente', 'as' => 'centralcliente.'], functio
 		Route::get('cancel', ['as' => 'cancel', 'uses' => 'Front\CentralCliente\FinanceController@cancel']);
 	});
 });
+
+Route::get('/boletos/atualizar-boleto-sicoob-segunda-via', ['as' => 'invoice.sicoob', 'uses' => 'Front\InvoiceController@sicoob']);
 
 Route::get('/home', 'HomeController@index');
