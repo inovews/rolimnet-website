@@ -21,10 +21,10 @@
 				<p class="text-justify">1) Inserir os dados do boleto: “nosso número” e “cooperativa contratante / código beneficíário”. Segue uma imagem para te auxiliar a encontrar essas informações na sua fatura Sicoob.</p>
 				<img src="{{ url('assets/img/como-atualizar-boleto-da-Sicoob.jpg') }}" alt="como atualizar boleto da Sicoob" width="655" height="185"/>
 
-				<p>2) Preencher os números da linha digitável do seu boleto Sicoob, conforme imagem abaixo:</p>
+				<p class="text-justify">2) Preencher os números da linha digitável do seu boleto Sicoob, conforme imagem abaixo:</p>
 				<img src="{{ url('assets/img/linha-digitável-de-boleto-atrasado-Sicoob.jpg') }}" alt="linha digitável de boleto atrasado Sicoob" width="655" height="200"/>
 
-				<p>Reforçamos que, caso o boleto esteja vencido, o novo documento gerado através deste procedimento de atualização já virá com o valor atualizado, incluindo o acréscimo dos juros e/ou multa em função do atraso no pagamento.</p>
+				<p class="text-justify">Reforçamos que, caso o boleto esteja vencido, o novo documento gerado através deste procedimento de atualização já virá com o valor atualizado, incluindo o acréscimo dos juros e/ou multa em função do atraso no pagamento.</p>
 			</div>
 			<div class="col-md-4 col-sm-4">
 				<img src="{{ url('assets/img/dicas-de-segurança-para-2-via-de-boleto-sicoob.png') }}" alt="dicas de segurança para 2 via de boleto sicoob" width="362" height="100%"/>
