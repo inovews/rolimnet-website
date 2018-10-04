@@ -98,7 +98,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <!--<a href="{{ route('centralcliente.index')}}" class="btn btn-lg btn-default raised">Acessar Central</a>-->
-                                <a target="_blank" href="http://mksolutions.rolimnet.com.br:60280/sac" class="btn btn-lg btn-default raised">Central do Cliente </a>
+                                <a target="_blank" href="http://app.rolimnet.com:60280/sac" class="btn btn-lg btn-default raised">Central do Cliente </a>
                             </div>
                             <!--// end row -->
                         </div>

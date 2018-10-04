@@ -140,7 +140,7 @@
 						<div class="text-center">
 							<i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
 							<h3>Financeiro</h3>
-							<p>(69) 9 8494-5271</p>
+							<p>(69) 9 9990-0936</p>
 						</div>
 					</div>
 					<div class="col-sm-4">
