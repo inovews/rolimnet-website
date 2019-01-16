@@ -121,12 +121,12 @@
 					<hr>
 					<div class="form-group">
 						<label class="sr-only" for="lat">Latitude </label>
-						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" value="-12.435708175456028" required>
+						<input type="text" name="lat" placeholder="Latitude" class="form-control" id="lat" value="-11.76894342922781" required>
 					</div>
 
 					<div class="form-group">
 						<label class="sr-only" for="lng">Longitude </label>
-						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" value="-64.22940379431225" required>
+						<input type="text" name="lng" placeholder="Longitude" class="form-control" id="lng" value="-63.03511267950512" required>
 					</div>
 					<div class="form-group">
 							{!! Captcha::display() !!}
