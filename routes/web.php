@@ -77,6 +77,13 @@ Route::group(['prefix' => 'costamarques', 'as' => 'costamarques.'], function() /
 	Route::get('obrigado', ['as' => 'obrigado', 'uses' => 'Front\CostaMarquesController@obrigado']);
 });
 
+Route::group(['prefix' => 'seringueiras', 'as' => 'seringueiras.'], function() // FIBRA
+{
+	Route::get('/', ['as' => 'index', 'uses' => 'Front\SeringueirasController@index']);
+	Route::post('enviar', ['as' => 'enviar', 'uses' => 'Front\SeringueirasController@store']);
+	Route::get('obrigado', ['as' => 'obrigado', 'uses' => 'Front\SeringueirasController@obrigado']);
+});
+
 // BLACK CENTRAL-DO-CLIENTE
 Auth::routes();
 

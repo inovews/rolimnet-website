@@ -29,6 +29,7 @@ return array(
     'CreatePlansTable' => $baseDir . '/database/migrations/2017_05_08_122240_create_plans_table.php',
     'CreatePrioritiesTable' => $baseDir . '/database/migrations/2017_05_19_172014_create_priorities_table.php',
     'CreateProductsTable' => $baseDir . '/database/migrations/2017_04_10_144455_create_products_table.php',
+    'CreateSeringueirasTable' => $baseDir . '/database/migrations/2019_01_16_210846_create_seringueiras_table.php',
     'CreateStatusesTable' => $baseDir . '/database/migrations/2017_05_19_172020_create_statuses_table.php',
     'CreateSupportsTable' => $baseDir . '/database/migrations/2017_05_03_145516_create_supports_table.php',
     'CreateTagsTable' => $baseDir . '/database/migrations/2017_05_05_152240_create_tags_table.php',

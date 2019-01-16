@@ -373,6 +373,7 @@ class ComposerStaticInit3ac529aeb654c163c7df646acbff8318
         'CreatePlansTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_08_122240_create_plans_table.php',
         'CreatePrioritiesTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_19_172014_create_priorities_table.php',
         'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2017_04_10_144455_create_products_table.php',
+        'CreateSeringueirasTable' => __DIR__ . '/../..' . '/database/migrations/2019_01_16_210846_create_seringueiras_table.php',
         'CreateStatusesTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_19_172020_create_statuses_table.php',
         'CreateSupportsTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_03_145516_create_supports_table.php',
         'CreateTagsTable' => __DIR__ . '/../..' . '/database/migrations/2017_05_05_152240_create_tags_table.php',
