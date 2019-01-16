@@ -28,7 +28,7 @@ class SeringueirasController extends Controller
     {
         //
         $seringueiras = Seringueiras::orderBy('created_at','desc')->paginate(250);
-        return view('black.sys.seringueiras.index')->withCostamarques($seringueiras); 
+        return view('black.sys.seringueiras.index')->withSeringueiras($seringueiras); 
     }
 
     /**

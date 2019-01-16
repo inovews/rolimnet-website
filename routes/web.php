@@ -119,6 +119,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function()
 	Route::resource('planscities', 'Black\Sys\PlanCityController');
 
 	Route::resource('costamarques', 'Black\Sys\CostaMarquesController');
+	Route::resource('seringueiras', 'Black\Sys\SeringueirasController');
 
 });
 
