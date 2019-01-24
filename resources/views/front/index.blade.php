@@ -53,8 +53,8 @@
     <div class="container content-sm">
         <div class="row">
             <div class="alert alert-info no-margin text-center" role="alert">
-                <strong>COSTA MARQUES/RO</strong>, faça aqui seu registro de interesse sem compromisso. <br>
-                <a href="/costamarques" class="color-blue">www.rolimnet.com.br/costamarques</a> 😁
+                <strong>SERINGUEIRAS/RO</strong>, faça aqui seu registro de interesse sem compromisso. <br>
+                <a href="/seringueiras" class="color-blue">www.rolimnet.com.br/seringueiras</a> 😁
             </div>
             <div class="col-sm-4 col-lg-offset-1">
                 <div class="text-center sm-text-left">
