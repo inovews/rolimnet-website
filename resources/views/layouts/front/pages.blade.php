@@ -109,5 +109,7 @@
 
     @yield('scripts')
 
+    <script> (function () { var script = document.createElement("script"); script.src = 'https://acessobot.com/api/botSites/d4d4a89b6617b2b23d2a22a0eb87e8a5/v1?lang=pt-BR&api=https://acessobot.com'; script.setAttribute('crossorigin', '*'); document.getElementsByTagName("body")[0].appendChild(script); })(); </script>
+
 </body>
 </html>
