@@ -12,9 +12,9 @@
                     <img class="img-thumbnail" src="{{ url('arquivos/banners/36877504_1294146260716666_130867786653106176_n.jpg') }}">
                 </div>-->
                 <div class="col-sm-7 pull-right">
-                <!--<div class="logo-rolimnet-fibra pull-right">-->
-                    <img class="img-responsive" src="{{ url('assets/img/logo-rolimnet-fibra.png') }}">
-                </div>
+                    <!--<div class="logo-rolimnet-fibra pull-right">-->
+                        <img class="img-responsive" src="{{ url('assets/img/logo-rolimnet-fibra.png') }}">
+                    </div>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -62,6 +62,19 @@
                     <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014, 2015, 2016 e 2017.</p>
                     <p class="text-right"><a href="{{ route('empresa.index') }}" class="color-blue">...mais sobre a empresa</a></p>
                 </div>
+                <div class="segundavia">
+                    <div class="col-sm-5">
+                        <a href="{{ route('invoice.sicoob') }}">
+                            <img src="{{ url('assets/img/segunda-via-boleto-1.png') }}">
+                        </a>
+                    </div>
+                    <div class="col-sm-7">
+                        <a href="{{ route('invoice.sicoob') }}">
+                        <h4 class="color-blue margin-b-0">Sicoob</h4>
+                        <p class="color-blue margin-b-0">Atualizar Boleto Sicoob pelo site</p>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="col-sm-7">
                 <div class="empresa-img text-right">
@@ -72,6 +85,7 @@
         <!--// end row -->
     </div>
 </div>
+
 
 <div id="centraldocliente">
     <div class="bg-color-blue" data-auto-height="true">
