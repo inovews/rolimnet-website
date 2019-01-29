@@ -47,9 +47,9 @@
 					<img class="logo" src="{{ url('assets/img/logo-dark.png') }}" >	
 						<div class="copyright-breather text-center">
 							<p>
-								Todos os direitos reservados &copy; 2008 - 2018 CGR.ROLIM NET (Centro de Gerência de Redes)
+								Todos os direitos reservados &copy; 2008 - 2019 CGR.ROLIM NET (Centro de Gerência de Redes)
 							<br>
-								<a href="http://www.agenciaevak.com/"> EvaK</a>, feito com <i class="fa fa-heart heart" alt="love"></i>.
+								<a href="http://www.rolimnet.com.br/"> RolimNet</a>, feito com <i class="fa fa-heart heart" alt="love"></i>.
 							</p>
 						</div>
 					</div>

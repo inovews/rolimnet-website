@@ -16,7 +16,7 @@
 				<h2>Atualizar Boleto Sicoob pelo site</h2>
 				<p class="text-justify">A forma mais fácil, rápida e segura para atualizar o seu boleto atrasado do Sicoob e emitir a 2ª via do código de barras para pagamento é através do próprio site da empresa.</p>
 
-				<p class="text-justify">Portanto, para solicitar a segunda via do seu Boleto Sicoob, basta <a href="http://www.sicoob.com.br/segunda-via-de-boleto" target="_blank" rel="noopener">acessar este link</a> e escolher uma das duas maneiras disponíveis para fazer a atualização:</p>
+				<p class="text-justify">Portanto, para solicitar a segunda via do seu Boleto Sicoob, basta <a class="btn btn-success btn-xs" href="http://www.sicoob.com.br/segunda-via-de-boleto" target="_blank" rel="noopener">acessar este link</a> e escolher uma das duas maneiras disponíveis para fazer a atualização:</p>
 
 				<p class="text-justify">1) Inserir os dados do boleto: “nosso número” e “cooperativa contratante / código beneficíário”. Segue uma imagem para te auxiliar a encontrar essas informações na sua fatura Sicoob.</p>
 				<img src="{{ url('assets/img/como-atualizar-boleto-da-Sicoob.jpg') }}" alt="como atualizar boleto da Sicoob" width="655" height="185"/>

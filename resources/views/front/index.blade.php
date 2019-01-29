@@ -59,7 +59,7 @@
             <div class="col-sm-4 col-lg-offset-1">
                 <div class="text-center sm-text-left">
                     <h1 class="color-blue margin-b-0">Bem-Vindo!</h1>
-                    <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014, 2015, 2016 e 2017.</p>
+                    <p>A Rolim Net surgiu no ano de 2008, hoje tem presença em mais de 10 cidades e várias Linhas na Zona da Mata. A Rolim Net é ganhadora do Troféu ACIRM dos anos de 2010, 2012, 2013, 2014, 2015, 2016, 2017 e 2018.</p>
                     <p class="text-right"><a href="{{ route('empresa.index') }}" class="color-blue">...mais sobre a empresa</a></p>
                 </div>
                 <div class="segundavia">
@@ -377,6 +377,7 @@
                                 <option selected data-show=".defalt">Selecione a Cidade </option>
                                 <option data-show=".cao">Cacoal</option>
                                 <option data-show=".cas">Castanheiras</option>
+                                <option data-show=".cmq">Costa Marques</option>
                                 <option data-show=".mdc">Presidente Medíci</option>
                                 <option data-show=".nbo">Nova Brasilandia d' Oeste</option>
                                 <option data-show=".nho">Novo Horizonte d' Oeste</option>
@@ -396,35 +397,38 @@
                             <h3 class="margin-b-0">Selecione a Cidade</h3>
                         </div>
                         <div class="cao hide">
-                            <h3 class="margin-b-0">Rolim Net</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
-                            <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
-                            <p>geral@rolimnet.com.br</p>
-                        </div>
-                        <div class="cas hide">
-                            <h3 class="margin-b-0">Adam</h3>
-                            <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
-                            <p>adamjhosua@rolimnet.com.br</p>
-                        </div>
-                        <div class="mdc hide">
-                            <h3 class="margin-b-0">Rolim Net</h3>
-                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
-                            <p class="margin-b-0">Endereço: Av. Manaus, 5095, Centro</p>
-                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
-                            <p>geral@rolimnet.com.br</p>
-                        </div>
-                        <div class="nbo hide">
                             <h3 class="margin-b-0">Carlos</h3>
-                            <p class="margin-b-0">Telefones: 69 9 8447-3680</p>
+                            <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
                             <p>carlosdiniz@rolimnet.com.br</p>
                         </div>
-                        <div class="nho hide">
-                            <h3 class="margin-b-0">Adam</h3>
+                        <div class="cas hide">
+                            <h3 class="margin-b-0">Carlos</h3>
                             <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
+                            <p>carlosdiniz@rolimnet.com.br</p>
+                        </div>
+                        <div class="cmq hide">
+                            <h3 class="margin-b-0">Norte Tel - Costa Marques</h3>
+                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
+                            <p>danielfaria@rolimnet.com.br</p>
+                        </div>
+                        <div class="mdc hide">
+                            <h3 class="margin-b-0">Carlos</h3>
+                            <p class="margin-b-0">Telefones: 69 9 9372-0546</p>
+                            <p>* As cidades de Cacoal e Presidente Médici contem apenas cobertura na Zona Rural, próximo ao distrito de Estrela Rondônia.</p>
+                            <p>carlosdiniz@rolimnet.com.br</p>
+                        </div>
+                        <div class="nbo hide">
+                            <h3 class="margin-b-0">João</h3>
+                            <p class="margin-b-0">Telefones: 69 9 8451-6449</p>
+                            <p>joaobatista@rolimnet.com.br</p>
+                        </div>
+                        <div class="nho hide">
+                            <h3 class="margin-b-0">Norte Tel - Novo Horizonte d' Oeste</h3>
+                            <p class="margin-b-0">Telefones: 69 3442-2779</p>
                             <p>adamjhosua@rolimnet.com.br</p>
                             <hr>
-                            <h3 class="margin-b-0">João <span>Distrito Migrantinópolis</span></h3>
+                            <h3 class="margin-b-0"> Norte Tel <span>João - Distrito Migrantinópolis</span></h3>
                             <p class="margin-b-0">Telefones: 69 9 8451-6449</p>
                             <p>joaobatista@rolimnet.com.br</p>
                         </div>
