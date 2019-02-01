@@ -173,7 +173,6 @@
                                                 <div class="margin-b-40">
                                                     <span class="pricing-list-v4-price-sign">R$</span>
                                                     <span class="pricing-list-v4-price">{{ $plan->price }},</span>
-                                                    <span class="pricing-list-v4-subprice">00</span>
                                                     <span class="pricing-list-v4-price-info">mês</span>
                                                 </div>
                                                 <div class="center-block">
