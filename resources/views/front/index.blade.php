@@ -132,6 +132,9 @@
             </div>
             <div class="col-sm-12">
                 <p>A Rolim Net tem os melhores planos para você aproveitar e se divertir navegando na internet, a qualquer momento, com a melhor conexão possível.</p>
+                <div class="alert alert-info no-margin text-justify" role="alert">
+                A banda contratada (plano) será compartilhada (dividida) com a quantidade de aparelhos conectados ao roteador da residência, ou seja, a qualidade do serviço de internet dependerá da quantidade dispositivos conectados ao mesmo tempo.
+            </div>
                 <div class="row">
                     <div class="internet">
                         <div class="col-sm-4">
@@ -190,12 +193,11 @@
                         </div>
                         <!-- End Pricing List v4 -->
                     </div>
-                    <!--// end row -->
                 </div>
             </div>
+            
         </div>
     </div>
-    <!--// end row -->
 </div>
 </div>
 
@@ -356,6 +358,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="alert alert-warning no-margin text-center" role="alert">
+                <strong><b>ATENÇÃO</b></strong>! A Rolim Net não fornece suporte ou garante qualidade ou funcionamento de serviços alternativos relativos à televisão ("IPTV", "SKYgato" e outros).
             </div>
         </div>
     </div>
